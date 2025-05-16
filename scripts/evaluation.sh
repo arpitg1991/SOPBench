@@ -75,7 +75,7 @@ domain="all"
 tool_list="full"
 tool_call_mode="fc"
 
-python run_evaluation1.py \
+python run_evaluation.py \
     --domain $domain \
     --assistant_model $model \
     --tool_list $tool_list \
