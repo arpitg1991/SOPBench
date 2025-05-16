@@ -1,0 +1,24 @@
+# directories
+__pycache__/
+__deprecated__/
+plotting/
+processing/
+output/all
+
+# files
+test*.py
+*.pyc
+.DS_Store
+.env
+*_task.py
+sync.sh
+
+# keys
+swarm/.env
+
+# ignore small model files
+*3b*.json
+# *7b*.json
+# *8b*.json
+# *14b*.json
+# *32b*.json
