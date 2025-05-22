@@ -9,7 +9,7 @@ assistant_model="gpt-4.1"
 
 output_dir="./output"
 domain="university"
-tool_call_mode="fc"
+tool_call_mode="fc" # react
 default_constraint_option="full"
 constraint_descr_format="structured"
 tool_list="full"
@@ -17,6 +17,7 @@ tool_list="full"
 python run_checking.py \
   --output_dir $output_dir \
   --domain $domain \
+  --user_model "adv" \
   --assistant_model $assistant_model \
   --tool_call_mode $tool_call_mode \
   --default_constraint_option $default_constraint_option \

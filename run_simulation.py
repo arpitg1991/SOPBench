@@ -14,7 +14,7 @@ from colorama import init, Fore, Back, Style
 from swarm.core import *
 from swarm.llm_handler import OpenAIHandler, _cleanup_all_handlers
 from swarm.util import function_to_json, _generate_random_id
-from run_evaluation import count_constraint_units
+from env.evaluator import count_constraint_units
 from env.task import task_default_dep_full, task_initializer
 
 # Store handlers for cleanup

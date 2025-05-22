@@ -8,7 +8,8 @@ from env.variables import domain_keys, domain_assistant_keys
 from env.helpers import get_action_parameters, dict_to_tuple, tuple_to_dict, hashable_dep, orig_dep,\
     gather_action_default_dependencies, dfsgather_actions_required, dfsins_cl_cd_aid, dfsgather_invfunccalldirgraph
 from env.generation import verify_database_format, verify_gen_succ, get_dict_str, dfsgather_dep_tree_vis
-from env.generation_test import testing
+from env.generation_test import generation_testing
+from env.evaluator_test import evaluator_testing
 from env.paper.paper_display_info import paper_display_info
 
 import json
@@ -229,7 +230,9 @@ def manual_operation(args)->list[Usage]:
         # case 0: all_run_usage = run_all_domain_tests(args.print_test_domain, args.test_domain, args.data_dir, args.assistant_file,
         #     args.openai_api_key, args.gpt_model, args.dependency_location, args.default_dependency_option,
         #     args.print_pipeline_disable, args.shuffle_assfun_disable)
-        case 1: testing()
+        case 1:
+            generation_testing()
+            evaluator_testing()
         # manually fixing the data
         case 2: find_manfix_params(args.data_dir, args.domain_str, args.indent_amount)
         case 3: clean_manfix_params(args.data_dir, args.domain_str, args.indent_amount)

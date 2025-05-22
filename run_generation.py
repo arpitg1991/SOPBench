@@ -3,7 +3,7 @@ running the task generation
 """
 
 
-from env.file_read_write import read_keys, write_data_file, read_data_file
+from env.file_read_write import read_keys, write_data_file, read_data_file, load_env_vars
 from env.variables import OPENAI_MODEL_COST_PER_1M_TOKENS
 from env.generation import task_generation
 
@@ -16,8 +16,7 @@ if __name__ == "__main__":
     # openai variables
     parser.add_argument("--metadata_dir",               type=str,   default="metadata",                             help="directory where metadata such as keys and cost are stored")
     parser.add_argument("--openai_api_key",             type=str,   default="not_a_key",                            help="openai api key, if inputted, system will use this over the api key in the file")
-    parser.add_argument("--key_file",                   type=str,   default="key_todsafety",                        help="<filename>.txt with the api key that we want to use")
-    parser.add_argument("--gpt_model",                  type=str,   default="gpt-4o-mini",                          help="GPT model of the generation model: gpt-4o gpt-4o-mini")
+    parser.add_argument("--gpt_model",                  type=str,   default="gpt-4.1-mini",                          help="GPT model of the generation model: gpt-4o gpt-4o-mini")
     parser.add_argument("--temperature",                type=float, default=0.4,                                    help="temperature of GPT, higher = more random")
     parser.add_argument("--top_p",                      type=float, default=1.0,                                    help="limiting the vocabulary of the LLM, high = more random")
     parser.add_argument("--max_tokens",                 type=int,   default=2000,                                   help="maximum number of xompletion tokens for any one generation")
@@ -46,8 +45,14 @@ if __name__ == "__main__":
     # calling the generation
     args = parser.parse_args()
     if args.openai_api_key == "not_a_key":
-        keydir_path = os.path.join(args.metadata_dir, "keys")
-        args.openai_api_key = read_keys(keydir_path)[args.key_file]
+        # First try to load from swarm/.env file
+        env_file_path = os.path.join("swarm", ".env")
+        env_vars = load_env_vars(env_file_path)
+        if "OPENAI_API_KEY" in env_vars:
+            args.openai_api_key = env_vars["OPENAI_API_KEY"]
+            print("Using OpenAI API key from swarm/.env file")
+        else:
+            raise ValueError("No OpenAI API key found!")
     all_run_usage = task_generation(args)
     # cost calculation
     total_usage = {"prompt_tokens": 0, "completion_tokens": 0}

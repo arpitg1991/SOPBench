@@ -4,9 +4,9 @@ File to hold helper functions for task_generation that could be used elsewhere
 
 import re
 import copy
-import json
 import itertools
 import inspect
+import json
 from collections import deque
 from difflib import SequenceMatcher
 from textwrap import dedent
@@ -50,7 +50,7 @@ def get_action_full_description(action_descriptions:dict, action_returns:dict, a
 def get_domain_dependency_none(class_name:str)->dict:
     return {func:None for func in dir(class_name) if callable(getattr(class_name, func))}
 
-# gets the action parameters for the domain
+# gets the action parameters for the actions of the domain
 def get_action_parameters(domain_system, domain_assistant)->dict:
     list_action_name = [func for func in dir(domain_system)
         if callable(getattr(domain_system, func)) and not func.startswith("_") and not func.startswith("evaluation_")]
@@ -247,17 +247,7 @@ def get_new_param_mapping(d1:dict, d2:dict)->dict:
         if d[key] in d1: d[key] = d1[d[key]]
     return d
 
-def dfsgather_constr_singles_dep(dep:tuple)->set:
-    params_set = set()
-    if not dep: return params_set
-    match dep[0]:
-        case "single":
-            params_set = {(dep[0], re.sub("not ", "", dep[1]), dict_to_tuple(dep[2]))}
-        case "and" | "or" | "chain" | "gate":
-            for ele in dep[1]: params_set = params_set | dfsgather_constr_singles_dep(ele)
-        case _: raise InvalidConstraintOption(f"invalid dependency option selected: {dep[0]}")
-    return params_set
-
+# returns a set of single constraints, removing the "not"
 def dfsgather_constr_singles_dep_set(dep:tuple)->set:
     constr_set = set()
     if not dep: return constr_set
@@ -286,7 +276,6 @@ def dfsgather_constr_singles_dep_list_recur(dep:tuple)->list:
                 constr_set |= constr_set_part_new
         case _: raise InvalidConstraintOption(f"invalid dependency option selected: {dep[0]}")
     return constr_list, constr_set
-
 def dfsgather_constr_singles_dep_list(dep:tuple)->list:
     constr_list, _ = dfsgather_constr_singles_dep_list_recur(dep)
     return constr_list
@@ -680,8 +669,8 @@ def dfsgather_inv_func_graph_dependency(dep_orig:tuple,
     return inv_func_graph
 
 # converts the list of tuple connections to a list of sets (indexed by node indicies)
-def convert_ifg_connections_list_to_set(connections:list)->set:
-    if not connections or connections and isinstance(connections[0], set): return connections
+def convert_ifg_connections_list_to_set(connections:list)->list:
+    if not connections or connections and isinstance(connections[0], set): return copy.deepcopy(connections)
     node_inds = set()
     for node_from, node_to in connections: node_inds |= {node_from, node_to}
     max_node_ind = max(node_inds)
@@ -797,7 +786,7 @@ def prune_ifg(inv_func_graph:dict, root_ind:int=0)->dict:
     conns = convert_ifg_connections_list_to_set(conns)
     if not conns: conns = [set() for _ in nodes]
     inv_func_graph["connections"] = conns
-    # bfs start from root, check for node duplicates
+    # bfs start from root, check for node duplicates (duplicate function name, even with different parameters)
     seen_nodes = set()
     node_mapping = [i for i in range(len(nodes))] # maps the duplicates to their original
     q = deque([root_ind])
@@ -940,62 +929,6 @@ def bfsconvert_tree_to_ifg(dep:tuple, action_user_goal:tuple=None)->dict:
     return prune_ifg(inv_func_graph)
 
 
-"""functions that are not used for task_generation, but are highly relevant and are used elsewhere"""
-
-# gets the connections (position to multiple positions) and inverse nodes (function name to position)
-def get_ifg_connections_invnodes(inv_func_call_graph:dict)->tuple[list[list],dict]:
-    ifg_n = inv_func_call_graph["nodes"]
-    ifg_c = inv_func_call_graph["connections"]
-    # put the connections into a 2D list
-    connections = convert_ifg_connections_list_to_set(ifg_c)
-    for _ in range(len(ifg_n)-len(connections)): connections.append(set())
-    # inverse nodes to quickly find certain functions
-    inv_nodes = {}
-    for i in range(len(ifg_n)):
-        node = ifg_n[i]
-        if isinstance(node, str): continue
-        fname = node[0]
-        if fname not in inv_nodes: inv_nodes[fname] = i
-    # return the connectiosn and inverse nodes
-    return connections, inv_nodes
-
-# gets the connections (position to multiple positions) and inverse nodes (function name to position)
-def get_dag_connections_invnodes(dir_act_graph:dict)->tuple[list[list],dict]:
-    dag_n = dir_act_graph["nodes"]
-    dag_c = dir_act_graph["connections"]
-    # put the connections into a 2D list
-    connections = [[] for _ in range(len(dag_n))]
-    for conn_from, conn_to in dag_c: connections[conn_from].append(conn_to)
-    # inverse nodes to quickly find certain functions
-    inv_nodes = {}
-    for i in range(len(dag_n)):
-        node = dag_n[i]
-        if isinstance(node, str): continue
-        fname = node[0]
-        if fname not in inv_nodes: inv_nodes[fname] = i
-    # return the connectiosn and inverse nodes
-    return connections, inv_nodes
-
-# gathers the inverse function call directed graph for a function of a domain, given that the action is a part of the domain
-def dfsgather_ifg_func(domain_system, domain_assistant:dict, action:str, default_dependency_option:str,
-    ifg_processed_conns:bool=True)->dict|tuple[list,list,dict]:
-    if action not in domain_assistant.action_descriptions: return None
-    # variable loading
-    ard = domain_assistant.action_required_dependencies
-    acd = domain_assistant.action_customizable_dependencies
-    cl = domain_assistant.constraint_links
-    cp = domain_assistant.constraint_processes
-    action_default_dep_orig = gather_action_default_dependencies(ard, acd, default_dependency_option=default_dependency_option)
-    action_parameters = get_action_parameters(domain_system, domain_assistant)
-    # process the graph
-    dep_orig = action_default_dep_orig[action]
-    user_goal_node = (action, {key: key for key in action_parameters[action]})
-    inv_func_call_graph = dfsgather_invfunccalldirgraph(dep_orig, cl, cp, action_default_dep_orig, action_parameters, user_goal_node)
-    if not ifg_processed_conns: return inv_func_call_graph
-    nodes = inv_func_call_graph["nodes"]
-    connections, inv_nodes = get_ifg_connections_invnodes(inv_func_call_graph)
-    return nodes, connections, inv_nodes
-
 """useful functions for printing information"""
 
 # formats the title to have a constant length
@@ -1028,3 +961,43 @@ def get_dict_json_str(d:dict, excluded_keys:set=set(), indent_amount:int=2)->str
         value_str = re.sub('\n', indent_str, value_str)
         dict_str += '{0:{align}{max_key_len}} {b}\n'.format(str(key), b=value_str, align="<", max_key_len=max_key_len)
     return dict_str[:-1]
+
+
+"""functions that are not used for task_generation, but are highly relevant and are used elsewhere"""
+
+# gets the connections (position to multiple positions) and inverse nodes (function name to position)
+def get_ifg_connections_invnodes(inv_func_call_graph:dict)->tuple[list[list],dict]:
+    ifg_n = inv_func_call_graph["nodes"]
+    ifg_c = inv_func_call_graph["connections"]
+    # put the connections into a 2D list
+    connections = convert_ifg_connections_list_to_set(ifg_c) # fills in connections to the indicies it sees
+    for _ in range(len(ifg_n)-len(connections)): connections.append(set())
+    # inverse nodes to quickly find certain functions
+    inv_nodes = {}
+    for i in range(len(ifg_n)):
+        node = ifg_n[i]
+        if isinstance(node, str): continue
+        fname = node[0]
+        if fname not in inv_nodes: inv_nodes[fname] = i
+    # return the connectiosn and inverse nodes
+    return connections, inv_nodes
+
+# gathers the inverse function call directed graph for a function of a domain, given that the action is a part of the domain
+def dfsgather_ifg_func(domain_system, domain_assistant:dict, action:str, default_dependency_option:str,
+    ifg_processed_conns:bool=True)->dict|tuple[list,list,dict]:
+    if action not in domain_assistant.action_descriptions: return None
+    # variable loading
+    ard = domain_assistant.action_required_dependencies
+    acd = domain_assistant.action_customizable_dependencies
+    cl = domain_assistant.constraint_links
+    cp = domain_assistant.constraint_processes
+    action_default_dep_orig = gather_action_default_dependencies(ard, acd, default_dependency_option=default_dependency_option)
+    action_parameters = get_action_parameters(domain_system, domain_assistant)
+    # process the graph
+    dep_orig = action_default_dep_orig[action]
+    user_goal_node = (action, {key: key for key in action_parameters[action]})
+    inv_func_call_graph = dfsgather_invfunccalldirgraph(dep_orig, cl, cp, action_default_dep_orig, action_parameters, user_goal_node)    
+    if not ifg_processed_conns: return inv_func_call_graph
+    nodes = inv_func_call_graph["nodes"]
+    connections, inv_nodes = get_ifg_connections_invnodes(inv_func_call_graph)
+    return nodes, connections, inv_nodes

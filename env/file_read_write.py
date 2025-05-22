@@ -27,6 +27,36 @@ def read_keys(keypath="keys")->dict:
         keys[key_name] = key
     return keys
 
+# loads environment variables from a .env file
+def load_env_vars(env_file_path:str)->dict:
+    """
+    Load environment variables from a .env file
+    
+    Args:
+        env_file_path (str): Path to the .env file
+        
+    Returns:
+        dict: Dictionary of environment variables
+    """
+    if not os.path.exists(env_file_path):
+        print(f"Warning: Environment file {env_file_path} not found")
+        return {}
+    
+    env_vars = {}
+    with open(env_file_path, 'r', encoding='utf-8', errors='ignore') as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith('#'):
+                continue
+                
+            key, value = line.split('=', 1)
+            env_vars[key.strip()] = value.strip().strip('"\'')
+            
+            # Optionally set environment variables
+            os.environ[key.strip()] = value.strip().strip('"\'')
+            
+    return env_vars
+
 # returns the str data in a file
 def read_data_file(data_dir:str, document_name:str)->str:
     res = None

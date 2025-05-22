@@ -534,7 +534,7 @@ def verify_gen_succ(task_obj:Task, dep:tuple, dep_perm:tuple, domain_str:str, us
         target_result = task_single[key]
         if key in actual_results: continue
         dep_perm_single = dfsins_cl_cd_aid(orig_dep(key), cl, act_innate_deps, act_def_deps, cd, action_parameters)
-        actual_result = int(Dependency_Evaluator_before_ug._process(dep_perm_single, **user_known)) if task_single[key] >= 0 else target_result
+        actual_result = int(dependency_evaluator_before_ug._process(dep_perm_single, **user_known)) if task_single[key] >= 0 else target_result
         actual_results[key] = actual_result
         undetermined_constr_set:set = gather_undetermined_constr_set(dep_perm, actual_results)
         for ele in undetermined_constr_set: actual_results[ele] = -1
@@ -602,17 +602,7 @@ def generate_verb_user_goal_oneround(verb_user_goal:str, user_known:dict, domain
 
 """miscellaneous and diagnostic functions"""
 
-from env.helpers import get_ifg_connections_invnodes, dfsgather_ifg_func
-
-# prints the dictionary in a pretty format
-def get_dict_str(d:dict)->str:
-    if not d: return
-    keys = sorted(list(d.keys()))
-    max_key_len = max([len(str(key)) for key in d])
-    dict_str = ""
-    for key in keys:
-        dict_str += '{0:{align}{max_key_len}} {b}\n'.format(str(key), b=str(d[key]), align="<", max_key_len=max_key_len)
-    return dict_str[:-1]
+from env.helpers import get_title_str, get_dict_str, get_ifg_connections_invnodes, dfsgather_ifg_func
 
 # visualizes the dependency or process by dfs gathering  all needed action dependencies
 def dfsgather_dep_tree_vis(dependency:tuple, user_goal:str="",
@@ -783,7 +773,7 @@ def gather_ifg_graph_vis(inv_func_graph:dict, transpose_bool:bool=False)->str:
                 y_ideal = find_levelnc_ideal(levelnc_to_setyblocked, (levelnc+1, levelnc_nt-1), levelnc_to_nextavaispot, set(levelncfrom_tempblocked), node_to_y[node_to])
                 levelnc_to_setyblocked, levelnc_to_nextavaispot = fill_with_connection(levelnc_to_setyblocked, (levelnc+1, levelnc_nt-1), levelnc_to_nextavaispot, y_ideal)
                 connsorig_to_y[(node_from, node_to)] = y_ideal
-    max_y = max(list(connsorig_to_y.values()))
+    max_y = max(list(connsorig_to_y.values()), default=0)
     # Section: calculating the x +/- offset relative to the node layer of each progenitor node based on if it needs connections below its y position
     # checks if the progenitor node has a connection down, returns True if true
     def check_proge_connoverlap(connsorig_to_y:dict, prev_node:int, prev_node_conns:set, prev_y:int, curr_node:int, curr_node_conns:set, curr_y:int, from_to_bool:bool)->bool:
@@ -1171,7 +1161,7 @@ def generate_action_task(domain_str:str, user_goal:str, default_dependency_optio
             task_single = {key: configured_tasks[key][j] for key in configured_tasks}
             task_succ = task_successes[j]
             if testing_mode: print(get_dict_str(task_single))
-            # AI generation information dynamic to the task_single
+            # LLM generation information dynamic to the task_single
             user_params = dfsgather_params_task(task_single) # params in this dependency
             user_params = user_params | action_params
             user_param_descs = {} # user_known
@@ -1215,7 +1205,7 @@ def generate_action_task(domain_str:str, user_goal:str, default_dependency_optio
                 prompt_task = modify_prompt(prompt_task_template).format(**prompt_task_vars)
                 if testing_mode: print(prompt_task)
                 messages = [{"role": "system", "content": dedent(system_prompt)}, {"role": "user", "content": prompt_task}]
-                # AI generation, regenerate until success
+                # LLM generation, regenerate until success
                 try:
                     completion_task = client.beta.chat.completions.parse(messages=messages, model=gpt_model, response_format=Task,
                         temperature=temperature, max_completion_tokens=max_completion_tokens)
@@ -1320,9 +1310,9 @@ def generate_action_task(domain_str:str, user_goal:str, default_dependency_optio
                 "dependency":               dep,
                 "dependency_original":      dep_orig,
                 "action_should_succeed":    task_succ,
-                "inv_func_call_graph":      inv_func_call_graph,
-                "verb_user_goal":           verb_user_goal,
-                "verb_user_goal_oneround":  verb_user_goal_oneround,
+                "directed_action_graph":      inv_func_call_graph,
+                "user_instruction":           verb_user_goal,
+                "user_prompt":  verb_user_goal_oneround,
             }
             list_task_info.append(task_info)
             inter_info = {

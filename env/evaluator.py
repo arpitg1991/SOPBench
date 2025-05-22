@@ -364,6 +364,7 @@ def domain_statistics(all_statistics_results:list[dict], ex_task_eval_res:dict, 
         elif und_attr in averaged_attributes: ds[f"avg_{und_attr}"] = round(ds[f"total_{und_attr}"] / ds[f"total_interactions"], 5)
     return domain_statistics
 
+
 def combine_numerical_dicts(d1:dict, d2:dict)->dict:
     """Combines two dictionaries with identical (nested) keys with totals as values"""
     d = copy.deepcopy(d1)
@@ -371,6 +372,7 @@ def combine_numerical_dicts(d1:dict, d2:dict)->dict:
         if isinstance(d[key], int): d[key] += d2[key]
         else: d[key] = combine_numerical_dicts(d[key], d2[key])
     return d
+
 
 def combine_list_numerical_dicts(d_list:list[dict])->dict:
     """Combines a list of dictionaries with identical (nested) keys with totals as values"""

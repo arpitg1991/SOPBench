@@ -63,4 +63,6 @@ OPENAI_MODEL_COST_PER_1M_TOKENS = {
     "o3-completion":                    40,
     "gpt-4.1":                          2,
     "gpt-4.1-completion":               8,
+    "gpt-4.1-mini":                     0.1,
+    "gpt-4.1-mini-completion":          0.4,
 }
