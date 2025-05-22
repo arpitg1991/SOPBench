@@ -7,13 +7,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "o4-mini-high",
                 "temperature": 0.0,
@@ -137,7 +131,7 @@
                 },
                 "interaction_time": "2024-11-21T16:25:31"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "vehicle_renewal_window": 90,
                 "dl_renewal_window": 180,
                 "attempt_limit": 3,
@@ -148,21 +142,21 @@
                 "username": "frustrated_coder",
                 "admin_password": "12baisdvbs9879"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are attempting to verify that the admin password you entered is correct for your account, using your username and identification, to enable more functionality.",
             "user_prompt": "Hello! I need to verify that the admin password I entered is correct for my account. My username is \"frustrated_coder\", and my identification number is \"xgdyfh6346pacd\". The admin password I have is \"12baisdvbs9879\". Can you help me confirm this?",
             "directed_action_graph": {

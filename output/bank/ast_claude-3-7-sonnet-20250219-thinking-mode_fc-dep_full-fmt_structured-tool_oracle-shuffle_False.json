@@ -7,13 +7,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "claude-3-7-sonnet-20250219-thinking",
                 "temperature": 0.0,
@@ -61,7 +55,7 @@
                 },
                 "interaction_time": "2024-11-21T16:25:31"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "maximum_owed_balance": 500,
                 "maximum_exchange": 3000,
                 "minimum_credit_score": 600,
@@ -73,21 +67,21 @@
                 "username": "john_doe",
                 "total_assets": 15000.0
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "internal_check_username_exist",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "internal_check_username_exist",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are applying for a credit card by providing your monthly income, username, and total assets to determine your eligibility and spending limit, aiming for a successful application outcome.",
             "user_prompt": "Hello! I'm interested in applying for a credit card. My monthly income is $4500.0, my username is john_doe, and my total assets amount to $15000.0. Could you help me determine my eligibility and possible spending limit? Thank you!",
             "directed_action_graph": {

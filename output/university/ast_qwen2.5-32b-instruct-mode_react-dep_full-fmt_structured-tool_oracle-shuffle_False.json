@@ -7,13 +7,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -146,7 +140,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -165,7 +159,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -291,7 +285,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -345,7 +339,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -651,13 +645,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -789,7 +777,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -808,7 +796,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -934,7 +922,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -988,7 +976,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -1290,13 +1278,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -1428,7 +1410,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -1447,7 +1429,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -1573,7 +1555,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -1627,7 +1609,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -1929,13 +1911,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -2067,7 +2043,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -2086,7 +2062,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -2212,7 +2188,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -2266,7 +2242,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -2568,13 +2544,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -2707,7 +2677,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -2726,7 +2696,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -2852,7 +2822,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -2906,7 +2876,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -3209,13 +3179,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -3348,7 +3312,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -3367,7 +3331,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -3493,7 +3457,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -3547,7 +3511,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -3850,13 +3814,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -3989,7 +3947,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -4008,7 +3966,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -4134,7 +4092,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -4188,7 +4146,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -4491,13 +4449,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -4629,7 +4581,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -4649,7 +4601,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -4731,7 +4683,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -4777,7 +4729,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -5242,13 +5194,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -5380,7 +5326,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -5400,7 +5346,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -5482,7 +5428,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -5528,7 +5474,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -5965,13 +5911,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -6103,7 +6043,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:01"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -6123,7 +6063,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -6205,7 +6145,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -6251,7 +6191,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -6663,13 +6603,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -6801,7 +6735,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -6821,7 +6755,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -6903,7 +6837,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -6949,7 +6883,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -7311,13 +7245,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -7449,7 +7377,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -7469,7 +7397,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -7551,7 +7479,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -7597,7 +7525,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -8034,13 +7962,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -8188,7 +8110,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -8208,7 +8130,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -8290,7 +8212,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -8336,7 +8258,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -8792,13 +8714,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -8964,7 +8880,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -8984,7 +8900,7 @@
                 "minor": "Physics",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -9064,7 +8980,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -9120,7 +9036,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -9625,13 +9541,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -9813,7 +9723,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -9833,7 +9743,7 @@
                 "minor": "Physics",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -9913,7 +9823,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -9969,7 +9879,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -10460,13 +10370,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -10638,7 +10542,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -10658,7 +10562,7 @@
                 "minor": "Physics",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -10738,7 +10642,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -10794,7 +10698,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -11200,13 +11104,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -11353,7 +11251,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -11373,7 +11271,7 @@
                 "minor": "Mathematics",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -11453,7 +11351,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -11509,7 +11407,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -11995,13 +11893,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -12183,7 +12075,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -12203,7 +12095,7 @@
                 "minor": "Physics",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -12283,7 +12175,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -12339,7 +12231,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -12780,13 +12672,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -12918,7 +12804,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -12938,7 +12824,7 @@
                 "minor": "Digital Arts",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -13018,7 +12904,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -13074,7 +12960,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -13515,13 +13401,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -13687,7 +13567,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -13707,7 +13587,7 @@
                 "minor": "Physics",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -13787,7 +13667,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -13843,7 +13723,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -14293,13 +14173,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -14431,7 +14305,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -14451,7 +14325,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS101"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -14508,7 +14382,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -14541,7 +14415,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -14960,13 +14834,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -15080,7 +14948,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -15100,7 +14968,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS101"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -15157,7 +15025,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -15190,7 +15058,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -15540,13 +15408,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -15678,7 +15540,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 10,
                 "graduation_credit_requirement": 180,
@@ -15698,7 +15560,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS101"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -15755,7 +15617,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -15788,7 +15650,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -16206,13 +16068,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -16344,7 +16200,7 @@
                 },
                 "interaction_time": "2023-12-02T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -16364,7 +16220,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS101"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -16421,7 +16277,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -16454,7 +16310,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -16847,13 +16703,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -16986,7 +16836,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -17006,7 +16856,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS201"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -17110,7 +16960,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -17190,7 +17040,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -17517,13 +17367,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -17655,7 +17499,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -17675,7 +17519,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS201"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -17779,7 +17623,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -17859,7 +17703,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -18285,13 +18129,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -18424,7 +18262,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 12,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -18444,7 +18282,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS201"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -18548,7 +18386,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -18628,7 +18466,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -18955,13 +18793,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -19094,7 +18926,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -19114,7 +18946,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS201"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -19218,7 +19050,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -19298,7 +19130,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -19625,13 +19457,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -19764,7 +19590,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -19784,7 +19610,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS201"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -19888,7 +19714,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -19968,7 +19794,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -20295,13 +20121,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -20434,7 +20254,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -20454,7 +20274,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS201"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -20558,7 +20378,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -20638,7 +20458,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -20965,13 +20785,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -21123,7 +20937,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 12,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -21143,7 +20957,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS201"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -21247,7 +21061,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -21327,7 +21141,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -21694,13 +21508,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -21834,7 +21642,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -21854,7 +21662,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS201"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -21958,7 +21766,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -22038,7 +21846,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -22366,13 +22174,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -22505,7 +22307,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -22525,7 +22327,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "CS201"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -22629,7 +22431,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -22709,7 +22511,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -23036,13 +22838,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -23190,7 +22986,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -23210,7 +23006,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "course_code": "MUS15"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -23314,7 +23110,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -23394,7 +23190,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -23737,13 +23533,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -23875,7 +23665,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -23894,9 +23684,9 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "username": "alice"
             },
-            "dependency": null,
-            "dependency_original": null,
-            "action_should_succeed": 1,
+            "constraints": null,
+            "constraints_original": null,
+            "action_should_succeed": true,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -24125,13 +23915,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -24263,7 +24047,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -24281,9 +24065,9 @@
             "user_known": {
                 "username": "alice"
             },
-            "dependency": null,
-            "dependency_original": null,
-            "action_should_succeed": 1,
+            "constraints": null,
+            "constraints_original": null,
+            "action_should_succeed": true,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -24511,13 +24295,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -24826,7 +24604,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -24845,7 +24623,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "username": "alice"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -24976,7 +24754,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -25035,7 +24813,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -25588,13 +25366,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -25738,7 +25510,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -25757,7 +25529,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -25888,7 +25660,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -25947,7 +25719,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -26335,13 +26107,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -26498,7 +26264,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -26517,7 +26283,7 @@
                 "username": "alice",
                 "password": "NXASNFIJSNAFnamfasfkjn123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -26648,7 +26414,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -26707,7 +26473,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -27108,13 +26874,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -27427,7 +27187,7 @@
                 },
                 "interaction_time": "2023-12-01T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -27446,7 +27206,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "username": "alice"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -27577,7 +27337,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -27636,7 +27396,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -28193,13 +27953,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -28509,7 +28263,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -28528,7 +28282,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "username": "alice"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -28659,7 +28413,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -28718,7 +28472,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -29219,13 +28973,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -29538,7 +29286,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -29557,7 +29305,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "username": "alice"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -29688,7 +29436,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -29747,7 +29495,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -30276,13 +30024,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -30590,7 +30332,7 @@
                 },
                 "interaction_time": "2024-03-02T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -30609,7 +30351,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "username": "alice"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -30740,7 +30482,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -30799,7 +30541,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [
@@ -31326,13 +31068,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "qwen2.5-32b-instruct",
                 "temperature": 0.0,
@@ -31642,7 +31378,7 @@
                 },
                 "interaction_time": "2023-11-15T10:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_credits_per_quarter": 18,
                 "min_credits_drop": 12,
                 "graduation_credit_requirement": 180,
@@ -31661,7 +31397,7 @@
                 "password": "NXASNFIJSNAFnamfasfkjn123",
                 "username": "alice"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -31792,7 +31528,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -31851,7 +31587,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "directed_action_graph": {
                 "nodes": [
                     [

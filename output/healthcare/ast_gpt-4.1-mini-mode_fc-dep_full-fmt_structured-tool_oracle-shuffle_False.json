@@ -7,13 +7,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "oracle",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4.1-mini",
                 "temperature": 0.0,
@@ -112,7 +106,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -123,7 +117,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -154,7 +148,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -173,7 +167,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to add a new authorized provider to your policy using the provider ID, your username, and either your account password or driver's license for identification, aiming for a successful addition.",
             "user_prompt": "Hello! I'd like to add a new authorized provider to my policy. I have the provider ID, my username, and my identification ready. \n\nThe provider ID is \"new_provider_id\", my username is \"Henry Smith\", and for identification, I'm using my account password which is \"sdfojngsmnlvx\". Can you assist me with this process?",
             "directed_action_graph": {

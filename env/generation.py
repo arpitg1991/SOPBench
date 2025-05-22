@@ -1307,8 +1307,8 @@ def generate_action_task(domain_str:str, user_goal:str, default_dependency_optio
             # parsing and recording all the variables, also for manual fixing
             list_task_obj.append(task_obj_best)
             task_info = {
-                "dependency":               dep,
-                "dependency_original":      dep_orig,
+                "constraints":               dep,
+                "constraints_original":      dep_orig,
                 "action_should_succeed":    task_succ,
                 "directed_action_graph":      inv_func_call_graph,
                 "user_instruction":           verb_user_goal,
@@ -1419,8 +1419,8 @@ def task_generation(args):
             task = {}
             try: task["initial_database"] = json.loads(task_obj.initial_database_str)
             except json.decoder.JSONDecodeError as e: task["initial_database"] = task_obj.initial_database_str
-            try: task["dependency_parameters"] = json.loads(task_obj.dependency_parameters_str)
-            except json.decoder.JSONDecodeError as e: task["dependency_parameters"] = task_obj.dependency_parameters_str
+            try: task["constraint_parameters"] = json.loads(task_obj.dependency_parameters_str)
+            except json.decoder.JSONDecodeError as e: task["constraint_parameters"] = task_obj.dependency_parameters_str
             try: task["user_known"] = json.loads(task_obj.user_known_str)
             except json.decoder.JSONDecodeError as e: task["user_known"] = task_obj.user_known_str
             task.update(list_task_info[i])

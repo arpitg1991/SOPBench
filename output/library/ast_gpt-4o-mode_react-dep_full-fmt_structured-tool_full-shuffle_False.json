@@ -4,13 +4,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -131,7 +125,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 5,
                 "max_reservation_slots": 4
             },
@@ -142,7 +136,7 @@
                 "restricted": false,
                 "password": "secureP@ssw0rd"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -173,7 +167,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -192,7 +186,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to add a new book titled \"[book_title]\" to the library database with [count] copies, while specifying whether it is restricted and using your username and password for authentication.",
             "user_prompt": "Hi, I'd like to add a new book to the library database. The book is titled \"The Great Gatsby,\" and I'm looking to add 3 copies. It's not restricted. For authentication, my username is \"new_admin\" and my password is \"secureP@ssw0rd.\" Could you please help me with this process?",
             "user_goal": "add_book",
@@ -475,13 +469,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -602,7 +590,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 5,
                 "max_reservation_slots": 5
             },
@@ -613,7 +601,7 @@
                 "restricted": false,
                 "password": "secureAdminPass123"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -644,7 +632,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -663,7 +651,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to add a new book titled \"[book_title]\" to the library database with [count] copies, using your username \"[username]\" and password, while specifying whether the book is restricted as [restricted].",
             "user_prompt": "Hello! I would like to add a new book to the library database. The book is titled \"The Great Gatsby\". I want to add 0 copies of it. My username is \"libAdmin\" and my password is \"secureAdminPass123\". Additionally, this book should not be restricted, so \"restricted\" is set to False. Could you assist me with this process? Thank you!",
             "user_goal": "add_book",
@@ -941,13 +929,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -1068,7 +1050,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 5,
                 "max_reservation_slots": 4
             },
@@ -1079,7 +1061,7 @@
                 "restricted": false,
                 "password": "modUBPGqOaDalVsmGqa"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -1110,7 +1092,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -1129,7 +1111,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to add a new book titled \"[book_title]\" with [count] copies to the library database, using your username \"[username]\" and password, while specifying if the book is restricted or not.",
             "user_prompt": "Hello! I'd like to add a new book to the library database. The book is titled \"rlednPBweFSqcudrEvA\" and I would like to add 3 copies. My username is \"booklover\" and my password is \"modUBPGqOaDalVsmGqa.\" The book is not restricted; therefore, \"restricted\" is \"False.\" Could you please help me with this? Thank you!",
             "user_goal": "add_book",
@@ -1369,13 +1351,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -1487,7 +1463,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 5,
                 "max_reservation_slots": 3
             },
@@ -1498,7 +1474,7 @@
                 "restricted": false,
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -1529,7 +1505,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -1548,7 +1524,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to add a new book titled \"book_title\" to the library database, specifying \"count\" copies, while using your username and password to authenticate, and indicating whether the book is restricted.",
             "user_prompt": "Hello! I'd like to add a new book to the library database. The book title is \"The Great Gatsby\". I would like to specify 3 copies of this book. My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Also, the book is not restricted, so \"restricted\" is set to \"False\". Could you please help me with this?",
             "user_goal": "add_book",
@@ -1798,13 +1774,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -1916,7 +1886,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -1925,7 +1895,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -1956,7 +1926,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -1975,7 +1945,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to borrow the book titled \"the title of the book to be borrowed, returned, or managed\" using your username and password, and you want to know if the borrowing was successful.",
             "user_prompt": "Hi! I'd like to borrow a book from the library. The title of the book is \"Beloved\". My username is \"mario\", and my password is \"m@rio37T73\". Could you please check if the borrowing is successful? Thank you!",
             "user_goal": "borrow_book",
@@ -2242,13 +2212,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -2360,7 +2324,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -2368,7 +2332,7 @@
                 "username": "KGVGIrMGUwmEsVqBOip",
                 "book_title": "Beloved"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -2399,7 +2363,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -2418,7 +2382,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"[book_title]\" using your username \"[username]\", and you will know if the borrowing is successful based on a true or false return.",
             "user_prompt": "Hello! I'd like to borrow a book, please. The title is \"Beloved\" and my username is \"KGVGIrMGUwmEsVqBOip\". Could you let me know if I can successfully borrow it? Thank you!",
             "user_goal": "borrow_book",
@@ -2704,13 +2668,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -2822,7 +2780,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -2831,7 +2789,7 @@
                 "username": "mario",
                 "password": "dJPxuZHKpJRTogCsOvI"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -2862,7 +2820,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -2881,7 +2839,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" using your username and password, and determine if the borrowing process is successful.",
             "user_prompt": "Hello! I'd like to borrow a book titled \"Beloved.\" My username is \"mario\" and my password is \"dJPxuZHKpJRTogCsOvI.\" Could you please let me know if the borrowing process is successful? Thank you!",
             "user_goal": "borrow_book",
@@ -3110,13 +3068,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -3229,7 +3181,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -3238,7 +3190,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -3269,7 +3221,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -3288,7 +3240,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"[book_title]\" by using your username \"[username]\" and password to set its return date, aiming for a successful transaction.",
             "user_prompt": "Hello! I'd like to borrow the book titled \"The Great Gatsby\". My username is \"mario\" and my password is \"m@rio37T73\". Could you help me set up a return date and complete the transaction? Thank you!",
             "user_goal": "borrow_book",
@@ -3537,13 +3489,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -3655,7 +3601,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -3664,7 +3610,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -3695,7 +3641,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -3714,7 +3660,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by logging into your account with the username \"username\" and the password \"password\", and you want to know if the borrowing process is successful.",
             "user_prompt": "Hi! I would like to borrow a book from the library. The title of the book I want to borrow is \"Beloved.\" I'd like to log into my account to proceed with the borrowing process. My username is \"mario\" and my password is \"m@rio37T73.\" Could you please let me know if the borrowing process is successful? Thank you.",
             "user_goal": "borrow_book",
@@ -3962,13 +3908,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -4080,7 +4020,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 4
             },
@@ -4089,7 +4029,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -4152,7 +4092,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -4179,7 +4119,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by logging into your account with the username \"username\" and your password, and you want to know if the borrowing was successful.",
             "user_prompt": "Hi! I'd like to borrow a book. The title is \"Beloved.\" Can you help me log into my account? My username is \"pepperoni,\" and my password is \"paikzmzhaa991.\" Could you let me know if the borrowing process was successful? Thank you!",
             "user_goal": "borrow_book",
@@ -4482,13 +4422,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -4600,7 +4534,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -4609,7 +4543,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -4672,7 +4606,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -4699,7 +4633,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"[book_title]\" by using your username \"[username]\" and password to set its return date and determine if the borrowing action is successful.",
             "user_prompt": "Hello! I would like to borrow a book, please. The title is \"Beloved.\" My username is \"mario\" and my password is \"m@rio37T73.\" Could you help me set the return date and verify if the action to borrow this book is successful? Thank you!",
             "user_goal": "borrow_book",
@@ -4981,13 +4915,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -5099,7 +5027,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -5108,7 +5036,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -5182,7 +5110,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -5220,7 +5148,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by using your username and password to set a return date, aiming for a successful transaction.",
             "user_prompt": "Hello! I'd like to borrow a book titled \"Beloved\". My username is \"mario\" and my password is \"m@rio37T73\". Could you help me set a return date for it? Thank you!",
             "user_goal": "borrow_book",
@@ -5543,13 +5471,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -5661,7 +5583,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -5670,7 +5592,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -5744,7 +5666,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -5782,7 +5704,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" using your username \"username\" and password to set its return date, aiming for a successful borrowing process.",
             "user_prompt": "Hi! I'd like to borrow a book today. The title is \"One Hundred Years of Solitude.\" My username is \"mario\" and my password is \"m@rio37T73\". Could you please help me set the return date for this book? Thank you!",
             "user_goal": "borrow_book",
@@ -6106,13 +6028,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -6224,7 +6140,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -6233,7 +6149,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -6307,7 +6223,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -6345,7 +6261,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to borrow the book titled \"[book_title]\" by using your username \"[username]\" and password to set the return date, aiming for a successful transaction.",
             "user_prompt": "Hi there! I'd like to borrow the book titled \"Beloved.\" My username is \"mario\" and my password is \"m@rio37T73.\" Could you please set a return date for me?",
             "user_goal": "borrow_book",
@@ -6668,13 +6584,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -6786,7 +6696,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -6795,7 +6705,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -6845,7 +6755,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -6871,7 +6781,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by logging into your account with the username \"username\" and the password \"password\", and you want to know if the borrowing was successful.",
             "user_prompt": "Hello! I'd like to borrow a book titled \"Beloved.\" I need to log into my account first. My username is \"mario\" and my password is \"m@rio37T73\". Could you help me with that and let me know if the borrowing was successful? Thank you!",
             "user_goal": "borrow_book",
@@ -7157,13 +7067,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -7276,7 +7180,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -7285,7 +7189,7 @@
                 "username": "Grimoire",
                 "password": "gr1m01re_libAdmin"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -7335,7 +7239,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -7361,7 +7265,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by using your username and password, and you want to know if the borrowing was successful.",
             "user_prompt": "Hi! I'd like to borrow a book, please. The title is \"Beloved.\" Can you help me with that? My username is \"Grimoire\" and my password is \"gr1m01re_libAdmin\". Could you let me know if the borrowing process is successful?",
             "user_goal": "borrow_book",
@@ -7648,13 +7552,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -7766,7 +7664,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -7775,7 +7673,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -7881,7 +7779,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -7927,7 +7825,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are attempting to borrow the book titled \"book_title\" by logging into your account using your username \"username\" and your password.",
             "user_prompt": "Hello! I'd like to borrow a book titled \"Beloved.\" First, I need to log into my account. My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Can you assist me with that, please?",
             "user_goal": "borrow_book",
@@ -8267,13 +8165,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -8385,7 +8277,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -8394,7 +8286,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -8500,7 +8392,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -8546,7 +8438,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by using your username and password, and you aim to successfully set a return date for it.",
             "user_prompt": "Hello! I would like to borrow a book titled \"One Hundred Years of Solitude\". My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Could you assist me in setting a return date for it?",
             "user_goal": "borrow_book",
@@ -8886,13 +8778,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -9004,7 +8890,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -9013,7 +8899,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -9119,7 +9005,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -9165,7 +9051,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by logging into your account with the username \"username\" and password \"password\", and you will know if the borrowing is successful by receiving a true or false response.",
             "user_prompt": "Hello! I'd like to borrow the book titled \"Beloved.\" Could you please help me log into my account? My username is \"mario\" and my password is \"m@rio37T73\". Let me know if the borrowing is successful by providing a true or false response. Thank you!",
             "user_goal": "borrow_book",
@@ -9503,13 +9389,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -9623,7 +9503,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 5,
                 "max_reservation_slots": 3
             },
@@ -9632,7 +9512,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -9738,7 +9618,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -9784,7 +9664,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by logging into your account with the username \"username\" and password \"password\", and set its return date.",
             "user_prompt": "Hi, I'd like to borrow the book titled \"Pride and Prejudice.\" Can I please log into my account? My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Once I'm logged in, could you also help me set the return date for the book? Thank you!",
             "user_goal": "borrow_book",
@@ -10124,13 +10004,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -10242,7 +10116,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -10251,7 +10125,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -10357,7 +10231,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -10403,7 +10277,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by logging into your account with the username \"username\" and password \"password\", and set its return date.",
             "user_prompt": "Hello! I'd like to borrow the book titled \"Beloved\". I'm trying to log into my account with my username \"pepperoni\" and password \"paikzmzhaa991\". Once logged in, I'll need to set a return date for the book. Can you assist me with this process?",
             "user_goal": "borrow_book",
@@ -10743,13 +10617,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -10861,7 +10729,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -10870,7 +10738,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -10952,7 +10820,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -10986,7 +10854,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" using your username \"username\" and your account password, and you will know if the borrowing was successful based on a true or false return.",
             "user_prompt": "Hello! I would like to borrow a book titled \"Beloved\". My username is \"pepperoni\" and my account password is \"paikzmzhaa991\". Could you please let me know if the borrowing process was successful? Thank you!",
             "user_goal": "borrow_book",
@@ -11289,13 +11157,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -11409,7 +11271,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -11418,7 +11280,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -11500,7 +11362,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -11534,7 +11396,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" using your username and password, and determine if the borrowing was successful.",
             "user_prompt": "Hello! I'd like to borrow a book titled \"Pride and Prejudice\". My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Could you please let me know if the borrowing was successful? Thank you!",
             "user_goal": "borrow_book",
@@ -11875,13 +11737,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -11993,7 +11849,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 0,
                 "max_reservation_slots": 3
             },
@@ -12002,7 +11858,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -12084,7 +11940,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -12118,7 +11974,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" using your username \"username\" and password to successfully set its return date.",
             "user_prompt": "Hi, I'd like to borrow the book titled \"Beloved\". My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Can you help me set the return date for this book?",
             "user_goal": "borrow_book",
@@ -12457,13 +12313,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -12575,7 +12425,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -12584,7 +12434,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -12677,7 +12527,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -12722,7 +12572,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are attempting to borrow the book titled \"book_title\" using your username and password, and you aim to successfully set its return date.",
             "user_prompt": "Hello! I'd like to borrow a book titled \"Beloved\". My username is \"mario\" and my password is \"m@rio37T73\". I also need to set a return date for the book. Could you assist me with that, please?",
             "user_goal": "borrow_book",
@@ -13121,13 +12971,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -13239,7 +13083,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 1,
                 "max_reservation_slots": 3
             },
@@ -13248,7 +13092,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -13341,7 +13185,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -13386,7 +13230,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" using your username \"username\" and password, aiming to successfully set its return date.",
             "user_prompt": "Hi there! I'd like to borrow a book titled \"One Hundred Years of Solitude\" using my library account. My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Could you assist me with setting the return date for this book, please?",
             "user_goal": "borrow_book",
@@ -13711,13 +13555,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -13829,7 +13667,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -13838,7 +13676,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -13931,7 +13769,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -13976,7 +13814,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by logging into your account with the username \"username\" and your password, and set its return date, aiming for a successful transaction.",
             "user_prompt": "Hi! I'd like to borrow a book titled \"Beloved\". Could you please assist me with logging into my account? My username is \"mario\" and my password is \"m@rio37T73\". Once logged in, I'd also like to set its return date. Thank you!",
             "user_goal": "borrow_book",
@@ -14299,13 +14137,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -14420,7 +14252,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -14429,7 +14261,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -14522,7 +14354,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -14567,7 +14399,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"[book_title]\" by using your username \"[username]\" and password to set its return date and determine if the borrowing was successful.",
             "user_prompt": "Hi! I'd like to borrow a book titled \"Beloved\". My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Could you set the return date for me and let me know if the borrowing was successful? Thank you!",
             "user_goal": "borrow_book",
@@ -14912,13 +14744,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -15034,7 +14860,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -15043,7 +14869,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -15136,7 +14962,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -15181,7 +15007,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"the title of the book to be borrowed, returned, or managed\" using your username and password, and determine if the borrowing was successful.",
             "user_prompt": "Hello! I'd like to borrow a book, please. The title of the book is \"Beloved\". My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Could you let me know if I'm able to borrow the book?",
             "user_goal": "borrow_book",
@@ -15527,13 +15353,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -15645,7 +15465,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -15654,7 +15474,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -15779,7 +15599,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -15832,7 +15652,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by logging into your account with the username \"username\" and the password \"password\", and set its return date.",
             "user_prompt": "Hi, I'd like to log into my library account with my username and password. My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Once I'm logged in, I'd like to borrow the book titled \"Beloved\" and set its return date. Can you assist me with this process?",
             "user_goal": "borrow_book",
@@ -16191,13 +16011,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -16309,7 +16123,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -16318,7 +16132,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -16443,7 +16257,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -16496,7 +16310,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to borrow the book titled \"[book_title]\" by logging into your account with the username \"[username]\" and the password \"[password]\", and you want to know if the borrowing process is successful.",
             "user_prompt": "Hello! I'd like to borrow the book titled \"One Hundred Years of Solitude\". I need to log into my account to do that. My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Could you please let me know if the borrowing process is successful? Thank you!",
             "user_goal": "borrow_book",
@@ -16855,13 +16669,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -16973,7 +16781,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -16982,7 +16790,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -17107,7 +16915,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -17160,7 +16968,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" using your username \"username\" and password to set its return date and determine if the borrowing was successful.",
             "user_prompt": "Hello! I'd like to borrow a book titled \"Beloved\". My username is \"mario\", and my password is \"m@rio37T73\". Could you help me set a return date and let me know if the borrowing process is successful? Thank you!",
             "user_goal": "borrow_book",
@@ -17555,13 +17363,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -17675,7 +17477,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 5,
                 "max_reservation_slots": 3
             },
@@ -17684,7 +17486,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -17809,7 +17611,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -17862,7 +17664,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"[book_title]\" by using your username \"[username]\" and password to set a return date, and you will know if the borrowing is successful by a true or false response.",
             "user_prompt": "I would like to borrow a book titled \"Pride and Prejudice.\" My username is \"pepperoni,\" and my password is \"paikzmzhaa991.\" Could you please set a return date and let me know if the borrowing is successful with a true or false response? Thank you!",
             "user_goal": "borrow_book",
@@ -18240,13 +18042,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -18358,7 +18154,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -18367,7 +18163,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -18492,7 +18288,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -18545,7 +18341,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"the title of the book to be borrowed, returned, or managed\" using your username and password, and determine if the borrowing was successful.",
             "user_prompt": "Hi! I'd like to borrow a book. The title is \"Beloved\". My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Could you please check if the borrowing process is successful?",
             "user_goal": "borrow_book",
@@ -18904,13 +18700,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -19022,7 +18812,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 0,
                 "max_reservation_slots": 3
             },
@@ -19031,7 +18821,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -19156,7 +18946,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -19209,7 +18999,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"[book_title]\" by logging into your account with the username \"[username]\" and password \"[password]\".",
             "user_prompt": "Hello! I'd like to borrow the book titled \"One Hundred Years of Solitude.\" I need to log into my account to do so. My username is \"pepperoni,\" and my password is \"paikzmzhaa991.\" Can you assist me with this?",
             "user_goal": "borrow_book",
@@ -19568,13 +19358,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -19686,7 +19470,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 0,
                 "max_reservation_slots": 3
             },
@@ -19695,7 +19479,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -19820,7 +19604,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -19873,7 +19657,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to borrow the book titled \"book_title\" by using your username and password to ensure successful borrowing and set a return date.",
             "user_prompt": "Hello! I would like to borrow the book titled \"One Hundred Years of Solitude.\" My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Can you help me with that? Also, I would like to set a return date for the book.",
             "user_goal": "borrow_book",
@@ -20359,13 +20143,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -20477,7 +20255,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -20486,7 +20264,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -20530,7 +20308,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -20550,7 +20328,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to retrieve the return date for the book titled \"book_title\" that you borrowed, using your username and password for authentication.",
             "user_prompt": "Hello! I would like to retrieve the return date for the book titled \"Beloved\" that I borrowed. My username is \"mario\" and my password is \"m@rio37T73\". Can you assist me with that information, please?",
             "user_goal": "check_return_date",
@@ -20813,13 +20591,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -20931,7 +20703,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -20940,7 +20712,7 @@
                 "username": "Grimoire",
                 "password": "pWImWWbThxuiauPDwQV"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -20984,7 +20756,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -21004,7 +20776,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to retrieve the return date for the book titled \"[book_title]\" using your username \"[username]\" and password.",
             "user_prompt": "Hello! I would like to check the return date for a book I borrowed. The title of the book is \"Pride and Prejudice.\" My username is \"Grimoire\" and my password is \"pWImWWbThxuiauPDwQV.\" Can you help me with that?",
             "user_goal": "check_return_date",
@@ -21248,13 +21020,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -21365,7 +21131,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -21374,7 +21140,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -21418,7 +21184,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -21438,7 +21204,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to retrieve the return date for the borrowed book titled \"[book_title]\" using your username \"[username]\" and password.",
             "user_prompt": "Hi! I'm trying to find out the return date for a book I borrowed. The book's title is \"Beloved\". Can you help me with that? My username is \"mario\" and I can provide my password if needed.",
             "user_goal": "check_return_date",
@@ -21700,13 +21466,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -21823,7 +21583,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -21832,7 +21592,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -21876,7 +21636,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -21896,7 +21656,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to retrieve the return date for the book titled \"book_title\" using your account credentials, including your username and password.",
             "user_prompt": "Hi! I'd like to retrieve the return date for a book titled \"The Great Gatsby.\" I have my account credentials ready. My username is \"mario\" and my password is \"m@rio37T73.\" Could you help me check that information?",
             "user_goal": "check_return_date",
@@ -22202,13 +21962,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -22329,7 +22083,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 5
             },
@@ -22338,21 +22092,21 @@
                 "username": "new_user",
                 "password": "newuser_pass123"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to add a specified amount of money to your account balance using your username and password, and you want to know if the addition is successful.",
             "user_prompt": "Hi, I would like to add some money to my account balance. The amount I want to add is $15. My username is \"new_user\" and my password is \"newuser_pass123\". Could you help me with that and let me know if the addition is successful?",
             "user_goal": "credit_balance",
@@ -22581,13 +22335,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -22699,7 +22447,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -22708,21 +22456,21 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to add a specified amount to your account balance by providing your username and password to ensure a successful transaction.",
             "user_prompt": "Hello! I'd like to add an amount to my account balance, please. My username is \"pepperoni\" and my password is \"paikzmzhaa991\". The amount I want to add is \"-5\". Could you please help me with that? Thanks!",
             "user_goal": "credit_balance",
@@ -22923,13 +22671,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -23041,7 +22783,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -23049,21 +22791,21 @@
                 "username": "iABQwZgTpSPriAUXwyW",
                 "amount": 50
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to add a specified amount of money to your account balance under the username you provided, aiming to successfully increase your funds.",
             "user_prompt": "Hello! I'd like to add $50 to my account balance. My username is \"iABQwZgTpSPriAUXwyW\". Can you assist me with this?",
             "user_goal": "credit_balance",
@@ -23302,13 +23044,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -23420,7 +23156,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 4
             },
@@ -23429,21 +23165,21 @@
                 "username": "pepperoni",
                 "password": "qqFLihLVFPnYvimwtCT"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to add a specified amount of money to your account balance by providing your username and password, and you will know if the addition is successful based on a true or false return.",
             "user_prompt": "Hello, I would like to add money to my account balance. My username is \"pepperoni\" and my password is \"qqFLihLVFPnYvimwtCT\". I want to add an amount of \"15\" to my account. Could you let me know if the addition is successful? Thank you!",
             "user_goal": "credit_balance",
@@ -23644,13 +23380,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -23771,7 +23501,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 4
             },
@@ -23779,21 +23509,21 @@
                 "username": "johndoe",
                 "password": "securePass123"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to retrieve the current balance of your account using your username and password.",
             "user_prompt": "Hello! I'd like to check the current balance on my library account. My username is \"johndoe\" and my password is \"securePass123\". Can you help me with this?",
             "user_goal": "get_account_balance",
@@ -24021,13 +23751,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -24139,28 +23863,28 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
             "user_known": {
                 "username": "WhvQjzfSTWYwjjXgyVL"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to retrieve the current balance of your account using your username.",
             "user_prompt": "Hi! I'd like to check the current balance on my account. My username is \"WhvQjzfSTWYwjjXgyVL\". Can you help me with that?",
             "user_goal": "get_account_balance",
@@ -24398,13 +24122,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -24516,7 +24234,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -24524,21 +24242,21 @@
                 "username": "pepperoni",
                 "password": "mInZQzitsDabVJLXirX"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to retrieve the current balance of your account by using your username and password.",
             "user_prompt": "Hello! I would like to retrieve the current balance of my library account. My username is \"pepperoni\" and my password is \"mInZQzitsDabVJLXirX\". Could you assist me with this, please?",
             "user_goal": "get_account_balance",
@@ -24738,13 +24456,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -24856,7 +24568,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 4
             },
@@ -24864,9 +24576,9 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": null,
-            "dependency_original": null,
-            "action_should_succeed": 1,
+            "constraints": null,
+            "constraints_original": null,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to log in to authenticate yourself by entering your username and password to access your account, and determine if the login is successful or not.",
             "user_prompt": "Hello! I'd like to log into my library account. My username is \"mario\" and my password is \"m@rio37T73\". Could you please verify if I am logged in successfully?",
             "user_goal": "login_user",
@@ -25055,13 +24767,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -25173,7 +24879,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -25181,7 +24887,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -25200,7 +24906,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -25219,7 +24925,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to log out from your account with the username and password you provided, ensuring a successful logout.",
             "user_prompt": "Hi, I would like to log out from my library account. My username is \"mario\" and my password is \"m@rio37T73\". Can you please assist me in ensuring a successful logout? Thank you!",
             "user_goal": "logout_user",
@@ -25428,13 +25134,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -25546,7 +25246,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -25554,7 +25254,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -25585,7 +25285,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -25604,7 +25304,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to deduct the total late fee from your account balance using your username and password to verify the transaction.",
             "user_prompt": "Hello! I would like to deduct the total late fee from my account balance. Can you assist me with that? My username is \"pepperoni\" and my password is \"paikzmzhaa991\" for verification purposes. Thank you!",
             "user_goal": "pay_late_fee",
@@ -25870,13 +25570,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -25988,7 +25682,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -25996,7 +25690,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -26027,7 +25721,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -26046,7 +25740,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to deduct the total late fee from your account balance using your username and password to verify the transaction.",
             "user_prompt": "Hello! I\u2019d like to deduct the total late fee from my account balance. I can provide my username and password for verification. My username is \"pepperoni\" and my password is \"paikzmzhaa991\".",
             "user_goal": "pay_late_fee",
@@ -26331,13 +26025,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -26446,7 +26134,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -26455,7 +26143,7 @@
                 "username": "Grimoire",
                 "password": "gr1m01re_libAdmin"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -26505,7 +26193,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -26531,7 +26219,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to remove the book titled \"the title of the book to be borrowed, returned, or managed\" from the library database using your username and password to authenticate the action.",
             "user_prompt": "Hello! I'd like to remove a book from the library database. The book title is \"One Hundred Years of Solitude\". I need to authenticate the action using my credentials. My username is \"Grimoire\" and my password is \"gr1m01re_libAdmin\". Could you assist me with this process?",
             "user_goal": "remove_book",
@@ -26636,13 +26324,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -26754,7 +26436,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -26763,7 +26445,7 @@
                 "username": "Grimoire",
                 "password": "gr1m01re_libAdmin"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -26813,7 +26495,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -26839,7 +26521,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to remove the book titled \"[book_title]\" from the library database using your username \"[username]\" and password.",
             "user_prompt": "Hello! I\u2019d like to remove a book from the library database. The title of the book is \"One Hundred Years of Solitude\". My username is \"Grimoire\" and my password is \"gr1m01re_libAdmin\". Could you assist me with this?",
             "user_goal": "remove_book",
@@ -26944,13 +26626,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -27063,7 +26739,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 4
             },
@@ -27077,7 +26753,7 @@
                 ],
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -27118,7 +26794,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -27139,7 +26815,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to reserve a library room with the ID you specified for the date you chose, during your selected time slots, using your username and password for authentication.",
             "user_prompt": "Hello! I'd like to reserve a library room with the ID \"LB002\" for October 10th, 2024. I want to book it during the time slots from '10:00' to '16:00'. My username is \"pepperoni\" and I'll use the password \"paikzmzhaa991\" for authentication. Can you please proceed with the reservation? Thank you!",
             "user_goal": "reserve_room",
@@ -27392,13 +27068,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -27510,7 +27180,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -27524,7 +27194,7 @@
                 ],
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -27565,7 +27235,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -27586,7 +27256,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to reserve a library room with the ID you specified on your chosen date for the time slots you selected, using your username and password to confirm the reservation.",
             "user_prompt": "Hi there! I'd like to reserve a library room. The room ID I'm interested in is \"LB002\" and I want to book it for October 12th, 2024. I need the time slots from 9:00 to 10:00. My username is \"pepperoni\" and my password to confirm the reservation is \"paikzmzhaa991\". Can you help me with that?",
             "user_goal": "reserve_room",
@@ -27857,13 +27527,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -27975,7 +27639,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -27989,7 +27653,7 @@
                 ],
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -28030,7 +27694,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -28051,7 +27715,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to reserve the library room identified by the room ID on your specified date for the time slots you have chosen, using your username and password to complete the reservation.",
             "user_prompt": "Hello! I'd like to reserve a library room, specifically Room ID \"LB001\", for October 10th, 2024. I need the reservation for the time slots from 11:00 to 12:00. My username is \"mario\" and my password is \"m@rio37T73.\" Can you help me with that, please?",
             "user_goal": "reserve_room",
@@ -28303,13 +27967,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -28421,7 +28079,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 5
             },
@@ -28435,7 +28093,7 @@
                 ],
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -28491,7 +28149,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -28523,7 +28181,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to reserve the library room with ID [room_id] on [resv_date] for the time slots [slots] using your username [username] and password.",
             "user_prompt": "Hello! I'd like to reserve the library room with ID \"LB001\" on October 10th, 2024, for the time slots ['11:00', '13:00']. My username is \"mario\", and my password is \"m@rio37T73\". Can you assist me with this reservation? Thank you!",
             "user_goal": "reserve_room",
@@ -28886,13 +28544,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -29004,7 +28656,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 2
             },
@@ -29017,7 +28669,7 @@
                 ],
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -29073,7 +28725,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -29105,7 +28757,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to reserve the library room with ID specified by 'room_id' on the date 'resv_date' for the time slots listed in 'slots', using your username 'username' and your account password.",
             "user_prompt": "Hello! I'd like to reserve the library room with ID 'LB001' on the date 'October 10th, 2024'. I need the reservation for the time slot '11:00'. My username is 'mario' and I will be using the password 'm@rio37T73' for verification. Could you please assist me with this reservation? Thank you!",
             "user_goal": "reserve_room",
@@ -29430,13 +29082,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -29555,7 +29201,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 1
             },
@@ -29569,7 +29215,7 @@
                 ],
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -29625,7 +29271,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -29657,7 +29303,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to reserve the library room with ID specified by 'room_id' on the date 'resv_date' for the time slots listed in 'slots', using your username 'username' and password to secure the reservation.",
             "user_prompt": "Hello! I'd like to reserve the library room with the ID \"LB001\" on October 10th, 2024. I want to book it for the time slots 11:00 and 13:00. My username is \"pepperoni\" and my password is \"paikzmzhaa991\" to secure the reservation. Could you please help me with that? Thank you!",
             "user_goal": "reserve_room",
@@ -29989,13 +29635,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -30107,7 +29747,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 5
             },
@@ -30121,7 +29761,7 @@
                 ],
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -30206,7 +29846,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -30247,7 +29887,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to reserve the library room identified by room_id for the date specified as resv_date, using your username and password, for the time slots listed in slots.",
             "user_prompt": "Hello! I would like to reserve the library room identified by room_id \"LB001\" for the date \"October 10th, 2024\". I would like to reserve it for the time slots \"11:00\" and \"13:00\". My username is \"mario\" and my password is \"m@rio37T73\". Can you assist me with this booking? Thank you!",
             "user_goal": "reserve_room",
@@ -30631,13 +30271,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -30749,7 +30383,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 2
             },
@@ -30763,7 +30397,7 @@
                 ],
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -30848,7 +30482,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -30889,7 +30523,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to reserve the library room with ID [room_id] for the date [resv_date] during the specified time slots [slots] using your username [username] and password.",
             "user_prompt": "Hello! I'd like to reserve the library room with ID \"LB001\" for the date of October 11th, 2024, during the time slots of 10:00 AM and 11:00 AM. My username is \"mario\" and my password is \"m@rio37T73\". Could you assist me with the reservation, please?",
             "user_goal": "reserve_room",
@@ -31216,13 +30850,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -31334,7 +30962,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -31348,7 +30976,7 @@
                 ],
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -31433,7 +31061,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -31474,7 +31102,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to reserve the library room with ID [room_id] for the date [resv_date] during the specified slots [slots] using your username [username] and password.",
             "user_prompt": "Hello! I would like to reserve the library room with ID LB001 for the date October 12th, 2024, during the slots ['11:00', '12:00']. My username is pepperoni and my password is paikzmzhaa991. Could you please assist me with this reservation? Thank you!",
             "user_goal": "reserve_room",
@@ -31820,13 +31448,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -31943,7 +31565,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -31957,7 +31579,7 @@
                 ],
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -32042,7 +31664,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -32083,7 +31705,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to reserve a library room identified by room_id on the specified resv_date for the time slots you have chosen, using your username and password to complete the reservation process.",
             "user_prompt": "Hi there! I'd like to reserve a library room. The room ID is LB001, and I want to book it for October 12th, 2024. I need the time slots from 10:00 to 11:00. My username is \"mario\" and my password is \"m@rio37T73\". Could you help me with this reservation? Thanks!",
             "user_goal": "reserve_room",
@@ -32434,13 +32056,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -32552,7 +32168,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 5
             },
@@ -32566,7 +32182,7 @@
                 ],
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -32651,7 +32267,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -32692,7 +32308,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to reserve the library room identified by room_id on the date resv_date for the time slots you specified, using your username and password to authenticate the reservation.",
             "user_prompt": "Hello! I'd like to reserve a library room using my account. The room I'd like to reserve has the room ID \"LB001\". I'd like to book it for October 10th, 2024, and I need it for the time slots of 11:00 AM and 12:00 PM. My username is \"mario\" and my password is \"m@rio37T73\". Can you help me with that, please?",
             "user_goal": "reserve_room",
@@ -33019,13 +32635,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -33137,7 +32747,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -33151,7 +32761,7 @@
                 ],
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -33236,7 +32846,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -33277,7 +32887,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to reserve the library room with ID specified by 'room_id' for the date 'resv_date' during the time slots listed in 'slots', using your account credentials ('username' and 'password').",
             "user_prompt": "Hello! I would like to reserve a library room using my account. The room ID I wish to reserve is \"LB001\". I would like to make the reservation for the date \"October 10th, 2024\" during the time slots \"11:00\" and \"12:00\". My username is \"mario\" and my password is \"m@rio37T73\". Can you please assist me with this reservation? Thank you!",
             "user_goal": "reserve_room",
@@ -33604,13 +33214,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -33723,7 +33327,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 1
             },
@@ -33737,7 +33341,7 @@
                 ],
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -33822,7 +33426,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -33863,7 +33467,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to reserve the library room identified by room_id on the date resv_date for the time slots you specified, using your username and password to authenticate the reservation.",
             "user_prompt": "Hello! I'd like to reserve a library room, please. Can I reserve the room with room_id \"LB002\" on the date \"October 11th, 2024\", for the time slots \"12:00\" and \"13:00\"? My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Thank you!",
             "user_goal": "reserve_room",
@@ -34172,13 +33776,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -34290,7 +33888,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 5
             },
@@ -34299,7 +33897,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -34343,7 +33941,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -34363,7 +33961,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to return the borrowed book titled \"[book_title]\" using your username \"[username]\" and password to update your account, including the late count if the book is overdue.",
             "user_prompt": "Hi there! I would like to return a book that I've borrowed. The book's title is \"Beloved,\" and my username is \"mario.\" I also have my password ready for any necessary updates to my account, which is \"m@rio37T73\". Please let me know if there's anything else you need from me to process the return and update my account, especially if there's a late count involved. Thank you!",
             "user_goal": "return_book",
@@ -34624,13 +34222,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -34742,7 +34334,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -34751,7 +34343,7 @@
                 "username": "mario",
                 "password": "HHyicGJCEmPosy"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -34795,7 +34387,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -34815,7 +34407,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to return the borrowed book titled \"book_title\" using your account credentials, \"username\" and \"password\", and update your late count if the book is overdue.",
             "user_prompt": "Hello! I would like to return a book I've borrowed. The title of the book is \"Beloved\". My account details are username: \"mario\" and password: \"HHyicGJCEmPosy\". Also, could you please let me know if the book is overdue so I can update my late count? Thank you!",
             "user_goal": "return_book",
@@ -35059,13 +34651,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -35176,7 +34762,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -35185,7 +34771,7 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -35229,7 +34815,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -35249,7 +34835,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to return the borrowed book titled \"book_title\" using your username \"username\" and password, while also updating your late count if the book is overdue.",
             "user_prompt": "Hi! I'd like to return a book I've borrowed. The title of the book is \"Beloved.\" My username is \"mario\" and my password is \"m@rio37T73\". Could you also please update my late count if the book is overdue? Thank you!",
             "user_goal": "return_book",
@@ -35531,13 +35117,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -35648,7 +35228,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -35657,7 +35237,7 @@
                 "username": "Grimoire",
                 "password": "gr1m01re_libAdmin"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -35701,7 +35281,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -35721,7 +35301,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to return the borrowed book titled \"[book_title]\" using your username \"[username]\" and password, while also updating your late count if the book is overdue.",
             "user_prompt": "Hi! I'd like to return the book I borrowed, titled \"One Hundred Years of Solitude.\" My username is \"Grimoire\" and my password is \"gr1m01re_libAdmin\". Could you also let me know if the book is overdue, and if it is, update my late count as necessary? Thank you!",
             "user_goal": "return_book",
@@ -36002,13 +35582,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -36120,7 +35694,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -36128,21 +35702,21 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to retrieve a list of books available for borrowing by using your username and password to access your account.",
             "user_prompt": "Hi, I'd like to access my library account to check for a list of books available for borrowing. Could you help me log in, please? My username is \"mario\" and my password is \"m@rio37T73\".",
             "user_goal": "show_available_book",
@@ -36361,13 +35935,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -36479,28 +36047,28 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
             "user_known": {
                 "username": "dEJCUtnOxnFOPGjYrJZ"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to retrieve a list of books available for borrowing using your username.",
             "user_prompt": "Hello! I\u2019m trying to find out which books are currently available for borrowing under my account. My username is \"dEJCUtnOxnFOPGjYrJZ\". Could you help me with that?",
             "user_goal": "show_available_book",
@@ -36700,13 +36268,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -36818,7 +36380,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -36826,21 +36388,21 @@
                 "username": "pepperoni",
                 "password": "FAEfaOwfUJTspyWNRKZ"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to access a list of books available for borrowing by logging into your account using your username and password.",
             "user_prompt": "Hello! I'd like to access the list of books available for borrowing. I need to log into my account first. My username is \"pepperoni\" and my password is \"FAEfaOwfUJTspyWNRKZ\". How can I proceed with that?",
             "user_goal": "show_available_book",
@@ -37040,13 +36602,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -37158,7 +36714,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -37166,21 +36722,21 @@
                 "username": "mario",
                 "password": "m@rio37T73"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are trying to access a list of rooms and their available slots to reserve by logging into your account using your username and password.",
             "user_prompt": "Hello! I'd like to access a list of rooms and their available slots to reserve. Could you please help me log into my account? My username is \"mario\" and my password is \"m@rio37T73\".",
             "user_goal": "show_available_rooms",
@@ -37222,13 +36778,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -37340,28 +36890,28 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
             "user_known": {
                 "username": "NoDzKJcLrDezjsjCgjA"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to retrieve a list of rooms with their available slots to reserve using your username.",
             "user_prompt": "Hello! I'm trying to retrieve a list of rooms with their available slots that I can reserve using my username, \"NoDzKJcLrDezjsjCgjA\". Could you please assist me with this information? Thank you!",
             "user_goal": "show_available_rooms",
@@ -37561,13 +37111,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -37679,7 +37223,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -37687,21 +37231,21 @@
                 "username": "pepperoni",
                 "password": "ttUsuQnrOMeKbcEjuNc"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to access a list of rooms and their available slots to reserve by using your username and password to retrieve the information.",
             "user_prompt": "Hi, I'm trying to access a list of rooms and their available slots for reservation. I have my username and password ready. My username is \"pepperoni\" and my password is \"ttUsuQnrOMeKbcEjuNc\". Can you help me retrieve this information, please?",
             "user_goal": "show_available_rooms",
@@ -37901,13 +37445,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -38019,7 +37557,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 3,
                 "max_reservation_slots": 3
             },
@@ -38027,7 +37565,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -38058,7 +37596,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -38077,7 +37615,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 1,
+            "action_should_succeed": true,
             "user_instruction": "You are attempting to update your restricted access status by providing your username and password, which will deduct the monthly fee from your balance and return the new expiration date if the update condition is met.",
             "user_prompt": "Hello! I'd like to update my restricted access status. My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Could you proceed with deducting the monthly fee from my balance and provide me with the new expiration date if the update is successful? Thank you!",
             "user_goal": "update_membership",
@@ -38164,13 +37702,7 @@
         "setup": {
             "env_mode": "prompt",
             "tool_list": "full",
-            "user_agent": {
-                "model": null,
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 8096,
-                "tool_call_mode": "react"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gpt-4o",
                 "temperature": 0.0,
@@ -38282,7 +37814,7 @@
                     }
                 }
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "borrow_limit": 2,
                 "max_reservation_slots": 3
             },
@@ -38290,7 +37822,7 @@
                 "username": "pepperoni",
                 "password": "paikzmzhaa991"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -38321,7 +37853,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -38340,7 +37872,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to update your restricted access status by using your username and password, which will also deduct the monthly fee from your balance and provide you with the new expiration date if the update is successful.",
             "user_prompt": "Hello! I'd like to update my restricted access status. My username is \"pepperoni\" and my password is \"paikzmzhaa991\". Can you help me with this? I'm aware that this will deduct the monthly fee from my balance, and I'd also like to know the new expiration date if the update is successful. Thank you!",
             "user_goal": "update_membership",

@@ -107,16 +107,16 @@ def evaluator_function_directed_graph(domain_str:str, task:dict, log_msg_fcall:l
     evaluation_result = {}
     dep_innate_full = domain_assistant_keys[domain_str].action_innate_dependencies
     default_dep_full = get_default_dep_full(domain_str, default_constraint_option)
-    default_dep_full[task["user_goal"]] = task["dependency"]
+    default_dep_full[task["user_goal"]] = task["constraints"]
     # gathering statistics
     evaluation_result["user_goal"] = task["user_goal"]
     evaluation_result["action_should_succeed"] = task["action_should_succeed"]
     evaluation_result["num_messages"] = len([entry_content for entry_content in log_msg_fcall if "sender" in entry_content])-1 # -1 due to end conversation message
     evaluation_result["num_function_calls"] = len(func_calls)
-    evaluation_result["num_constraints"] = count_constraint_units(task["dependency_original"])
-    evaluation_result["num_constraints_expanded"] = count_constraint_units(task["dependency"])
+    evaluation_result["num_constraints"] = count_constraint_units(task["constraints_original"])
+    evaluation_result["num_constraints_expanded"] = count_constraint_units(task["constraints"])
     # gathering ground truth function responses
-    domain_system_strict = domain_keys[domain_str+"_strict"](copy.deepcopy(task["initial_database"]), dep_innate_full, default_dep_full, task["dependency_parameters"])
+    domain_system_strict = domain_keys[domain_str+"_strict"](copy.deepcopy(task["initial_database"]), dep_innate_full, default_dep_full, task["constraint_parameters"])
     domain_system = domain_system_strict.evaluation_get_domain_system()
     gt_responses = []
     evaluation_result["no_tool_call_error"] = True

@@ -372,7 +372,7 @@ def main():
         for i in tqdm(range(num_tasks), desc="Running interactions"):
             
             # Skip tasks with fewer constraints than the minimum specified
-            dependency = tasks[i]["dependency_original"]   
+            dependency = tasks[i]["constraints_original"]   
             constraint_count = count_constraint_units(dependency)
             if constraint_count < args.min_constraints:
                 print(f"{Fore.YELLOW}[Skip] Task {i} has only {constraint_count} constraints (min required: {args.min_constraints}){Style.RESET_ALL}")

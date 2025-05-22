@@ -89,17 +89,17 @@ def clean_manfix_params(domain_str:str, tasks:dict, intermediate_tasks:dict):
 def verify_task(user_goal:str, domain_str:str, task:dict, intermediate_task:dict, example_database:dict, example_dep_params:dict,
     aid:dict, cl:dict, cd:dict, ad:dict, action_default_dep_orig:dict,
     action_parameters:dict, hashed_cl_funcs:dict)->tuple[int,dict]:
-    dep, dep_perm, task_succ = task["dependency"], intermediate_task["dependency_permutation"], task["action_should_succeed"]
+    dep, dep_perm, task_succ = task["constraints"], intermediate_task["dependency_permutation"], task["action_should_succeed"]
     # verification of json parsing error
     if (isinstance(task["initial_database"], str)
-        or isinstance(task["dependency_parameters"], str)
+        or isinstance(task["constraint_parameters"], str)
         or isinstance(task["user_known"], str)):
         return 2, None
     # verification of database and user_known format
     database_format_match_bool, initial_database = verify_database_format(task["initial_database"], example_database)
     if not database_format_match_bool: return 3, None
     else: task["initial_database"] = initial_database
-    dep_params = task["dependency_parameters"]
+    dep_params = task["constraint_parameters"]
     matching_keys_dep_params = set(example_dep_params.keys()) == set(dep_params.keys())
     matching_keys_user_known = set(intermediate_task["user_params"]) == set(task["user_known"].keys())
     if not matching_keys_dep_params or not matching_keys_user_known: return 4, None
@@ -109,7 +109,7 @@ def verify_task(user_goal:str, domain_str:str, task:dict, intermediate_task:dict
             self.initial_database_str = json.dumps(initial_database)
             self.dependency_parameters_str = json.dumps(dependency_parameters)
             self.user_known_str = json.dumps(user_known)
-    task_obj = Task_Imitator(task["initial_database"], task["dependency_parameters"], task["user_known"])
+    task_obj = Task_Imitator(task["initial_database"], task["constraint_parameters"], task["user_known"])
     task_single = {}
     for i in range(len(intermediate_task["inv_task_single"])):
         exp_res = i if i < 2 else -1
@@ -185,7 +185,7 @@ def add_actions_required_intertasks(domain_str:str, tasks:dict, intermediate_tas
     # loop through all tasks
     for user_goal in tasks:
         for i in range(len(tasks[user_goal])):
-            dep_orig = tasks[user_goal][i]["dependency_original"]
+            dep_orig = tasks[user_goal][i]["constraints_original"]
             dep_perm = dfsins_cl_cd_aid(dep_orig, cl, aid, ad, cd, action_parameters)
             actions_required = dfsgather_actions_required(dep_perm, hashed_cl_funcs)
             actions_required = [(func_str, tuple_to_dict(hashed_func_params)) for func_str, hashed_func_params in actions_required]
@@ -211,7 +211,7 @@ def add_invfunccallgraph_tasks(domain_str:str, tasks:dict, intermediate_tasks:di
     for user_goal in tasks:
         for i in range(len(tasks[user_goal])):
             # gather information from the task
-            dep_orig = tasks[user_goal][i]["dependency_original"]
+            dep_orig = tasks[user_goal][i]["constraints_original"]
             # find the inverse function call graph
             user_goal_node = (user_goal, {key: key for key in action_parameters[user_goal]})
             inv_func_call_graph = dfsgather_invfunccalldirgraph(dep_orig, cl, cp, action_default_dep_orig, action_parameters, user_goal_node)

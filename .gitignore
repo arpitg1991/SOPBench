@@ -22,3 +22,7 @@ swarm/.env
 # *8b*.json
 # *14b*.json
 # *32b*.json
+
+# backup files
+data_backup/
+output_backup/

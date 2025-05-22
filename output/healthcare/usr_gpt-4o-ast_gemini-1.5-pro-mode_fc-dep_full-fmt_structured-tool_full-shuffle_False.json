@@ -7,13 +7,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -105,7 +99,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 90,
@@ -116,7 +110,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -147,7 +141,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -166,7 +160,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to add a new authorized healthcare provider, identified by the provider ID, to your policy using your username and either your account password or driver's license for identification, aiming for a successful addition indicated by a true or false response.",
             "user_prompt": "Hello, I am trying to add a new authorized healthcare provider to my policy. The provider ID is \"new_provider_123\". My username is \"Henry Smith\", and I will provide \"sdfojngsmnlvx\" for identification. Can you please help me with the addition and inform me if it's successful (true or false)?",
             "directed_action_graph": {
@@ -237,13 +231,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -343,7 +331,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 180,
                 "appeal_period": 365,
@@ -354,7 +342,7 @@
                 "username": "Zhang Jia Ming",
                 "identification": "rMTfzWssoZnpOoxqKzX"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -385,7 +373,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -404,7 +392,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to add a new authorized healthcare provider with the unique identifier 'provider_id' to your policy using your username and either your account password or driver's license for identification, aiming for a successful addition indicated by a true or false return.",
             "user_prompt": "Hello! I'd like to add a new authorized healthcare provider to my policy. Here are the details you need:\n\n- Provider Identifier: \"new_provider_id\"\n- My Username: \"Zhang Jia Ming\"\n- Identification: \"rMTfzWssoZnpOoxqKzX\"\n\nCould you please proceed with this request and let me know if the addition is successful (true or false)? Thank you!",
             "directed_action_graph": {
@@ -475,13 +463,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -580,7 +562,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -591,7 +573,7 @@
                 "username": "Zhang Jia Ming",
                 "identification": "zm,xz,cmzxczx,"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -622,7 +604,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -641,7 +623,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to add a new authorized provider with the unique identifier 'provider_id' to your policy using your username and either your account password or driver's license for identification.",
             "user_prompt": "Hi, I would like to add a new authorized provider to my policy. The provider's unique identifier is \"new_provider_id\". My username is \"Zhang Jia Ming\" and for identification, I'll use my driver's license number which is \"zm,xz,cmzxczx,\". Could you please assist me with this request?",
             "directed_action_graph": {
@@ -712,13 +694,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -811,7 +787,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -822,7 +798,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -873,7 +849,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -900,7 +876,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to add a new authorized healthcare provider to your policy using the provider's unique identifier, your username, and either your account password or driver's license for identification.",
             "user_prompt": "Hi, I'd like to add a new authorized healthcare provider to my policy. The provider's unique identifier is \"johns_hopkins_baltimore\". My username is \"Henry Smith\", and I will use my driver's license for identification. The identification is \"sdfojngsmnlvx\". Can you help me with that, please?",
             "directed_action_graph": {
@@ -971,13 +947,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -1069,7 +1039,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 30,
@@ -1080,7 +1050,7 @@
                 "identification": "sdfojngsmnlvx",
                 "claim_id": "CLM-002"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -1132,7 +1102,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -1159,7 +1129,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to appeal a previously denied claim using your username, identification, and the specific claim ID associated with your policy.",
             "user_prompt": "Hello! I'd like to submit an appeal for a previously denied claim. My username is Henry Smith, and my identification is sdfojngsmnlvx. The specific claim ID I am appealing is CLM-002. Can you please assist me with this?",
             "directed_action_graph": {
@@ -1286,13 +1256,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -1394,7 +1358,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -1405,7 +1369,7 @@
                 "identification": "zm,xz,cmzxczx,",
                 "claim_id": "CLM-003"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -1457,7 +1421,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -1484,7 +1448,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to appeal a previously denied claim using your username, identification details, and the specific claim ID to determine if the appeal is successfully submitted.",
             "user_prompt": "Hello, I'd like to appeal a previously denied claim. My username is \"Zhang Jia Ming\", my identification is \"zm,xz,cmzxczx,\", and the specific claim ID I want to appeal is \"CLM-003\". Could you please let me know if my appeal has been successfully submitted?",
             "directed_action_graph": {
@@ -1593,13 +1557,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -1691,7 +1649,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -1702,7 +1660,7 @@
                 "identification": "sdfojngsmnlvx",
                 "claim_id": "CLM-002"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -1775,7 +1733,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -1810,7 +1768,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to appeal a previously denied claim using your username, identification, and the unique claim ID to ensure the appeal is successfully submitted.",
             "user_prompt": "Hello, I would like to appeal a previously denied claim. My username is Henry Smith, my identification is sdfojngsmnlvx, and the unique claim ID is CLM-002. Could you please help me ensure that this appeal is successfully submitted? Thank you!",
             "directed_action_graph": {
@@ -1954,13 +1912,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -2052,7 +2004,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 60,
@@ -2063,7 +2015,7 @@
                 "identification": "sdfojngsmnlvx",
                 "claim_id": "CLM-002"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -2136,7 +2088,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -2171,7 +2123,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to appeal a previously denied claim by submitting your username, identification, and the unique claim ID for review.",
             "user_prompt": "Hello! I would like to appeal a previously denied claim. Here is the information needed for review:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Claim ID: CLM-002\n\nPlease let me know if there is anything else I need to provide. Thank you!",
             "directed_action_graph": {
@@ -2315,13 +2267,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -2413,7 +2359,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -2423,7 +2369,7 @@
                 "identification": "sdfojngsmnlvx",
                 "username": "Henry Smith"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -2473,7 +2419,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -2499,7 +2445,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to deactivate your policy by setting it to inactive with zero coverage, using your username and either your account password or driver's license for identification.",
             "user_prompt": "Hello! I'd like to deactivate my policy by setting it to inactive with zero coverage. I'm using my username \"Henry Smith\" and my identification \"sdfojngsmnlvx\". Could you assist me with this process?",
             "directed_action_graph": {
@@ -2592,13 +2538,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -2690,7 +2630,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -2701,21 +2641,21 @@
                 "identification": "sdfojngsmnlvx",
                 "claim_id": "CLM-003"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to retrieve the details of a specific claim using your username, identification, and claim ID to check the status, amount, description, and date of the claim.",
             "user_prompt": "Hi, I am trying to retrieve the details of a specific claim. Could you please help me check the status, amount, description, and date of the claim using my details?\n\nHere are my details:\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Claim ID: CLM-003\n\nThank you!",
             "directed_action_graph": {
@@ -2754,13 +2694,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -2877,7 +2811,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -2888,21 +2822,21 @@
                 "identification": "KCjhrYuVkODcsSlcnxq",
                 "claim_id": "CLM-003"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to retrieve the details of a specific claim by using your username and either your account password or driver's license, along with the unique claim ID, to check the status, amount, description, and date of the claim.",
             "user_prompt": "Hello! I'd like to retrieve the details of a specific claim using my credentials. My username is \"Alice Johnson,\" and I'll use my identification, which is \"KCjhrYuVkODcsSlcnxq,\" along with the claim ID \"CLM-003.\" Could you help me check the status, amount, description, and date of this claim? Thank you!",
             "directed_action_graph": {
@@ -2941,13 +2875,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -3039,7 +2967,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -3048,21 +2976,21 @@
             "user_known": {
                 "username": "TYIOrPvIXQWYrpTpMop"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to retrieve a history of all claims submitted under your policy by using your username to access the list of claims associated with your account.",
             "user_prompt": "Hello! I need to retrieve a history of all claims submitted under my policy. My username is \"TYIOrPvIXQWYrpTpMop\". Can you help me access the list of claims associated with my account?",
             "directed_action_graph": {
@@ -3100,13 +3028,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -3198,7 +3120,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -3208,21 +3130,21 @@
                 "identification": "xzaUsfQrXJTCEfrhmfP",
                 "username": "Henry Smith"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to retrieve a history of all claims submitted under your policy by using your username and either your account password or your driver's license for identification.",
             "user_prompt": "Hello! I'd like to retrieve a history of all claims submitted under my policy. My username is \"Henry Smith,\" and I can provide my identification information as \"xzaUsfQrXJTCEfrhmfP.\" Could you help me with that, please?",
             "directed_action_graph": {
@@ -3260,13 +3182,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -3358,7 +3274,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -3367,21 +3283,21 @@
             "user_known": {
                 "username": "MXaVflDOKHYDkmnwfFj"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to retrieve your healthcare policy details, including coverage, authorized providers, and enrollment date, using your username.",
             "user_prompt": "Hello! I need to retrieve the details of my healthcare policy. Can you please provide me with information about my coverage, authorized providers, and my enrollment date? My username is MXaVflDOKHYDkmnwfFj. Thank you!",
             "directed_action_graph": {
@@ -3419,13 +3335,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -3543,7 +3453,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -3553,21 +3463,21 @@
                 "identification": "vNKDSRrATahdirmpxBJ",
                 "username": "John Doe"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "logged_in_user",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to access your healthcare policy details by providing your username and either your account password or driver's license for identification.",
             "user_prompt": "Hello! I would like to access my healthcare policy details. My username is \"John Doe\", and for identification, I will provide my driver's license, which is \"vNKDSRrATahdirmpxBJ\". Can you assist me with that?",
             "directed_action_graph": {
@@ -3605,13 +3515,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -3703,7 +3607,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -3712,21 +3616,21 @@
             "user_known": {
                 "username": "NLgTzMlBXFaBGwvUqLM"
             },
-            "dependency": [
+            "constraints": [
                 "single",
                 "internal_check_username_exist",
                 {
                     "username": "username"
                 }
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "single",
                 "internal_check_username_exist",
                 {
                     "username": "username"
                 }
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to log out by clearing all information associated with your username, ensuring a successful logout.",
             "user_prompt": "Hello! I would like to log out of my account and ensure that all information associated with my username \"NLgTzMlBXFaBGwvUqLM\" is cleared. Can you please assist me with this? Thank you!",
             "directed_action_graph": {
@@ -3776,13 +3680,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -3876,7 +3774,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 50,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -3889,7 +3787,7 @@
                 "annual_income": 50000,
                 "coverage_amount": -1000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -3920,7 +3818,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -3939,7 +3837,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to reactivate your healthcare policy with the specified type and coverage amount, using your username and identification for verification, while considering your annual income.",
             "user_prompt": "Hello, I'd like to reactivate my healthcare policy. \n\nHere are the details:\n- **Policy Type**: Inactive\n- **Username**: Zhang Jia Ming\n- **Identification**: zm,xz,cmzxczx,\n- **Annual Income**: 50000\n- **Coverage Amount**: -1000\n\nCould you please verify my information and guide me on how to proceed? Thank you!",
             "directed_action_graph": {
@@ -4012,13 +3910,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -4110,7 +4002,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -4123,7 +4015,7 @@
                 "annual_income": 0,
                 "coverage_amount": 1000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -4154,7 +4046,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -4173,7 +4065,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to reactivate your healthcare policy of type 'Health' with a specified coverage amount by using your username and identification, considering your annual income to ensure successful reactivation.",
             "user_prompt": "Hello! I'm looking to reactivate my healthcare policy. Here are the details you'll need:\n\n- Policy Type: Inactive\n- Username: Zhang Jia Ming\n- Identification: hfasMJnrAqTwJxFnDaB\n- Annual Income: 0\n- Coverage Amount: 1000\n\nCould you please assist me in reactivating my health policy with the specified coverage amount? Thank you!",
             "directed_action_graph": {
@@ -4246,13 +4138,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -4346,7 +4232,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -4359,7 +4245,7 @@
                 "annual_income": 50000,
                 "coverage_amount": 5000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -4390,7 +4276,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -4409,7 +4295,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to reactivate your healthcare policy by specifying the policy type, coverage amount, and providing your username, identification, and annual income to ensure successful reactivation.",
             "user_prompt": "Hello! I would like to reactivate my healthcare policy. Here are the details you might need:\n\n- Policy Type: Health\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 50000\n- Coverage Amount: 5000\n\nCould you please help me process the reactivation? Thank you!",
             "directed_action_graph": {
@@ -4482,13 +4368,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -4580,7 +4460,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -4593,7 +4473,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 5000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -4631,7 +4511,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -4657,7 +4537,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to reactivate your healthcare policy by providing your username, identification, annual income, policy type, and the desired coverage amount.",
             "user_prompt": "Hi! I'd like to reactivate my healthcare policy, please. Here are my details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 0\n- Policy Type: Inactive\n- Desired Coverage Amount: 5000\n\nLet me know if you need any more information. Thank you!",
             "directed_action_graph": {
@@ -4940,13 +4820,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -5038,7 +4912,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -5050,7 +4924,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -5100,7 +4974,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -5126,7 +5000,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using their unique provider ID on a specific date, ensuring that your username and identification are correctly provided for successful confirmation.",
             "user_prompt": "Hello, I'd like to schedule an appointment with a healthcare provider. The provider ID is \"mayo_clinic_rochester,\" and I'm looking to schedule it for \"2025-02-20.\" My username is \"Henry Smith,\" and my identification number is \"sdfojngsmnlvx.\" Could you please confirm my appointment? Thank you!",
             "directed_action_graph": {
@@ -5217,13 +5091,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -5317,7 +5185,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -5329,7 +5197,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -5367,7 +5235,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -5393,7 +5261,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to schedule an appointment with a healthcare provider using their unique identifier on a specified date, ensuring you provide your username and either your account password or driver's license for identification.",
             "user_prompt": "Hi, I'd like to schedule an appointment with a healthcare provider. My provider ID is \"mayo_clinic_rochester\", and I'd like to make an appointment for \"2025-01-14\". My username is \"Henry Smith\", and for identification, here is my account password or driver's license: \"sdfojngsmnlvx\". Could you help me with that, please?",
             "directed_action_graph": {
@@ -5482,13 +5350,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -5580,7 +5442,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -5592,7 +5454,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -5680,7 +5542,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -5720,7 +5582,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using their unique identifier, on a specified date, while ensuring you are logged in with your username and providing either your password or driver's license for identification.",
             "user_prompt": "Hello! I would like to schedule an appointment with a healthcare provider. I have the provider's unique identifier and would like to make an appointment on a specific date. Here are my details:\n\n- Provider ID: johns_hopkins_baltimore\n- Appointment Date: 2025-02-20\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n\nCould you please assist me with this request? Thank you!",
             "directed_action_graph": {
@@ -5829,13 +5691,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -5927,7 +5783,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -5939,7 +5795,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -5996,7 +5852,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -6029,7 +5885,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using their unique identifier on a specific date, ensuring that your username and identification are correctly provided to secure the appointment.",
             "user_prompt": "Hello! I'd like to schedule an appointment with a healthcare provider. I have the provider's unique identifier, which is \"johns_hopkins_baltimore\". I would like to book the appointment for the date \"2025-01-20\". My username is \"Henry Smith\", and for identification purposes, I will provide the code \"sdfojngsmnlvx\". Could you assist me with securing this appointment? Thank you!",
             "directed_action_graph": {
@@ -6137,13 +5993,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -6235,7 +6085,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -6247,7 +6097,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -6304,7 +6154,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -6337,7 +6187,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using their unique provider ID on a specific date, ensuring to use your username and either your account password or driver's license for identification.",
             "user_prompt": "Hi, I'd like to schedule an appointment with a healthcare provider. The provider's unique ID is \"mayo_clinic_rochester\", and I would like the appointment to be on \"2025-01-10\". My username is \"Henry Smith\" and I will use my account password for identification, which is \"sdfojngsmnlvx\". Could you please assist me with this? Thanks!",
             "directed_action_graph": {
@@ -6445,13 +6295,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -6544,7 +6388,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -6556,7 +6400,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -6663,7 +6507,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -6710,7 +6554,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to schedule an appointment with a healthcare provider using their unique provider ID on a specific date, ensuring you use your username and either your account password or driver's license for identification.",
             "user_prompt": "Hi, I'd like to schedule an appointment with a healthcare provider. The provider ID is \"kaiser_permanente_oakland\", and I'd like to set the appointment for \"2025-03-01\". My username is \"Henry Smith\", and for identification, I'm using my account password, which is \"sdfojngsmnlvx\". Could you assist me with setting this up?",
             "directed_action_graph": {
@@ -6832,13 +6676,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -6936,7 +6774,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -6948,7 +6786,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -7055,7 +6893,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -7102,7 +6940,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using their unique identifier, on a specified date, by providing your username and either your account password or driver's license for identification.",
             "user_prompt": "Hello! I'd like to schedule an appointment with a healthcare provider. The provider's unique identifier is \"mayo_clinic_rochester\", and I want the appointment on the date \"2025-02-01\". My username is \"Henry Smith\", and for identification, I'm using \"sdfojngsmnlvx\". Could you please help me with this?",
             "directed_action_graph": {
@@ -7224,13 +7062,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -7322,7 +7154,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -7334,7 +7166,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -7441,7 +7273,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -7488,7 +7320,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You aim to schedule an appointment with a healthcare provider using their unique identifier on a specific date, ensuring you provide your username and either your account password or driver's license for identification.",
             "user_prompt": "Hi! I'd like to schedule an appointment with a healthcare provider. \n\nHere are the details I need for the appointment:\n- Provider ID: johns_hopkins_baltimore\n- Appointment Date: 2025-02-20\n\nFor identification purposes, my username is Henry Smith and my driver's license number is sdfojngsmnlvx. \n\nCan you assist me in making this appointment? Thank you!",
             "directed_action_graph": {
@@ -7610,13 +7442,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -7708,7 +7534,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -7720,7 +7546,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -7815,7 +7641,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -7862,7 +7688,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using your username and identification, on the specified date, by providing the provider's unique identifier.",
             "user_prompt": "Hello! I would like to schedule an appointment with a healthcare provider. My username is \"Henry Smith\", and my identification is \"sdfojngsmnlvx\". I would like to book this appointment for the date \"2025-01-10\" with the provider whose unique identifier is \"cleveland_clinic_ohio\". Thank you!",
             "directed_action_graph": {
@@ -7988,13 +7814,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -8088,7 +7908,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -8100,7 +7920,7 @@
                 "username": "Zhang Jia Ming",
                 "identification": "zm,xz,cmzxczx,"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -8195,7 +8015,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -8242,7 +8062,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using your username, identification, the provider's unique identifier, and the specified appointment date.",
             "user_prompt": "Hi! I'd like to schedule an appointment with a healthcare provider. Here are my details:\n\n- Provider ID: kaiser_permanente_oakland\n- Appointment Date: 2025-01-10\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n\nCould you please help me set this up?",
             "directed_action_graph": {
@@ -8368,13 +8188,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -8468,7 +8282,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -8480,7 +8294,7 @@
                 "username": "Zhang Jia Ming",
                 "identification": "zm,xz,cmzxczx,"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -8575,7 +8389,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -8622,7 +8436,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to schedule an appointment with a healthcare provider using their unique identifier on a specific date, ensuring you provide your username and either your account password or driver's license for identification.",
             "user_prompt": "Hello! I would like to schedule an appointment with a healthcare provider. Here are my details:\n\n- Provider ID: kaiser_permanente_oakland\n- Appointment Date: 2025-01-16\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n\nCould you please assist me with booking this appointment? Thank you!",
             "directed_action_graph": {
@@ -8748,13 +8562,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -8848,7 +8656,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -8860,7 +8668,7 @@
                 "username": "Zhang Jia Ming",
                 "identification": "zm,xz,cmzxczx,"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -8974,7 +8782,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -9028,7 +8836,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using their unique identifier on a specified date, ensuring your username and identification are correctly provided for successful processing.",
             "user_prompt": "Hello! I'd like to schedule an appointment with a healthcare provider using their unique identifier. The provider ID is \"johns_hopkins_baltimore\". I would like to schedule this appointment for the date \"2025-01-20\". My username is \"Zhang Jia Ming\" and my identification is \"zm,xz,cmzxczx,\". Could you help me process this request? Thank you!",
             "directed_action_graph": {
@@ -9167,13 +8975,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -9265,7 +9067,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -9277,7 +9079,7 @@
                 "username": "Zhang Jia Ming",
                 "identification": "zm,xz,cmzxczx,"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -9391,7 +9193,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -9445,7 +9247,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using their unique identifier, on a specific date in the format of %Y-%m-%d, by providing your username and either your account password or driver's license for identification.",
             "user_prompt": "Hello! I would like to schedule an appointment with a healthcare provider. \n\n- Provider ID: johns_hopkins_baltimore\n- Appointment Date: 2025-02-15\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n\nCould you please assist me in scheduling this appointment? Thank you!",
             "directed_action_graph": {
@@ -9584,13 +9386,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -9682,7 +9478,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -9694,7 +9490,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -9808,7 +9604,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -9862,7 +9658,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using their unique identifier on a specified date, ensuring that your username and either your account password or driver's license are used for identification.",
             "user_prompt": "Hi! I'd like to schedule an appointment with a healthcare provider. The provider's unique identifier is \"johns_hopkins_baltimore\" and I'm looking to book it on the date \"2025-01-10\". My username is \"Henry Smith\" and for identification purposes, my account password or driver's license is \"sdfojngsmnlvx\". Can you help me with setting this up?",
             "directed_action_graph": {
@@ -10001,13 +9797,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -10099,7 +9889,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -10111,7 +9901,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -10225,7 +10015,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -10279,7 +10069,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using their unique identifier, set for a specific date, by providing your username and either your account password or driver's license for identification.",
             "user_prompt": "Hi, I would like to schedule an appointment with a healthcare provider. Here are the details:\n\n- Provider ID: kaiser_permanente_oakland\n- Appointment Date: 2025-01-10\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n\nCould you please assist me in setting up this appointment?",
             "directed_action_graph": {
@@ -10418,13 +10208,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -10516,7 +10300,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -10528,7 +10312,7 @@
                 "username": "Henry Smith",
                 "identification": "sdfojngsmnlvx"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -10642,7 +10426,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -10696,7 +10480,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to schedule an appointment with a healthcare provider using their unique provider ID on a specific date, ensuring you use your username and either your account password or driver's license for identification.",
             "user_prompt": "Hello! I'd like to schedule an appointment with a healthcare provider. I have the provider's unique ID: it's \"johns_hopkins_baltimore\". I'd like the appointment to be on \"2025-01-20\". My username is \"Henry Smith\" and for identification, I will be using my account password, which is \"sdfojngsmnlvx\". Please let me know if you need any more information. Thank you!",
             "directed_action_graph": {
@@ -10835,13 +10619,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -10933,7 +10711,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -10946,7 +10724,7 @@
                 "username": "Henry Smith",
                 "description": "Emergency surgery"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -10997,7 +10775,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -11024,7 +10802,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to submit a new claim to your healthcare policy by providing your username, identification, provider ID, the amount for the claim, and a description of the claim.",
             "user_prompt": "Hello! I'd like to submit a new claim to my healthcare policy. Here are the details:\n\n- **Username:** Henry Smith\n- **Identification:** sdfojngsmnlvx\n- **Provider ID:** mayo_clinic_rochester\n- **Amount:** 8301\n- **Description:** Emergency surgery\n\nCould you assist me with processing this claim? Thank you!",
             "directed_action_graph": {
@@ -11149,13 +10927,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -11249,7 +11021,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -11262,7 +11034,7 @@
                 "username": "Zhang Jia Ming",
                 "description": "Dental surgery"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -11300,7 +11072,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -11326,7 +11098,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to submit a new claim to your healthcare policy using your username and identification, specifying the provider ID, amount, and a brief description of the claim.",
             "user_prompt": "Hello! I would like to submit a new claim for my healthcare policy. Here are the details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Provider ID: johns_hopkins_baltimore\n- Amount: 6000\n- Description: Dental surgery\n\nPlease let me know if you need any other information to process the claim. Thank you!",
             "directed_action_graph": {
@@ -11399,13 +11171,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -11497,7 +11263,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -11510,7 +11276,7 @@
                 "username": "Henry Smith",
                 "description": "Emergency surgery"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -11568,7 +11334,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -11602,7 +11368,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to submit a new claim to your healthcare policy by providing your username, identification, provider ID, the claim amount, and a description of the claim.",
             "user_prompt": "Hello! I'd like to submit a new claim to my healthcare policy. Here are the details: \n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Provider ID: mayo_clinic_rochester\n- Claim Amount: 9000\n- Description: Emergency surgery\n\nCould you please help me process this claim? Thank you!",
             "directed_action_graph": {
@@ -11727,13 +11493,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -11835,7 +11595,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -11848,7 +11608,7 @@
                 "username": "Zhang Jia Ming",
                 "description": "Emergency dental procedure"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -11906,7 +11666,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -11940,7 +11700,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to submit a new claim to your healthcare policy using your username and identification, specifying the provider ID, the claim amount, and a brief description of the claim.",
             "user_prompt": "Hello! I would like to submit a new claim to my healthcare policy. Here are the details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Provider ID: johns_hopkins_baltimore\n- Claim Amount: 5000\n- Description: Emergency dental procedure\n\nCould you please assist me with processing this claim? Thank you!",
             "directed_action_graph": {
@@ -12065,13 +11825,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -12164,7 +11918,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -12177,7 +11931,7 @@
                 "username": "Henry Smith",
                 "description": "Prescription medication"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -12285,7 +12039,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -12333,7 +12087,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to submit a new claim to your healthcare policy by providing your username, identification, provider ID, amount, and a brief description of the claim.",
             "user_prompt": "Hi there! I'd like to submit a new claim on my healthcare policy. Here are the details:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Provider ID: kaiser_permanente_oakland\n- Amount: 9000\n- Description: Prescription medication\n\nPlease let me know if you need any further information or assistance. Thank you!",
             "directed_action_graph": {
@@ -12495,13 +12249,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -12603,7 +12351,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -12616,7 +12364,7 @@
                 "username": "Henry Smith",
                 "description": "Emergency surgery"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -12724,7 +12472,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -12772,7 +12520,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to submit a new claim to your healthcare policy using your username and identification, specifying the provider ID, claim amount, and a brief description of the claim.",
             "user_prompt": "Hello! I would like to submit a new claim to my healthcare policy. Here are the details:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Provider ID: kaiser_permanente_oakland\n- Claim Amount: 9000\n- Description: Emergency surgery\n\nPlease let me know if you need any additional information. Thank you!",
             "directed_action_graph": {
@@ -12934,13 +12682,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -13042,7 +12784,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 100,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -13055,7 +12797,7 @@
                 "username": "Zhang Jia Ming",
                 "description": "Prescription medication"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -13163,7 +12905,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -13211,7 +12953,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to submit a new claim to your healthcare policy by providing your username, identification, the provider ID, the amount for the claim, and a description of the claim.",
             "user_prompt": "Hello! I would like to submit a new claim to my healthcare policy. Here are the details:\n\n- **Username:** Zhang Jia Ming\n- **Identification:** zm,xz,cmzxczx,\n- **Provider ID:** kaiser_permanente_oakland\n- **Amount:** 1000\n- **Description:** Prescription medication\n\nCould you please assist me with processing this claim? Thank you!",
             "directed_action_graph": {
@@ -13373,13 +13115,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -13473,7 +13209,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -13486,7 +13222,7 @@
                 "username": "Zhang Jia Ming",
                 "description": "Dental surgery claim"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -13581,7 +13317,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -13628,7 +13364,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to submit a new claim to your healthcare policy by providing your username, identification, provider ID, the claim amount, and a brief description of the claim.",
             "user_prompt": "Hello! I'd like to submit a new claim to my healthcare policy. Here are the details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Provider ID: johns_hopkins_baltimore\n- Claim Amount: 6000\n- Description: Dental surgery claim\n\nPlease let me know if you need anything else from me. Thank you!",
             "directed_action_graph": {
@@ -13738,13 +13474,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -13839,7 +13569,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -13852,7 +13582,7 @@
                 "username": "Henry Smith",
                 "description": "Dental surgery claim"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -13947,7 +13677,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -13994,7 +13724,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to submit a new claim to your healthcare policy using your username and identification, specifying the provider ID, amount, and a brief description of the claim.",
             "user_prompt": "Hello! I'd like to submit a new claim for my healthcare policy. Here are the details:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Provider ID: johns_hopkins_baltimore\n- Amount: 6000\n- Description: Dental surgery claim\n\nCould you please help me process this claim? Thank you!",
             "directed_action_graph": {
@@ -14104,13 +13834,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -14205,7 +13929,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -14218,7 +13942,7 @@
                 "username": "Zhang Jia Ming",
                 "description": "Prescription medication"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -14313,7 +14037,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -14360,7 +14084,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to submit a new claim to your healthcare policy by providing your username, identification, provider ID, the amount for the claim, and a brief description of the claim.",
             "user_prompt": "Hello, I'd like to submit a new claim to my healthcare policy. Here are the details you need:\n\n- **Username:** Zhang Jia Ming\n- **Identification:** zm,xz,cmzxczx,\n- **Provider ID:** kaiser_permanente_oakland\n- **Amount:** 2000\n- **Description:** Prescription medication\n\nPlease let me know if you need any further information to process this claim. Thank you!",
             "directed_action_graph": {
@@ -14470,13 +14194,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -14569,7 +14287,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -14582,7 +14300,7 @@
                 "username": "Henry Smith",
                 "description": "Pharmacy purchase"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -14697,7 +14415,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -14752,7 +14470,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to submit a new claim to your healthcare policy by providing your username, identification, provider ID, a monetary amount, and a brief description of the claim.",
             "user_prompt": "Hello! I'd like to submit a new claim to my healthcare policy. Here are the details:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Provider ID: kaiser_permanente_oakland\n- Amount: 9000\n- Description: Pharmacy purchase\n\nThank you!",
             "directed_action_graph": {
@@ -14914,13 +14632,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -15029,7 +14741,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -15042,7 +14754,7 @@
                 "username": "Zhang Jia Ming",
                 "description": "Routine dental checkup"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -15157,7 +14869,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -15212,7 +14924,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to submit a new claim to your healthcare policy by providing your username, identification, the provider ID, the amount you are claiming, and a description of the claim.",
             "user_prompt": "Hello there! I would like to submit a new claim to my healthcare policy. Here are the details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Provider ID: new_provider\n- Amount: 800\n- Description: Routine dental checkup\n\nCould you please assist me with this process? Thank you!",
             "directed_action_graph": {
@@ -15374,13 +15086,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -15484,7 +15190,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -15497,7 +15203,7 @@
                 "username": "Henry Smith",
                 "description": "Dental procedure"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -15612,7 +15318,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -15667,7 +15373,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to submit a new claim to your healthcare policy by providing your username, identification, provider ID, the amount for the claim, and a brief description of the claim.",
             "user_prompt": "Hello! I'd like to submit a new claim to my healthcare policy. Here are the details:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Provider ID: johns_hopkins_baltimore\n- Amount: 2000\n- Description: Dental procedure\n\nCould you please process this claim for me? Thank you!",
             "directed_action_graph": {
@@ -15829,13 +15535,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -15937,7 +15637,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 100,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -15950,7 +15650,7 @@
                 "username": "Henry Smith",
                 "description": "Prescription medication"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -16065,7 +15765,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -16120,7 +15820,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to submit a new claim to your healthcare policy by providing your username, identification, provider ID, the amount for the claim, and a description of the claim.",
             "user_prompt": "Hello! I'd like to submit a new claim to my healthcare policy. Here are the details:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Provider ID: kaiser_permanente_oakland\n- Amount: 4000\n- Description: Prescription medication\n\nPlease let me know if there's anything else you need from me. Thank you!",
             "directed_action_graph": {
@@ -16282,13 +15982,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -16390,7 +16084,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -16403,7 +16097,7 @@
                 "username": "Zhang Jia Ming",
                 "description": "Pharmacy visit"
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -16518,7 +16212,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -16573,7 +16267,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to submit a new claim to your healthcare policy by providing your username, identification, provider ID, amount, and a brief description, aiming for a successful claim submission.",
             "user_prompt": "Hello! I would like to submit a new claim for my healthcare policy. My username is Zhang Jia Ming, and my identification is zm,xz,cmzxczx,. The provider ID is kaiser_permanente_oakland, and the amount is 1000. The description for the claim is \"Pharmacy visit\". Could you assist me in submitting this claim? Thank you!",
             "directed_action_graph": {
@@ -16735,13 +16429,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -16836,7 +16524,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -16849,7 +16537,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 5000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -16899,7 +16587,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -16925,7 +16613,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, desired policy type, and coverage amount to ensure your policy reflects your current needs and financial situation.",
             "user_prompt": "Hi, I'd like to update my healthcare policy to better reflect my current needs and financial situation. Here's the information you might need:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 60000\n- Desired Policy Type: Health\n- Coverage Amount: 5000\n\nPlease let me know if you need any more information to process this update. Thank you!",
             "directed_action_graph": {
@@ -17024,13 +16712,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -17122,7 +16804,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -17135,7 +16817,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 13000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -17174,7 +16856,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -17201,7 +16883,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, desired policy type, and coverage amount to ensure your policy reflects your current needs and financial situation.",
             "user_prompt": "Hello! I'd like to update my healthcare policy to reflect my current needs and financial situation. Here are the details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: $60,000\n- Desired Policy Type: Health\n- Coverage Amount: $13,000\n\nPlease let me know if you need any additional information or confirmation from me. Thank you!",
             "directed_action_graph": {
@@ -17274,13 +16956,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -17374,7 +17050,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -17387,7 +17063,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 7500
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -17425,7 +17101,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -17451,7 +17127,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification (either your password or driver's license), annual income, desired policy type, and the coverage amount, to see if the update is successful.",
             "user_prompt": "Hello! I'd like to update my healthcare policy. Here are the details you need:\n\n- **Username:** Zhang Jia Ming\n- **Identification:** zm,xz,cmzxczx,\n- **Annual Income:** 55000\n- **Desired Policy Type:** Life\n- **Coverage Amount:** 7500\n\nCould you please let me know if the update is successful? Thank you!",
             "directed_action_graph": {
@@ -17524,13 +17200,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -17625,7 +17295,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 15,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -17638,7 +17308,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 4000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -17696,7 +17366,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -17730,7 +17400,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, either your account password or driver's license for identification, your annual income, the type of policy you want (such as Health, Dental, Pharmacy, Vision, or Inactive), and the desired coverage amount, to see if the update is successful.",
             "user_prompt": "Hi, I'd like to update my healthcare policy. Here are the details you need:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 30000\n- Type of Policy: Health\n- Desired Coverage Amount: 4000\n\nCould you please let me know if the update is successful? Thank you!",
             "directed_action_graph": {
@@ -17829,13 +17499,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -17930,7 +17594,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 60,
                 "appeal_period": 180,
@@ -17943,7 +17607,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 12000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -18001,7 +17665,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -18035,7 +17699,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by selecting a new policy type, specifying the coverage amount, and providing your annual income, using your username and either your account password or driver's license for identification.",
             "user_prompt": "Hello! I would like to update my healthcare policy. I would like to select a new policy type, specify the coverage amount, and provide my annual income. Here are the details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Policy Type: Health\n- Coverage Amount: 12000\n- Annual Income: 50000\n\nCould you please assist me with updating my policy? Thank you!",
             "directed_action_graph": {
@@ -18134,13 +17798,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -18235,7 +17893,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -18248,7 +17906,7 @@
                 "username": "Henry Smith",
                 "coverage_amount": 15000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -18317,7 +17975,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -18350,7 +18008,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by specifying a new policy type, coverage amount, and your annual income, using your username and either your account password or driver's license for identification, to ensure a successful policy update.",
             "user_prompt": "Hello! I would like to update my healthcare policy. I need to specify a new policy type, coverage amount, and my annual income for a successful policy update. My username is Henry Smith, and I can provide my identification through my driver's license, which is sdfojngsmnlvx. \n\nHere are the details I need to update:\n\n- Policy Type: Health\n- Coverage Amount: 15,000\n- Annual Income: 1,000,000\n\nPlease let me know if you need any further information. Thank you!",
             "directed_action_graph": {
@@ -18472,13 +18130,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -18581,7 +18233,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 60,
                 "appeal_period": 180,
@@ -18594,7 +18246,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 5000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -18663,7 +18315,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -18696,7 +18348,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, policy type, and desired coverage amount to ensure your policy reflects your current needs and financial situation.",
             "user_prompt": "Hi, I would like to update my healthcare policy. Here are the details you need:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 50000\n- Policy Type: Health\n- Desired Coverage Amount: 5000\n\nPlease ensure that my policy reflects my current needs and financial situation. Thank you!",
             "directed_action_graph": {
@@ -18818,13 +18470,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -18919,7 +18565,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -18932,7 +18578,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 5000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -18989,7 +18635,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -19022,7 +18668,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification (either your account password or driver's license), annual income, desired policy type, and the coverage amount you wish to have, to ensure your policy reflects your current needs and financial situation.",
             "user_prompt": "Hello! I'd like to update my healthcare policy to better fit my current needs and financial situation. Here are my details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 45000\n- Desired Policy Type: Dental\n- Coverage Amount: 5000\n\nCould you please update my policy with this information? Thank you!",
             "directed_action_graph": {
@@ -19121,13 +18767,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -19220,7 +18860,7 @@
                 },
                 "interaction_time": "2023-11-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -19233,7 +18873,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 7000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -19290,7 +18930,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -19323,7 +18963,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, desired policy type, and coverage amount to ensure the policy meets your current needs and financial situation.",
             "user_prompt": "Hello, I would like to update my healthcare policy. My username is Zhang Jia Ming. My identification is zm,xz,cmzxczx. My annual income is 50,000. I would like to update my policy type to \"Invalid\", and I want a coverage amount of 7,000. Could you please assist me with this? Thank you!",
             "directed_action_graph": {
@@ -19422,13 +19062,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -19513,7 +19147,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -19526,7 +19160,7 @@
                 "username": "Henry Smith",
                 "coverage_amount": 250000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -19584,7 +19218,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -19618,7 +19252,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, either your password or driver's license for identification, your annual income, the type of policy you want, and the desired coverage amount, to see if the update is successful.",
             "user_prompt": "Hello! I'd like to update my healthcare policy. Here are the details you need:\n\n- Username: Henry Smith\n- Identification (Driver's License): sdfojngsmnlvx\n- Annual Income: 1000000\n- Policy Type: Health\n- Desired Coverage Amount: 250000\n\nCould you please let me know if the update is successful? Thank you!",
             "directed_action_graph": {
@@ -19714,13 +19348,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -19822,7 +19450,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -19835,7 +19463,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 40000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -19893,7 +19521,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -19927,7 +19555,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, policy type, and desired coverage amount to see if the update is successful.",
             "user_prompt": "Hello! I'd like to update my healthcare policy. Here is my information:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 200000\n- Policy Type: Health\n- Desired Coverage Amount: 40000\n\nCould you please let me know if this update is successful?",
             "directed_action_graph": {
@@ -20023,13 +19651,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -20123,7 +19745,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -20136,7 +19758,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 15000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -20182,7 +19804,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -20216,7 +19838,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy to a new type with a specified coverage amount, using your annual income, username, and either your account password or driver's license for identification.",
             "user_prompt": "Hello! I'd like to update my healthcare policy to a new type. Could you help me change my policy type to \"Dental\" with a coverage amount of \"15000\"? My annual income is \"60000\". For identification purposes, my username is \"Zhang Jia Ming\" and my identification is \"zm,xz,cmzxczx,\". Thank you!",
             "directed_action_graph": {
@@ -20289,13 +19911,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -20387,7 +20003,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -20400,7 +20016,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 10000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -20446,7 +20062,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -20480,7 +20096,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, desired policy type, and coverage amount to ensure your policy reflects your current needs and financial situation.",
             "user_prompt": "Hello! I would like to update my healthcare policy. Here are my details for the update:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 50000\n- Desired Policy Type: Invalid\n- Coverage Amount: 10000\n\nPlease let me know if you need any additional information or clarification. Thank you!",
             "directed_action_graph": {
@@ -20553,13 +20169,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -20661,7 +20271,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 80,
                 "enrollment_period": 365,
                 "appeal_period": 180,
@@ -20674,7 +20284,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 5000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -20731,7 +20341,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -20764,7 +20374,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification (either your account password or driver's license), annual income, desired policy type, and the coverage amount, to ensure your policy reflects your current needs and financial situation.",
             "user_prompt": "Hello! I'd like to update my healthcare policy. Here is the information you might need: \n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 75000\n- Desired Policy Type: Dental\n- Coverage Amount: 5000\n\nPlease let me know if you need anything else to proceed with the update.",
             "directed_action_graph": {
@@ -20860,13 +20470,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -20951,7 +20555,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 25,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -20964,7 +20568,7 @@
                 "username": "Henry Smith",
                 "coverage_amount": 15000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -21021,7 +20625,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -21054,7 +20658,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to update your healthcare policy by providing your username and identification, specifying a new policy type and coverage amount, and including your annual income to ensure the update is successful.",
             "user_prompt": "Hello! I'd like to update my healthcare policy. Here are the details you need:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Policy Type: Invalid\n- Coverage Amount: 15000\n- Annual Income: 120000\n\nCould you please make sure the update is successful? Thank you!",
             "directed_action_graph": {
@@ -21150,13 +20754,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -21241,7 +20839,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 180,
                 "appeal_period": 180,
@@ -21254,7 +20852,7 @@
                 "username": "Henry Smith",
                 "coverage_amount": 200000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -21331,7 +20929,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -21372,7 +20970,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, desired policy type, and coverage amount to ensure your policy reflects your current needs and financial situation.",
             "user_prompt": "Hello! I'd like to update my healthcare policy. Here are my details:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Annual Income: 1,000,000\n- Desired Policy Type: Health\n- Coverage Amount: 200,000\n\nPlease let me know if there's anything else you need from me to update the policy. Thank you!",
             "directed_action_graph": {
@@ -21494,13 +21092,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -21595,7 +21187,7 @@
                 },
                 "interaction_time": "2023-10-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 10,
                 "enrollment_period": 180,
                 "appeal_period": 180,
@@ -21608,7 +21200,7 @@
                 "username": "Henry Smith",
                 "coverage_amount": 120000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -21685,7 +21277,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -21726,7 +21318,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, desired policy type, and the coverage amount, aiming for a successful policy update.",
             "user_prompt": "Hello! I would like to update my healthcare policy. Here are the details you'll need:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Annual Income: 1,000,000\n- Desired Policy Type: Health\n- Coverage Amount: 120,000\n\nPlease let me know if you need any additional information or if there's anything else I need to do to complete this update. Thank you!",
             "directed_action_graph": {
@@ -21848,13 +21440,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -21957,7 +21543,7 @@
                 },
                 "interaction_time": "2023-12-15T12:00:00"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 10,
                 "enrollment_period": 60,
                 "appeal_period": 180,
@@ -21970,7 +21556,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 5000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -22047,7 +21633,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -22088,7 +21674,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, policy type, and desired coverage amount to ensure that your policy reflects your current needs and financial situation.",
             "user_prompt": "Hello! I would like to update my healthcare policy to ensure it better aligns with my current needs and financial situation. Here are the details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 50000\n- Policy Type: Health\n- Desired Coverage Amount: 5000\n\nThank you for your assistance in updating my policy!",
             "directed_action_graph": {
@@ -22210,13 +21796,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -22311,7 +21891,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -22324,7 +21904,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 10000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -22389,7 +21969,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -22430,7 +22010,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification (either your account password or driver's license), your annual income, the desired policy type, and the coverage amount to ensure your policy reflects your current needs and financial situation.",
             "user_prompt": "Hello! I'd like to update my healthcare policy. Here are the details you'll need:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 50000\n- Policy Type: Health\n- Coverage Amount: 10000\n\nPlease let me know if you need anything else to proceed with the update. Thank you!",
             "directed_action_graph": {
@@ -22529,13 +22109,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -22630,7 +22204,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 60,
                 "appeal_period": 180,
@@ -22643,7 +22217,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 15000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -22708,7 +22282,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -22749,7 +22323,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification (either your password or driver's license), annual income, desired policy type, and coverage amount to see if the update is successful.",
             "user_prompt": "Hello! I would like to update my healthcare policy. Here is my information:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual income: 50000\n- Desired policy type: Health\n- Coverage amount: 15000\n\nCould you please check if this update is successful? Thank you!",
             "directed_action_graph": {
@@ -22848,13 +22422,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -22949,7 +22517,7 @@
                 },
                 "interaction_time": "2024-12-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 30,
                 "appeal_period": 180,
@@ -22962,7 +22530,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 10000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -23027,7 +22595,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -23068,7 +22636,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification (either your password or driver's license), annual income, desired policy type, and coverage amount, in order to successfully modify your policy details.",
             "user_prompt": "Hello! I'd like to update my healthcare policy details. Here is the information you requested:\n\n- Username: Zhang Jia Ming\n- Identification (Driver's license): zm,xz,cmzxczx,\n- Annual Income: 50000\n- Desired Policy Type: Invalid\n- Coverage Amount: 10000\n\nCould you please help me with updating my policy? Thank you!",
             "directed_action_graph": {
@@ -23167,13 +22735,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -23268,7 +22830,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -23281,7 +22843,7 @@
                 "username": "Henry Smith",
                 "coverage_amount": 15000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -23357,7 +22919,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -23397,7 +22959,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, policy type, and desired coverage amount to ensure the policy meets your current needs.",
             "user_prompt": "Hello! I would like to update my healthcare policy to ensure it meets my current needs. Here are the details:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Annual Income: 1,000,000\n- Policy Type: Health\n- Desired Coverage Amount: 15,000\n\nPlease let me know if any additional steps are needed to update my policy. Thank you!",
             "directed_action_graph": {
@@ -23519,13 +23081,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -23628,7 +23184,7 @@
                 },
                 "interaction_time": "2023-12-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 30,
                 "appeal_period": 180,
@@ -23641,7 +23197,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 5000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -23717,7 +23273,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -23757,7 +23313,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, desired policy type, and coverage amount to ensure your policy reflects your current needs and financial situation.",
             "user_prompt": "Hello! I'd like to update my healthcare policy to better suit my current needs and financial situation. Here are my details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 50000\n- Desired Policy Type: Health\n- Coverage Amount: 5000\n\nPlease let me know if you need any further information to proceed with the update. Thank you!",
             "directed_action_graph": {
@@ -23879,13 +23435,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -23980,7 +23530,7 @@
                 },
                 "interaction_time": "2023-11-30T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 210,
                 "appeal_period": 180,
@@ -23993,7 +23543,7 @@
                 "username": "Henry Smith",
                 "coverage_amount": 15000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -24069,7 +23619,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -24109,7 +23659,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to update your healthcare policy by specifying your username, providing either your account password or driver's license for identification, and including your annual income, desired policy type, and the coverage amount to ensure the policy meets your needs.",
             "user_prompt": "Hello, I'd like to update my healthcare policy. Here are the details:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Annual Income: 1000000\n- Policy Type: Invalid\n- Coverage Amount: 15000\n\nCould you please assist me with this update? Thank you!",
             "directed_action_graph": {
@@ -24231,13 +23781,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -24322,7 +23866,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -24335,7 +23879,7 @@
                 "username": "Henry Smith",
                 "coverage_amount": 250000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -24400,7 +23944,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -24441,7 +23985,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, and selecting a new policy type and coverage amount, to ensure your policy details are current and meet your needs.",
             "user_prompt": "Hello! I'd like to update my healthcare policy to ensure my details are current and meet my needs. Here are my details: \n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Annual Income: 1,000,000\n- Policy Type: Health\n- Coverage Amount: 250,000 \n\nCould you please assist me with updating my policy with this information? Thank you!",
             "directed_action_graph": {
@@ -24537,13 +24081,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -24645,7 +24183,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -24658,7 +24196,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 10000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -24723,7 +24261,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -24764,7 +24302,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to update your healthcare policy by specifying your username, identification, annual income, desired policy type, and coverage amount to ensure it aligns with your current needs and financial situation.",
             "user_prompt": "Hello! I'd like to update my healthcare policy details. Here are the details I need to update:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 50000\n- Desired Policy Type: Dental\n- Coverage Amount: 10000\n\nPlease ensure that my policy is adjusted to match my current needs and financial situation. Thank you!",
             "directed_action_graph": {
@@ -24860,13 +24398,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -24951,7 +24483,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -24964,7 +24496,7 @@
                 "username": "Henry Smith",
                 "coverage_amount": 10000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -25029,7 +24561,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -25070,7 +24602,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to update your healthcare policy by providing your username, identification, annual income, desired policy type, and coverage amount to ensure the policy meets your current needs.",
             "user_prompt": "Hello! I'd like to update my healthcare policy. Here's the information you need:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Annual Income: 1000000\n- Desired Policy Type: Invalid\n- Coverage Amount: 10000\n\nCould you please assist me in ensuring that this new policy meets my current needs? Thank you!",
             "directed_action_graph": {
@@ -25166,13 +24698,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -25257,7 +24783,7 @@
                 },
                 "interaction_time": "2025-01-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 90,
                 "appeal_period": 180,
@@ -25270,7 +24796,7 @@
                 "username": "Henry Smith",
                 "coverage_amount": 200000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -25354,7 +24880,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -25402,7 +24928,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by specifying your username, identification, annual income, desired policy type, and coverage amount to ensure your policy reflects your current needs and financial situation.",
             "user_prompt": "Hello! I'd like to update my healthcare policy. Here are my details:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Annual Income: 1,000,000\n- Policy Type: Health\n- Coverage Amount: 200,000\n\nI want to ensure that my policy reflects my current needs and financial situation. Can you assist me with this update?",
             "directed_action_graph": {
@@ -25524,13 +25050,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -25615,7 +25135,7 @@
                 },
                 "interaction_time": "2023-07-01T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 60,
                 "appeal_period": 180,
@@ -25628,7 +25148,7 @@
                 "username": "Henry Smith",
                 "coverage_amount": 250000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -25712,7 +25232,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -25760,7 +25280,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are trying to update your healthcare policy by providing your username, identification, annual income, the desired policy type, and the coverage amount to ensure your policy meets your current needs.",
             "user_prompt": "Hi there! I would like to update my healthcare policy to ensure it meets my current needs. Here are my details:\n\n- Username: Henry Smith\n- Identification: sdfojngsmnlvx\n- Annual Income: 1,000,000\n- Desired Policy Type: Health\n- Coverage Amount: 250,000\n\nCould you please assist me with updating my policy according to these details? Thank you!",
             "directed_action_graph": {
@@ -25882,13 +25402,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -25991,7 +25505,7 @@
                 },
                 "interaction_time": "2023-12-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 60,
                 "appeal_period": 180,
@@ -26004,7 +25518,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 12000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -26088,7 +25602,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -26136,7 +25650,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to update your healthcare policy by providing your username, identification (either your account password or driver's license), and details such as your annual income, desired policy type, and coverage amount, to ensure your policy meets your current needs.",
             "user_prompt": "Hello! I'd like to update my healthcare policy. Here are my details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Annual Income: 60000\n- Desired Policy Type: Health\n- Coverage Amount: 12000\n\nPlease let me know if you need any more information to process this update. Thank you!",
             "directed_action_graph": {
@@ -26258,13 +25772,7 @@
             "default_constraint_option": "full",
             "constraint_descr_format": "structured",
             "tool_list": "full",
-            "user_agent": {
-                "model": "gpt-4o",
-                "temperature": 1.0,
-                "top_p": 1.0,
-                "max_tokens": 128,
-                "tool_call_mode": "fc"
-            },
+            "user_agent": null,
             "assistant_agent": {
                 "model": "gemini-1.5-pro",
                 "temperature": 0.0,
@@ -26352,7 +25860,7 @@
                 },
                 "interaction_time": "2024-11-15T12:56:39"
             },
-            "dependency_parameters": {
+            "constraint_parameters": {
                 "max_coverage_percentage": 20,
                 "enrollment_period": 30,
                 "appeal_period": 180,
@@ -26365,7 +25873,7 @@
                 "username": "Zhang Jia Ming",
                 "coverage_amount": 7000
             },
-            "dependency": [
+            "constraints": [
                 "and",
                 [
                     [
@@ -26449,7 +25957,7 @@
                     ]
                 ]
             ],
-            "dependency_original": [
+            "constraints_original": [
                 "and",
                 [
                     [
@@ -26497,7 +26005,7 @@
                     ]
                 ]
             ],
-            "action_should_succeed": 0,
+            "action_should_succeed": false,
             "user_instruction": "You are attempting to update your healthcare policy by selecting a new policy type, specifying a coverage amount, and providing your annual income, using your username and either your password or driver's license for identification.",
             "user_prompt": "Hello! I'd like to update my healthcare policy. Here are the details:\n\n- Username: Zhang Jia Ming\n- Identification: zm,xz,cmzxczx,\n- Policy Type: Invalid\n- Coverage Amount: 7000\n- Annual Income: 50000\n\nThank you for your assistance!",
             "directed_action_graph": {

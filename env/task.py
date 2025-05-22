@@ -157,15 +157,15 @@ def task_initializer(domain_str:str, task:dict, dep_innate_full:dict, default_de
     dep_full = copy.deepcopy(default_dep_full)
     dep_full_descr = copy.deepcopy(default_dep_full_descr)
     user_goal = task["user_goal"] if task else None
-    dep = task["dependency"] if task else {}
-    dep_orig = task["dependency_original"] if task else tuple()
+    dep = task["constraints"] if task else {}
+    dep_orig = task["constraints_original"] if task else tuple()
     dep_params = None
     domain_system = None
     # if task is not specified, use defaults constraints
     if task:
         data = copy.deepcopy(task["initial_database"])
         dep_full[user_goal] = dep
-        dep_params = task["dependency_parameters"]
+        dep_params = task["constraint_parameters"]
         if mode != "program": domain_system = domain_keys[domain_str](data, dep_innate_full, dep_params)
         else: domain_system = domain_keys[domain_str+"_strict"](data, dep_innate_full, dep_full, dep_params)
     else:
