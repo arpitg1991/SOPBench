@@ -1,5 +1,12 @@
 # SOPBench: Evaluating Language Agents at Following Standard Operating Procedures and Constraints
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2503.08669"><img src="https://img.shields.io/badge/arXiv-Paper-red?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv Paper"></a>
+  &nbsp;
+  <a href="https://github.com/Leezekun/SOPBench"><img src="https://img.shields.io/badge/GitHub-Project-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Project"></a>
+</p>
+
+
 ## Overview
 
 <p align="center"><img width="100%" src="assets/overview-v8.png" /></p>
@@ -128,6 +135,36 @@ python run_checking.py \
 ```
 
 Over 24,000 agent trajectories are provided in the `output/` directory for reference.
+
+## Results
+
+### Model Performance Across Domains
+
+The following table shows model pass rates (%) across seven domains. The overall score is averaged on cases from all domains.
+
+| **Model** | **Bank** | **DMV** | **Healthcare** | **Market** | **Univ** | **Library** | **Hotel** | **Overall** |
+|-----------|----------|---------|----------------|------------|----------|-------------|-----------|-------------|
+| **_Proprietary Non-reasoning Models_** | | | | | | | | |
+| GPT-4.1 (FC) | 71.89 | 78.26 | 80.00 | 81.82 | 52.27 | 61.54 | 42.86 | 67.22 |
+| GPT-4o (FC) | 64.71 | 80.87 | 73.85 | 63.64 | 68.18 | 65.38 | 39.80 | 62.13 |
+| Claude-3-7-Sonnet (FC) | 69.28 | 70.43 | 72.31 | 58.29 | 68.18 | 37.18 | 23.98 | 54.26 |
+| GPT-4.1-mini (FC) | 62.75 | 73.91 | 67.69 | 58.82 | 38.64 | 25.64 | 7.65 | 47.07 |
+| Claude-3-5-Sonnet (FC) | 71.90 | 50.43 | 39.23 | 43.32 | 52.27 | 33.33 | 15.82 | 41.42 |
+| GPT-4o-mini (FC) | 34.64 | 70.43 | 26.15 | 45.99 | 40.91 | 46.15 | 41.33 | 42.64 |
+| Gemini-2.0-Flash (FC) | 56.86 | 54.78 | 23.08 | 40.11 | 34.09 | 26.92 | 7.65 | 33.33 |
+| Gemini-1.5-Pro (FC) | 54.25 | 60.00 | 18.46 | 34.22 | 63.64 | 26.92 | 12.37 | 34.18 |
+| **_Reasoning Models_** | | | | | | | | |
+| o4-mini-high (FC) | 76.47 | 81.74 | 93.08 | 90.37 | 95.45 | 43.59 | 56.12 | 76.08 |
+| Gemini-2.0-Flash-Thinking (ReAct) | 77.12 | 73.91 | 83.08 | 53.48 | 93.18 | 55.13 | 62.24 | 67.66 |
+| Deepseek-R1 (ReAct) | 55.56 | 79.13 | 55.38 | 71.66 | 77.27 | 57.69 | 51.02 | 62.13 |
+| Claude-3.7-Sonnet-Thinking (FC) | 71.90 | 72.17 | 73.85 | 50.80 | 70.45 | 34.62 | 23.47 | 53.27 |
+| **_Open-source Models_** | | | | | | | | |
+| Llama3.1-70B-Instruct (ReAct) | 43.79 | 66.96 | 56.15 | 40.44 | 45.45 | 42.86 | 14.29 | 41.20 |
+| Qwen2.5-72B-Instruct (ReAct) | 32.68 | 61.74 | 28.46 | 41.71 | 38.64 | 38.46 | 14.29 | 34.44 |
+| Qwen2.5-32B-Instruct (ReAct) | 41.83 | 53.04 | 42.31 | 46.52 | 56.82 | 37.18 | 18.88 | 39.65 |
+| Qwen2.5-14B-Instruct (ReAct) | 32.03 | 53.91 | 29.23 | 39.04 | 27.27 | 30.77 | 15.31 | 31.89 |
+| Llama3.1-8B-Instruct (ReAct) | 13.73 | 20.00 | 20.00 | 19.25 | 25.00 | 32.05 | 0.51 | 15.84 |
+| Qwen2.5-7B-Instruct (ReAct) | 5.88 | 21.74 | 17.69 | 13.37 | 2.27 | 21.79 | 1.02 | 11.30 |
 
 ## Project Structure
 
