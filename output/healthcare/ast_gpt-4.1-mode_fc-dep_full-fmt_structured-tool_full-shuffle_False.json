@@ -419,7 +419,7 @@
         "evaluations": [
             {
                 "user_goal": "add_authorized_provider",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 4,
                 "num_function_calls": 3,
                 "num_constraints": 2,
@@ -455,7 +455,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -877,7 +882,7 @@
         "evaluations": [
             {
                 "user_goal": "add_authorized_provider",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 2,
@@ -913,7 +918,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -1305,7 +1315,7 @@
         "evaluations": [
             {
                 "user_goal": "add_authorized_provider",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 2,
@@ -1341,7 +1351,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -1731,7 +1746,7 @@
         "evaluations": [
             {
                 "user_goal": "add_authorized_provider",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 2,
@@ -1767,7 +1782,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -2218,7 +2238,7 @@
         "evaluations": [
             {
                 "user_goal": "add_authorized_provider",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 4,
                 "num_function_calls": 3,
                 "num_constraints": 3,
@@ -2254,7 +2274,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -2683,7 +2708,7 @@
         "evaluations": [
             {
                 "user_goal": "add_authorized_provider",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 3,
@@ -2719,7 +2744,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -3292,7 +3322,7 @@
         "evaluations": [
             {
                 "user_goal": "appeal_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 3,
@@ -3328,7 +3358,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -3881,7 +3916,7 @@
         "evaluations": [
             {
                 "user_goal": "appeal_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 3,
@@ -3917,7 +3952,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -4429,7 +4469,7 @@
         "evaluations": [
             {
                 "user_goal": "appeal_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 3,
@@ -4465,7 +4505,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -4974,7 +5019,7 @@
         "evaluations": [
             {
                 "user_goal": "appeal_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 3,
@@ -5010,7 +5055,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -5609,7 +5659,7 @@
         "evaluations": [
             {
                 "user_goal": "appeal_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 4,
@@ -5645,7 +5695,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -6244,7 +6299,7 @@
         "evaluations": [
             {
                 "user_goal": "appeal_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 4,
@@ -6280,7 +6335,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -6819,7 +6879,7 @@
         "evaluations": [
             {
                 "user_goal": "appeal_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 3,
                 "num_constraints": 4,
@@ -6855,7 +6915,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -7322,7 +7387,7 @@
         "evaluations": [
             {
                 "user_goal": "deactivate_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 3,
@@ -7358,7 +7423,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -7827,7 +7897,7 @@
         "evaluations": [
             {
                 "user_goal": "deactivate_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 3,
@@ -7863,7 +7933,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -8194,7 +8269,7 @@
         "evaluations": [
             {
                 "user_goal": "get_claim_details",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -8230,7 +8305,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -8561,7 +8641,7 @@
         "evaluations": [
             {
                 "user_goal": "get_claim_details",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -8597,7 +8677,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -8955,7 +9040,7 @@
         "evaluations": [
             {
                 "user_goal": "get_claim_details",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 1,
@@ -8991,7 +9076,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -9320,7 +9410,7 @@
         "evaluations": [
             {
                 "user_goal": "get_claim_history",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -9356,7 +9446,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -9647,7 +9742,7 @@
         "evaluations": [
             {
                 "user_goal": "get_claim_history",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 2,
                 "num_function_calls": 1,
                 "num_constraints": 1,
@@ -9683,7 +9778,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -9989,7 +10089,7 @@
         "evaluations": [
             {
                 "user_goal": "get_claim_history",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 1,
@@ -10025,7 +10125,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -10354,7 +10459,7 @@
         "evaluations": [
             {
                 "user_goal": "get_policy_details",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -10390,7 +10495,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -10672,7 +10782,7 @@
         "evaluations": [
             {
                 "user_goal": "get_policy_details",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 3,
                 "num_function_calls": 0,
                 "num_constraints": 1,
@@ -10708,7 +10818,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -11066,7 +11181,7 @@
         "evaluations": [
             {
                 "user_goal": "get_policy_details",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 1,
@@ -11102,7 +11217,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -11383,7 +11503,7 @@
         "evaluations": [
             {
                 "user_goal": "get_provider_details",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 0,
@@ -11419,7 +11539,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 0.0,
             "avg_num_constraints_expanded": 0.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -11702,7 +11827,7 @@
         "evaluations": [
             {
                 "user_goal": "login_user",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 0,
@@ -11738,7 +11863,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 0.0,
             "avg_num_constraints_expanded": 0.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -12055,7 +12185,7 @@
         "evaluations": [
             {
                 "user_goal": "logout_user",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 1,
@@ -12091,7 +12221,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -12394,7 +12529,7 @@
         "evaluations": [
             {
                 "user_goal": "logout_user",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 2,
                 "num_function_calls": 1,
                 "num_constraints": 1,
@@ -12430,7 +12565,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -12843,7 +12983,7 @@
         "evaluations": [
             {
                 "user_goal": "reactivate_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 4,
                 "num_function_calls": 3,
                 "num_constraints": 2,
@@ -12879,7 +13019,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -13286,7 +13431,7 @@
         "evaluations": [
             {
                 "user_goal": "reactivate_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 2,
@@ -13322,7 +13467,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -13702,7 +13852,7 @@
         "evaluations": [
             {
                 "user_goal": "reactivate_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 2,
@@ -13738,7 +13888,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -14145,7 +14300,7 @@
         "evaluations": [
             {
                 "user_goal": "reactivate_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 2,
@@ -14181,7 +14336,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -14608,7 +14768,7 @@
         "evaluations": [
             {
                 "user_goal": "reactivate_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 4,
                 "num_function_calls": 3,
                 "num_constraints": 3,
@@ -14644,7 +14804,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -15015,7 +15180,7 @@
         "evaluations": [
             {
                 "user_goal": "reactivate_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 3,
                 "num_function_calls": 0,
                 "num_constraints": 3,
@@ -15051,7 +15216,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -15555,7 +15725,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 3,
@@ -15591,7 +15761,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -16046,7 +16221,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 3,
                 "num_constraints": 3,
@@ -16082,7 +16257,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -16576,7 +16756,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 3,
@@ -16612,7 +16792,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -17071,7 +17256,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 3,
@@ -17107,7 +17292,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -17600,7 +17790,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 4,
@@ -17636,7 +17826,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -18133,7 +18328,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 4,
@@ -18169,7 +18364,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -18767,7 +18967,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 4,
@@ -18803,7 +19003,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -19365,7 +19570,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 4,
@@ -19401,7 +19606,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -19887,7 +20097,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 3,
                 "num_constraints": 4,
@@ -19923,7 +20133,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -20446,7 +20661,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 4,
@@ -20482,7 +20697,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -21081,7 +21301,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 5,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -21117,7 +21337,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -21728,7 +21953,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -21764,7 +21989,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -22330,7 +22560,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 3,
                 "num_constraints": 5,
@@ -22366,7 +22596,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -22942,7 +23177,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 3,
                 "num_constraints": 5,
@@ -22978,7 +23213,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -23510,7 +23750,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 5,
@@ -23546,7 +23786,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -24178,7 +24423,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 5,
@@ -24214,7 +24459,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -24846,7 +25096,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 5,
@@ -24882,7 +25132,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -25452,7 +25707,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 5,
@@ -25488,7 +25743,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -26085,7 +26345,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -26121,7 +26381,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -26777,7 +27042,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 5,
@@ -26813,7 +27078,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -27455,7 +27725,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 6,
@@ -27491,7 +27761,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -28195,7 +28470,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 6,
@@ -28231,7 +28506,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -28867,7 +29147,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 6,
@@ -28903,7 +29183,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -29498,7 +29783,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 3,
                 "num_constraints": 6,
@@ -29534,7 +29819,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -30178,7 +30468,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 6,
@@ -30214,7 +30504,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -30846,7 +31141,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 6,
@@ -30882,7 +31177,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -31512,7 +31812,7 @@
         "evaluations": [
             {
                 "user_goal": "schedule_appointment",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 4,
                 "num_constraints": 6,
@@ -31548,7 +31848,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -32105,7 +32410,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 3,
@@ -32141,7 +32446,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -32647,7 +32957,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 3,
@@ -32683,7 +32993,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -33136,7 +33451,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 3,
@@ -33172,7 +33487,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -33547,7 +33867,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 3,
                 "num_function_calls": 0,
                 "num_constraints": 3,
@@ -33583,7 +33903,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -34103,7 +34428,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 4,
@@ -34139,7 +34464,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -34659,7 +34989,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 4,
@@ -34695,7 +35025,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -35152,7 +35487,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 1,
                 "num_function_calls": 0,
                 "num_constraints": 4,
@@ -35188,7 +35523,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -35870,7 +36210,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 5,
@@ -35906,7 +36246,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -36601,7 +36946,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 5,
@@ -36637,7 +36982,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -37260,7 +37610,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 5,
@@ -37296,7 +37646,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -37960,7 +38315,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -37996,7 +38351,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -38660,7 +39020,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -38696,7 +39056,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -39284,7 +39649,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -39320,7 +39685,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -39957,7 +40327,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 5,
@@ -39993,7 +40363,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -40483,7 +40858,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 3,
                 "num_function_calls": 0,
                 "num_constraints": 5,
@@ -40519,7 +40894,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -41011,7 +41391,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 3,
                 "num_function_calls": 0,
                 "num_constraints": 5,
@@ -41047,7 +41427,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -41640,7 +42025,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -41676,7 +42061,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -42385,7 +42775,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 6,
@@ -42421,7 +42811,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -43054,7 +43449,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 6,
@@ -43090,7 +43485,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -43727,7 +44127,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 6,
@@ -43763,7 +44163,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -44478,7 +44883,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 6,
@@ -44514,7 +44919,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -45090,7 +45500,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 1,
                 "num_function_calls": 0,
                 "num_constraints": 6,
@@ -45126,7 +45536,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -45712,7 +46127,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 3,
                 "num_function_calls": 0,
                 "num_constraints": 6,
@@ -45748,7 +46163,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -46357,7 +46777,7 @@
         "evaluations": [
             {
                 "user_goal": "submit_claim",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 6,
@@ -46393,7 +46813,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 11.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -46900,7 +47325,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 3,
@@ -46936,7 +47361,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -47443,7 +47873,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 3,
@@ -47479,7 +47909,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -47925,7 +48360,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 3,
@@ -47961,7 +48396,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -48403,7 +48843,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 3,
@@ -48439,7 +48879,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -48883,7 +49328,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 3,
@@ -48919,7 +49364,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -49280,7 +49730,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 1,
                 "num_function_calls": 0,
                 "num_constraints": 3,
@@ -49316,7 +49766,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -49839,7 +50294,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 4,
@@ -49875,7 +50330,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -50375,7 +50835,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 4,
@@ -50411,7 +50871,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -50934,7 +51399,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 4,
@@ -50970,7 +51435,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -51529,7 +51999,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 4,
@@ -51565,7 +52035,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -52052,7 +52527,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 4,
@@ -52088,7 +52563,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -52637,7 +53117,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 4,
@@ -52673,7 +53153,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -53194,7 +53679,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 4,
@@ -53230,7 +53715,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -53751,7 +54241,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 4,
@@ -53787,7 +54277,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -54235,7 +54730,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 4,
@@ -54271,7 +54766,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -54775,7 +55275,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 4,
@@ -54811,7 +55311,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -55242,7 +55747,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 4,
@@ -55278,7 +55783,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -55789,7 +56299,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 4,
@@ -55825,7 +56335,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -56285,7 +56800,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 4,
@@ -56321,7 +56836,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -56781,7 +57301,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 4,
@@ -56817,7 +57337,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -57250,7 +57775,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 4,
@@ -57286,7 +57811,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -57788,7 +58318,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 4,
@@ -57824,7 +58354,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -58333,7 +58868,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 4,
@@ -58369,7 +58904,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -58775,7 +59315,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 3,
                 "num_function_calls": 0,
                 "num_constraints": 4,
@@ -58811,7 +59351,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -59392,7 +59937,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 5,
@@ -59428,7 +59973,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -59989,7 +60539,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 5,
                 "num_constraints": 5,
@@ -60025,7 +60575,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -60597,7 +61152,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -60633,7 +61188,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -61198,7 +61758,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 5,
@@ -61234,7 +61794,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -61757,7 +62322,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 5,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -61793,7 +62358,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -62307,7 +62877,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 5,
@@ -62343,7 +62913,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -62866,7 +63441,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -62902,7 +63477,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -63347,7 +63927,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 3,
                 "num_function_calls": 0,
                 "num_constraints": 5,
@@ -63383,7 +63963,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -63864,7 +64449,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 5,
@@ -63900,7 +64485,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -64493,7 +65083,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 5,
@@ -64529,7 +65119,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -65092,7 +65687,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 5,
@@ -65128,7 +65723,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -65606,7 +66206,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 3,
                 "num_function_calls": 0,
                 "num_constraints": 5,
@@ -65642,7 +66242,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -66156,7 +66761,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -66192,7 +66797,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -66706,7 +67316,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 5,
@@ -66742,7 +67352,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -67267,7 +67882,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 5,
@@ -67303,7 +67918,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -67771,7 +68391,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 5,
@@ -67807,7 +68427,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -68402,7 +69027,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 6,
@@ -68438,7 +69063,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -69004,7 +69634,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 6,
@@ -69040,7 +69670,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -69606,7 +70241,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 6,
@@ -69642,7 +70277,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -70244,7 +70884,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 6,
@@ -70280,7 +70920,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -70760,7 +71405,7 @@
         "evaluations": [
             {
                 "user_goal": "update_policy",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 3,
                 "num_function_calls": 0,
                 "num_constraints": 6,
@@ -70796,7 +71441,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     }
 ]

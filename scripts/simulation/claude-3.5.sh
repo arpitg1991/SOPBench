@@ -2,10 +2,11 @@ cd ../..
 devices="0"
 
 model="claude-3-5-sonnet-20241022"
-domains=("hotel" "university")
-tool_lists=("full" "oracle")
+domains=("hotel" "university" "dmv" "healthcare" "library" "online_market" "bank")
 method="fc"
 
+# Experiment 1: full and oracle tool list
+tool_lists=("full" "oracle")
 for domain in "${domains[@]}"; do
     for tool_list in "${tool_lists[@]}"; do
         CUDA_VISIBLE_DEVICES=$devices python run_simulation.py \
@@ -17,7 +18,7 @@ for domain in "${domains[@]}"; do
     done
 done
 
-# Experiment 2: Full and Env Tool List on Five Domains with React
+# Experiment 2: prompt approach: react and act-only
 methods=("react" "act-only")
 tool_list="full"
 for domain in "${domains[@]}"; do
@@ -38,7 +39,7 @@ tool_list="full"
 for domain in "${domains[@]}"; do
     CUDA_VISIBLE_DEVICES=$devices python run_simulation.py \
             --domain $domain \
-            --user_model gpt-4o \
+            --user_model adv \
             --assistant_model $model \
             --env_mode prompt \
             --tool_list $tool_list \

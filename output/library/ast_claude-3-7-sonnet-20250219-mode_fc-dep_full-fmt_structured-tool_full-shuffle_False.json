@@ -454,7 +454,7 @@
         "evaluations": [
             {
                 "user_goal": "add_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 2,
@@ -490,7 +490,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -943,7 +948,7 @@
         "evaluations": [
             {
                 "user_goal": "add_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 2,
@@ -979,7 +984,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -1413,7 +1423,7 @@
         "evaluations": [
             {
                 "user_goal": "add_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 2,
@@ -1449,7 +1459,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -1903,7 +1918,7 @@
         "evaluations": [
             {
                 "user_goal": "add_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 2,
@@ -1939,7 +1954,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -2389,7 +2409,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 2,
@@ -2425,7 +2445,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -2817,7 +2842,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 2,
@@ -2853,7 +2878,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -3284,7 +3314,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 2,
@@ -3320,7 +3350,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -3772,7 +3807,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 2,
@@ -3808,7 +3843,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -4296,7 +4336,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 2,
@@ -4332,7 +4372,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -4877,7 +4922,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 3,
@@ -4913,7 +4958,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -5475,7 +5525,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 3,
@@ -5511,7 +5561,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -6136,7 +6191,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 4,
@@ -6172,7 +6227,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -6779,7 +6839,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 4,
@@ -6815,7 +6875,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -7440,7 +7505,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 4,
@@ -7476,7 +7541,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -7990,7 +8060,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 3,
@@ -8026,7 +8096,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -8599,7 +8674,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 11,
                 "num_function_calls": 8,
                 "num_constraints": 3,
@@ -8635,7 +8710,12 @@
             "avg_num_function_calls": 8.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -9336,7 +9416,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 5,
@@ -9372,7 +9452,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -10054,7 +10139,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 5,
@@ -10090,7 +10175,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -10770,7 +10860,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 5,
@@ -10806,7 +10896,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -11433,7 +11528,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 5,
@@ -11469,7 +11564,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -12130,7 +12230,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 5,
@@ -12166,7 +12266,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -12775,7 +12880,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 4,
@@ -12811,7 +12916,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -13403,7 +13513,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 4,
@@ -13439,7 +13549,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -14048,7 +14163,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 4,
@@ -14084,7 +14199,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -14773,7 +14893,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 11,
                 "num_function_calls": 8,
                 "num_constraints": 5,
@@ -14809,7 +14929,12 @@
             "avg_num_function_calls": 8.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -15481,7 +15606,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 5,
@@ -15517,7 +15642,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -16206,7 +16336,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 11,
                 "num_function_calls": 8,
                 "num_constraints": 5,
@@ -16242,7 +16372,12 @@
             "avg_num_function_calls": 8.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -16937,7 +17072,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 11,
                 "num_function_calls": 8,
                 "num_constraints": 5,
@@ -16973,7 +17108,12 @@
             "avg_num_function_calls": 8.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -17613,7 +17753,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 5,
@@ -17649,7 +17789,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -18319,7 +18464,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 6,
@@ -18355,7 +18500,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -19101,7 +19251,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 6,
@@ -19137,7 +19287,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -19900,7 +20055,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 11,
                 "num_function_calls": 8,
                 "num_constraints": 6,
@@ -19936,7 +20091,12 @@
             "avg_num_function_calls": 8.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -20684,7 +20844,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 6,
@@ -20720,7 +20880,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -21485,7 +21650,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 11,
                 "num_function_calls": 8,
                 "num_constraints": 6,
@@ -21521,7 +21686,12 @@
             "avg_num_function_calls": 8.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -22286,7 +22456,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 11,
                 "num_function_calls": 8,
                 "num_constraints": 6,
@@ -22322,7 +22492,12 @@
             "avg_num_function_calls": 8.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -23068,7 +23243,7 @@
         "evaluations": [
             {
                 "user_goal": "borrow_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 6,
@@ -23104,7 +23279,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -23545,7 +23725,7 @@
         "evaluations": [
             {
                 "user_goal": "check_return_date",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 2,
@@ -23581,7 +23761,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -24003,7 +24188,7 @@
         "evaluations": [
             {
                 "user_goal": "check_return_date",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 2,
@@ -24039,7 +24224,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -24535,7 +24725,7 @@
         "evaluations": [
             {
                 "user_goal": "check_return_date",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 2,
@@ -24571,7 +24761,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -25079,7 +25274,7 @@
         "evaluations": [
             {
                 "user_goal": "check_return_date",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 2,
@@ -25115,7 +25310,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -25557,7 +25757,7 @@
         "evaluations": [
             {
                 "user_goal": "credit_balance",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 1,
@@ -25593,7 +25793,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -25941,7 +26146,7 @@
         "evaluations": [
             {
                 "user_goal": "credit_balance",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -25977,7 +26182,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -26296,7 +26506,7 @@
         "evaluations": [
             {
                 "user_goal": "credit_balance",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 0,
                 "num_constraints": 1,
@@ -26332,7 +26542,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -26680,7 +26895,7 @@
         "evaluations": [
             {
                 "user_goal": "credit_balance",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -26716,7 +26931,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -27080,7 +27300,7 @@
         "evaluations": [
             {
                 "user_goal": "get_account_balance",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -27116,7 +27336,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -27433,7 +27658,7 @@
         "evaluations": [
             {
                 "user_goal": "get_account_balance",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 0,
                 "num_constraints": 1,
@@ -27469,7 +27694,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -27834,7 +28064,7 @@
         "evaluations": [
             {
                 "user_goal": "get_account_balance",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 1,
@@ -27870,7 +28100,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -28174,7 +28409,7 @@
         "evaluations": [
             {
                 "user_goal": "login_user",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 4,
                 "num_function_calls": 1,
                 "num_constraints": 0,
@@ -28210,7 +28445,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 0.0,
             "avg_num_constraints_expanded": 0.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -28608,7 +28848,7 @@
         "evaluations": [
             {
                 "user_goal": "logout_user",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 2,
@@ -28644,7 +28884,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 2.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -29130,7 +29375,7 @@
         "evaluations": [
             {
                 "user_goal": "pay_late_fee",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 2,
@@ -29166,7 +29411,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -29690,7 +29940,7 @@
         "evaluations": [
             {
                 "user_goal": "pay_late_fee",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 2,
@@ -29726,7 +29976,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -30225,7 +30480,7 @@
         "evaluations": [
             {
                 "user_goal": "remove_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 3,
@@ -30261,7 +30516,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -30785,7 +31045,7 @@
         "evaluations": [
             {
                 "user_goal": "remove_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 3,
@@ -30821,7 +31081,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -31280,7 +31545,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 2,
@@ -31316,7 +31581,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -31844,7 +32114,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 2,
@@ -31880,7 +32150,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -32408,7 +32683,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 2,
@@ -32444,7 +32719,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -33066,7 +33346,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 10,
                 "num_function_calls": 10,
                 "num_constraints": 3,
@@ -33102,7 +33382,12 @@
             "avg_num_function_calls": 10.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -33723,7 +34008,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 10,
                 "num_function_calls": 10,
                 "num_constraints": 3,
@@ -33759,7 +34044,12 @@
             "avg_num_function_calls": 10.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -34362,7 +34652,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 3,
@@ -34398,7 +34688,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -35070,7 +35365,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 11,
                 "num_function_calls": 9,
                 "num_constraints": 4,
@@ -35106,7 +35401,12 @@
             "avg_num_function_calls": 9.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -35778,7 +36078,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 11,
                 "num_function_calls": 9,
                 "num_constraints": 4,
@@ -35814,7 +36114,12 @@
             "avg_num_function_calls": 9.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -36493,7 +36798,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 11,
                 "num_function_calls": 9,
                 "num_constraints": 4,
@@ -36529,7 +36834,12 @@
             "avg_num_function_calls": 9.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -37168,7 +37478,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 9,
                 "num_function_calls": 6,
                 "num_constraints": 4,
@@ -37204,7 +37514,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -37871,7 +38186,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 11,
                 "num_function_calls": 8,
                 "num_constraints": 4,
@@ -37907,7 +38222,12 @@
             "avg_num_function_calls": 8.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -38555,7 +38875,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 10,
                 "num_function_calls": 7,
                 "num_constraints": 4,
@@ -38591,7 +38911,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -39270,7 +39595,7 @@
         "evaluations": [
             {
                 "user_goal": "reserve_room",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 11,
                 "num_function_calls": 9,
                 "num_constraints": 4,
@@ -39306,7 +39631,12 @@
             "avg_num_function_calls": 9.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -39764,7 +40094,7 @@
         "evaluations": [
             {
                 "user_goal": "return_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 2,
@@ -39800,7 +40130,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -40241,7 +40576,7 @@
         "evaluations": [
             {
                 "user_goal": "return_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 2,
@@ -40277,7 +40612,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -40835,7 +41175,7 @@
         "evaluations": [
             {
                 "user_goal": "return_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 11,
                 "num_function_calls": 9,
                 "num_constraints": 2,
@@ -40871,7 +41211,12 @@
             "avg_num_function_calls": 9.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -41367,7 +41712,7 @@
         "evaluations": [
             {
                 "user_goal": "return_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 8,
                 "num_function_calls": 5,
                 "num_constraints": 2,
@@ -41403,7 +41748,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -41749,7 +42099,7 @@
         "evaluations": [
             {
                 "user_goal": "show_available_book",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -41785,7 +42135,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -42121,7 +42476,7 @@
         "evaluations": [
             {
                 "user_goal": "show_available_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 1,
                 "num_constraints": 1,
@@ -42157,7 +42512,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -42503,7 +42863,7 @@
         "evaluations": [
             {
                 "user_goal": "show_available_book",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -42539,7 +42899,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -42885,7 +43250,7 @@
         "evaluations": [
             {
                 "user_goal": "show_available_rooms",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -42921,7 +43286,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -43266,7 +43636,7 @@
         "evaluations": [
             {
                 "user_goal": "show_available_rooms",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -43302,7 +43672,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -43648,7 +44023,7 @@
         "evaluations": [
             {
                 "user_goal": "show_available_rooms",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 5,
                 "num_function_calls": 2,
                 "num_constraints": 1,
@@ -43684,7 +44059,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -44149,7 +44529,7 @@
         "evaluations": [
             {
                 "user_goal": "update_membership",
-                "action_should_succeed": 1,
+                "action_should_succeed": true,
                 "num_messages": 7,
                 "num_function_calls": 4,
                 "num_constraints": 2,
@@ -44185,7 +44565,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -44631,7 +45016,7 @@
         "evaluations": [
             {
                 "user_goal": "update_membership",
-                "action_should_succeed": 0,
+                "action_should_succeed": false,
                 "num_messages": 6,
                 "num_function_calls": 3,
                 "num_constraints": 2,
@@ -44667,7 +45052,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     }
 ]

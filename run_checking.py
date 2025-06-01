@@ -251,5 +251,6 @@ def main():
         print(f"\n{Fore.YELLOW}Press Enter to continue to next scenario...{Style.RESET_ALL}")
         input()
 
+        
 if __name__ == "__main__":
     main() 

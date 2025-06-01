@@ -326,11 +326,33 @@ def interaction_statistics(all_evaluation_results:list,
     pass_at_k = len(all_evaluation_results) if pass_at_amount < 0 else min(len(all_evaluation_results), pass_at_amount)
     task_succeeded = False
     num_chars = int(math.log10(len(all_evaluation_results)+1)+1)
+    
+    # Track individual run pass rates
+    per_run_pass_rates = {}
     for i in range(pass_at_k):
         eval_res = all_evaluation_results[i]
+        # Add per-run success tracking
+        run_num = i + 1
+        per_run_pass_rates[f"run_{run_num}_pass"] = int(eval_res["success"])
+        
         if not task_succeeded and eval_res["success"]: task_succeeded=True
         num_chars_part = int(math.log10(i+1)+1)
         statistics[f"total_pass@{'0'*(num_chars-num_chars_part)}{i+1}"] = int(task_succeeded)
+    
+    # Calculate overall per-run pass rate and standard deviation
+    if pass_at_k > 0:
+        pass_values = [per_run_pass_rates[f"run_{i+1}_pass"] for i in range(pass_at_k)]
+        statistics["per_run_pass_rates"] = per_run_pass_rates
+        statistics["mean_pass_rate"] = sum(pass_values) / len(pass_values)
+        
+        # Calculate standard deviation
+        if len(pass_values) > 1:
+            mean = statistics["mean_pass_rate"]
+            variance = sum((x - mean) ** 2 for x in pass_values) / len(pass_values)
+            statistics["std_pass_rate"] = math.sqrt(variance)
+        else:
+            statistics["std_pass_rate"] = 0.0
+    
     return statistics
 
 # calculates the statistics of the entire run
@@ -347,10 +369,49 @@ def domain_statistics(all_statistics_results:list[dict], ex_task_eval_res:dict, 
     ds = domain_statistics = {key:0 if key.find("total_")==0 else {}
         for key in ex_task_stat_res
         if any(key.find(word)==0 for word in allowed_statistic_types)}
+    
+    # Initialize per-run pass rate tracking
+    run_counts = {}
+    run_successes = {}
+    
+    # Process each task's statistics
     for task_stat_res in all_statistics_results:
+        # Add the regular statistics
         for key in task_stat_res:
             if key.find("total_")==0: ds[key] += task_stat_res[key]
             elif key.find("distr_")==0: ds[key] = Counter(ds[key]) + Counter(task_stat_res[key])
+        
+        # Process per-run pass rates if available
+        if "per_run_pass_rates" in task_stat_res:
+            for run_key, pass_value in task_stat_res["per_run_pass_rates"].items():
+                if run_key not in run_successes:
+                    run_successes[run_key] = 0
+                    run_counts[run_key] = 0
+                run_successes[run_key] += pass_value
+                run_counts[run_key] += 1
+    
+    # Calculate the per-run pass rates across all tasks
+    if run_counts:
+        ds["per_run_pass_rates"] = {}
+        pass_rates = []
+        
+        for run_key in sorted(run_counts.keys()):
+            pass_rate = run_successes[run_key] / run_counts[run_key] if run_counts[run_key] > 0 else 0
+            ds["per_run_pass_rates"][run_key] = pass_rate
+            pass_rates.append(pass_rate)
+        
+        # Calculate mean and std of per-run pass rates
+        if pass_rates:
+            ds["mean_pass_rate"] = sum(pass_rates) / len(pass_rates)
+            
+            # Calculate standard deviation
+            if len(pass_rates) > 1:
+                mean = ds["mean_pass_rate"]
+                variance = sum((x - mean) ** 2 for x in pass_rates) / len(pass_rates)
+                ds["std_pass_rate"] = math.sqrt(variance)
+            else:
+                ds["std_pass_rate"] = 0.0
+    
     # calculating proportion and averages
     def get_underlying_attribute(attribute:str, statistic_types:list[str])->str:
         for stat_type in statistic_types:

@@ -525,7 +525,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -1049,7 +1054,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -1548,7 +1558,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -2029,7 +2044,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -2506,7 +2526,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -3004,7 +3029,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -3434,7 +3464,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -3891,7 +3926,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -4368,7 +4408,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -5021,7 +5066,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -5672,7 +5722,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 6.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -6292,7 +6347,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -6913,7 +6973,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -7533,7 +7598,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 7.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -8055,7 +8125,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -8629,7 +8704,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -9300,7 +9380,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -9996,7 +10081,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -10665,7 +10755,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -11363,7 +11458,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -12059,7 +12159,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 10.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -12782,7 +12887,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -13435,7 +13545,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -14058,7 +14173,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -14773,7 +14893,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -15515,7 +15640,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -16180,7 +16310,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -16926,7 +17061,12 @@
             "avg_num_function_calls": 6.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -17627,7 +17767,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 5.0,
             "avg_num_constraints_expanded": 9.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -18368,7 +18513,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -19084,7 +19234,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -19826,7 +19981,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -20544,7 +20704,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -21260,7 +21425,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -22099,7 +22269,12 @@
             "avg_num_function_calls": 7.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -22840,7 +23015,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 6.0,
             "avg_num_constraints_expanded": 12.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -23396,7 +23576,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -23877,7 +24062,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -24425,7 +24615,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -24919,7 +25114,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -25350,7 +25550,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -25713,7 +25918,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -26097,7 +26307,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -26485,7 +26700,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -26914,7 +27134,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -27296,7 +27521,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -27682,7 +27912,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -28045,7 +28280,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 0.0,
             "avg_num_constraints_expanded": 0.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -28508,7 +28748,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 2.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -29077,7 +29322,12 @@
             "avg_num_function_calls": 5.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -29574,7 +29824,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -30150,7 +30405,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -30682,7 +30942,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -31232,7 +31497,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -31780,7 +32050,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -32328,7 +32603,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -32937,7 +33217,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -33523,7 +33808,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -34096,7 +34386,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 3.0,
             "avg_num_constraints_expanded": 5.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -34764,7 +35059,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -35432,7 +35732,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -36100,7 +36405,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -36778,7 +37088,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -37446,7 +37761,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -38114,7 +38434,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -38784,7 +39109,12 @@
             "avg_num_function_calls": 4.0,
             "avg_num_constraints": 4.0,
             "avg_num_constraints_expanded": 8.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -39313,7 +39643,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -39794,7 +40129,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -40323,7 +40663,12 @@
             "avg_num_function_calls": 3.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -40827,7 +41172,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 4.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -41260,7 +41610,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -41642,7 +41997,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -42028,7 +42388,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -42414,7 +42779,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -42774,7 +43144,12 @@
             "avg_num_function_calls": 0.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -43160,7 +43535,12 @@
             "avg_num_function_calls": 1.0,
             "avg_num_constraints": 1.0,
             "avg_num_constraints_expanded": 1.0,
-            "total_pass@1": 1
+            "total_pass@1": 1,
+            "per_run_pass_rates": {
+                "run_1_pass": 1
+            },
+            "mean_pass_rate": 1.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -43652,7 +44032,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     },
     {
@@ -44144,7 +44529,12 @@
             "avg_num_function_calls": 2.0,
             "avg_num_constraints": 2.0,
             "avg_num_constraints_expanded": 3.0,
-            "total_pass@1": 0
+            "total_pass@1": 0,
+            "per_run_pass_rates": {
+                "run_1_pass": 0
+            },
+            "mean_pass_rate": 0.0,
+            "std_pass_rate": 0.0
         }
     }
 ]

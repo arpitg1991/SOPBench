@@ -2,7 +2,7 @@ cd ..
 devices="0"
 
 model="gpt-4o-mini"
-domains=("dmv" "healthcare" "library" "online_market" "bank")
+domains=("dmv" "healthcare" "library" "online_market" "bank" "hotel" "university")
 tool_lists=("full" "oracle")
 method="react"
 

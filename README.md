@@ -79,13 +79,15 @@ The following command line arguments control the simulation and evaluation:
 
 ### Data Preparation
 
-Pre-generated data is provided in the `data` folder. You can also download the data from [Huggingface](https://huggingface.co/datasets/Zekunli/SOPBench).
+The framework comes with pre-generated task data in the `data` folder. Alternatively, you can download the complete dataset from [Huggingface](https://huggingface.co/datasets/Zekunli/SOPBench).
 
 To generate new data (note that generating each task using GPT-4o costs approximately $0.015 USD):
 
 ```bash
-python run_generation.py
+python run_datagen.py
 ```
+
+The code will run data generation and verification (format verification and constraint verification). If failed, it will start re-generation. The whole process is fully automated.
 
 ### Running Simulations
 

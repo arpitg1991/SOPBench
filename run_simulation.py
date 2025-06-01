@@ -395,7 +395,7 @@ def main():
             num_retry = 0
             while len(runs) < args.num_run_per_interaction and num_retry <= args.max_num_retries:
                 try:
-                    print(f"Start Task {i}: {tasks[i]['user_goal']}, retry {num_retry} / {args.max_num_retries}")
+                    print(f"Start Task {i}: {tasks[i]['user_goal']}, runs: {len(runs)} / {args.num_run_per_interaction}, retry: {num_retry} / {args.max_num_retries}")
                     if num_retry == 0:
                         assistant_agent.temperature = args.assistant_temperature
                         assistant_agent.top_p = args.assistant_top_p
@@ -427,12 +427,14 @@ def main():
                     
                     # save the interaction result
                     runs.append(result)
-                
+                    
+                    # print the current runs and retry information
+                    print(f"Current run finished: {len(runs)} / {args.num_run_per_interaction}, retry: {num_retry} / {args.max_num_retries}")
+                    
                 except Exception as e:
                     print(f"An error occurred during task {i}: {e.__class__.__name__}: {e}")
                     print("Full traceback:")
                     traceback.print_exc()
-                    # _ = input("Press Enter to continue retrying...")
                     num_retry += 1
                     continue
             

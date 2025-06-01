@@ -31,7 +31,11 @@ def save_results(output_file, results, verbose=False):
     """
     try:
         # Add debug print before saving
-        print(f"Saving {len(results)} results. First result has evaluations: {'evaluations' in results[0] if results else False}")
+        has_evaluations = False
+        if results and len(results) > 0:
+            has_evaluations = 'evaluations' in results[0]
+        print(f"Saving {len(results)} results. First result has evaluations: {has_evaluations}")
+        
         with open(output_file, 'w', encoding='utf-8') as f: json.dump(results, f, indent=4)
         if verbose: print(f"Results saved successfully to {output_file}")
     except Exception as e: print(f"Error saving results to {output_file}: {str(e)}")
@@ -55,7 +59,7 @@ def load_existing_results(output_file):
     return []
 
 def get_domain_results_str(domain:str, domain_stats:dict, indent_amount:int=2,
-    separate_out_keys:list[str]=["distr_user_goal", "goal_statistics", "group_statistics", "error_statistics"])->str:
+    separate_out_keys:list[str]=["distr_user_goal", "goal_statistics", "group_statistics", "error_statistics", "per_run_pass_rates"])->str:
     """
     Returns the string of a nicely formatted domain statistics results
     Args:
@@ -72,8 +76,29 @@ def get_domain_results_str(domain:str, domain_stats:dict, indent_amount:int=2,
         if key in domain_stats:
             title_word_list = [w[0].upper() + w[1:] for w in key.split('_')]
             title_str = ' '.join(title_word_list)
-            domain_results_str += f"\n\n{get_title_str(title_str)}"\
-                +f"\n{get_dict_json_str(domain_stats[key], indent_amount=indent_amount)}"
+            
+            # Add special formatting for per-run pass rates
+            if key == "per_run_pass_rates":
+                pass_rates_str = json.dumps(domain_stats[key], indent=indent_amount)
+                mean_rate = domain_stats.get("mean_pass_rate", "N/A")
+                std_rate = domain_stats.get("std_pass_rate", "N/A")
+                domain_results_str += f"\n\n{get_title_str(title_str)}"\
+                    + f"\n{pass_rates_str}"\
+                    + f"\nMean Pass Rate: {mean_rate:.4f}"\
+                    + f"\nStandard Deviation: {std_rate:.4f}"
+            # Add special formatting for goal statistics to show success rate per user goal
+            elif key == "goal_statistics":
+                domain_results_str += f"\n\n{get_title_str(title_str)}"\
+                    + f"\n{get_dict_json_str(domain_stats[key], indent_amount=indent_amount)}"
+                # Add success rate per user goal
+                domain_results_str += f"\n\n{get_title_str('Success Rate Per User Goal')}"
+                success_rates = {}
+                for goal, stats in domain_stats[key].items():
+                    success_rates[goal] = stats.get("success_rate", 0)
+                domain_results_str += f"\n{json.dumps(success_rates, indent=indent_amount)}"
+            else:
+                domain_results_str += f"\n\n{get_title_str(title_str)}"\
+                    +f"\n{get_dict_json_str(domain_stats[key], indent_amount=indent_amount)}"
     return domain_results_str
 
 
@@ -95,7 +120,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--verbose", action="store_true", help="Whether to print verbose output")
     # Data settings
     parser.add_argument("--output_dir", type=str, default="./output", help="Output directory")
-    parser.add_argument("--domain", type=str, default="bank", choices=["bank", "online_market", "dmv", "healthcare", "library", "all"], help="Domain name")
+    parser.add_argument("--domain", type=str, default="bank", choices=["bank", "online_market", "dmv", "healthcare", "library", "hotel", "university", "all"], help="Domain name")
     parser.add_argument("--indent_amount", type=int, default=2, help="controls the indent amount when writing to a file")
     args = parser.parse_args()
     return args
@@ -110,6 +135,7 @@ def main():
     ex_task_eval_res = None
     ex_task_stat_res = None
     combined_results = {}
+    goal_distribution = {}
     for current_domain in domains_to_process:
         # Setup output path
         output_dir = f"{args.output_dir}/{current_domain}"
@@ -161,8 +187,10 @@ def main():
         for idx, task_simulation in tqdm(enumerate(task_simulations), desc="Evaluating task simulations"):
             user_goal = task_simulation["task"]["user_goal"]
             evaluations = []
+            # Limit interactions to top num_run_per_interaction
+            limited_interactions = task_simulation["interactions"][:args.num_run_per_interaction]
             # run and record evaluations
-            for interaction_log in task_simulation["interactions"]:
+            for interaction_log in limited_interactions:
                 results = {"final_database": interaction_log["database"]}
                 interaction = interaction_log["interaction"]
                 # collect the function call and response
@@ -217,6 +245,8 @@ def main():
             updated_simulation = copy.deepcopy(task_simulation)
             updated_simulation["evaluations"] = evaluations
             updated_simulation["statistics"] = stats
+            # Trim interactions to only include the top num_run_per_interaction
+            updated_simulation["interactions"] = limited_interactions
             updated_task_simulations.append(updated_simulation)
         for stat in all_stats:
             if not ex_task_stat_res or len(ex_task_stat_res) < len(stat): ex_task_stat_res = stat
@@ -233,14 +263,19 @@ def main():
         domain_stats["assistant_model"] = args.assistant_model,
         domain_stats["domain"] = current_domain
         # collected statistics
-        domain_stats["goal_statistics"] = goal_statistics
+        # domain_stats["goal_statistics"] = goal_statistics
         domain_stats["group_statistics"] = group_statistics
         domain_stats["error_statistics"] = error_statistics
+        goal_distribution[current_domain] = goal_statistics
         # Save the updated task simulations
         save_results(new_output_file, updated_task_simulations, verbose=True)
         if args.domain == "all": combined_results[current_domain] = domain_stats
+        
     # Aggregate results if needed
-    if args.domain != "all": print(get_domain_results_str(args.domain, domain_stats, args.indent_amount))
+    if args.domain != "all": 
+        # Use the same separate_out_keys as for "all" domains to ensure per_run_pass_rates is shown
+        separate_out_keys = ["distr_user_goal", "group_statistics", "error_statistics", "per_run_pass_rates"]
+        print(get_domain_results_str(args.domain, domain_stats, args.indent_amount, separate_out_keys))
     else:
         # combine the domain statistics
         combined_domain_stats = domain_statistics([combined_results[key] for key in combined_results], ex_task_eval_res, ex_task_stat_res)
@@ -256,7 +291,8 @@ def main():
         combined_error_statistics = combine_list_numerical_dicts([combined_results[key]["error_statistics"] for key in combined_results])   
         combined_domain_stats["error_statistics"] = combined_error_statistics
         # print the result
-        separate_out_keys = ["distr_user_goal", "group_statistics", "error_statistics"]
+        separate_out_keys = ["distr_user_goal", "group_statistics", "error_statistics", "per_run_pass_rates"]
         print(get_domain_results_str(args.domain, combined_domain_stats, args.indent_amount, separate_out_keys))
+
         
 if __name__ == "__main__": main()
