@@ -11,139 +11,14 @@
 
 <p align="center"><img width="100%" src="assets/overview-v8.png" /></p>
 
-This repository contains the data and code for the paper: "SOPBench: Evaluating Language Agents at Following Standard Operating Procedures and Constraints".
-
-## Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/Leezekun/SOPBench.git
-cd SOPBench
-
-# Create and activate conda environment
-conda create -n agent python=3.10
-conda activate agent
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-## Configuration
-
-### API Keys Setup
-
-Create a `.env` file in the root directory with your API keys:
-
-```bash
-OPENAI_API_KEY=your_openai_api_key
-ANTHROPIC_API_KEY=your_anthropic_api_key
-GEMINI_API_KEY=your_gemini_api_key
-FIREWORKS_API_KEY=your_fireworks_api_key
-```
-
-### Supported Language Models
-
-The framework supports a wide range of language models through unified interfaces for both multi-turn inference and function calling:
-
-#### API-based Models
-
-- **OpenAI Models**
-  - GPT-4o Series: `gpt-4o`, `gpt-4o-mini`, `gpt-4.1`
-  - "o" Series: `o1`, `o3`, `o3-mini`, `o4-mini`
-- **Anthropic Models**
-  - Claude 3.5: `claude-3-5-sonnet-20241022`, `claude-3-5-haiku-20241022`
-  - Claude 3.7: `claude-3-7-sonnet-20250219`, `claude-3-7-sonnet-20250219-thinking`
-- **Google Gemini Models**
-  - Gemini 1.5: `gemini-1.5-flash`, `gemini-1.5-pro`
-  - Gemini 2.0: `gemini-2.0-flash-001`, `gemini-2.0-flash`, `gemini-2.0-flash-thinking-exp`
-  - Gemini 2.5: `gemini-2.5-pro-preview-03-25`, `gemini-2.5-flash-preview-04-17`
-- **Fireworks Models**
-  - Various models hosted on the Fireworks AI platform
-
-#### Local Inference
-- **OSS Models via vLLM**: Run open-source models locally with vLLM for efficient inference
-
-All models use a unified format for multi-turn inference and function calling, with backend-specific implementations that convert responses to a standardized format compatible with OpenAI's API.
-
-#### Adding Custom Models
-
-You can add or customize supported models by modifying the model lists in `swarm/constants.py`.
-
-## Usage
-
-### Key Parameters
-
-The following command line arguments control the simulation and evaluation:
-
-| Parameter | Description | Options |
-|-----------|-------------|---------|
-| `--domain` | Test domain | bank, online_market, dmv, healthcare, library, hotel, university |
-| `--user_model` | Model for user agent | Any supported model name, "human" for interactive mode, or None (default) |
-| `--assistant_model` | Model for assistant agent | Any supported model name |
-| `--env_mode` | Environment mode | "prompt" (without code constraint checking), "program" (with code constraint checking) |
-| `--tool_list` | Available tools | "full" (all tools), "oracle" (only the oracle-used tools for each case) |
-| `--tool_call_mode` | Tool call mode | "fc" (function calling), "react", "act-only" |
-
-### Data Preparation
-
-The framework comes with pre-generated task data in the `data` folder. Alternatively, you can download the complete dataset from [Huggingface](https://huggingface.co/datasets/Zekunli/SOPBench).
-
-To generate new data (note that generating each task using GPT-4o costs approximately $0.015 USD):
-
-```bash
-python run_datagen.py
-```
-
-The code will run data generation and verification (format verification and constraint verification). If failed, it will start re-generation. The whole process is fully automated.
-
-### Running Simulations
-
-```bash
-python run_simulation.py \
-  --domain [domain] \
-  --user_model [user_model] \
-  --assistant_model [assistant_model] \
-  --env_mode [env_mode] \
-  --tool_list [tool_list] \
-  --tool_call_mode [tool_call_mode]
-```
-
-### Running Evaluations
-
-```bash
-python run_evaluation.py \
-  --domain [domain] \
-  --user_model [user_model] \
-  --assistant_model [assistant_model] \
-  --tool_list [tool_list] \
-  --tool_call_mode [tool_call_mode]
-```
-
-### Reviewing Agent Trajectories
-
-To view agent trajectories and evaluation results:
-
-```bash
-python run_checking.py \
-  --output_dir [output_dir] \
-  --domain [domain] \
-  --assistant_model [assistant_model] \
-  --tool_call_mode [tool_call_mode] \
-  --default_constraint_option [default_constraint_option] \
-  --constraint_descr_format [constraint_descr_format] \
-  --tool_list [tool_list]
-```
-
-Over 24,000 agent trajectories are provided in the `output/` directory for reference.
+This repository contains the data and code for the paper: "SOPBench: Evaluating Language Agents at Following Standard Operating Procedures and Constraints". This benchmark is used to evaluate Language Agents at Following Standard Operating Procedures and Constraints across seven customer service domains.
 
 ## Results
-
-### Model Performance Across Domains
 
 The following table shows model pass rates (%) across seven domains. The overall score is averaged on cases from all domains.
 
 | **Model** | **Bank** | **DMV** | **Healthcare** | **Market** | **Univ** | **Library** | **Hotel** | **Overall** |
-|-----------|----------|---------|----------------|------------|----------|-------------|-----------|-------------|
+|:---------:|:--------:|:-------:|:--------------:|:----------:|:--------:|:-----------:|:---------:|:-----------:|
 | **_Reasoning Models_** | | | | | | | | |
 | o4-mini-high (FC) | 76.47 | 81.74 | 93.08 | 90.37 | 95.45 | 43.59 | 56.12 | 76.08 |
 | Gemini-2.0-Flash-Thinking (ReAct) | 77.12 | 73.91 | 83.08 | 53.48 | 93.18 | 55.13 | 62.24 | 67.66 |
@@ -165,6 +40,131 @@ The following table shows model pass rates (%) across seven domains. The overall
 | Qwen2.5-14B-Instruct (ReAct) | 32.03 | 53.91 | 29.23 | 39.04 | 27.27 | 30.77 | 15.31 | 31.89 |
 | Llama3.1-8B-Instruct (ReAct) | 13.73 | 20.00 | 20.00 | 19.25 | 25.00 | 32.05 | 0.51 | 15.84 |
 | Qwen2.5-7B-Instruct (ReAct) | 5.88 | 21.74 | 17.69 | 13.37 | 2.27 | 21.79 | 1.02 | 11.30 |
+
+## Getting Started
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Leezekun/SOPBench.git
+cd SOPBench
+
+# Create and activate conda environment
+conda create -n agent python=3.10
+conda activate agent
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Configuration
+
+#### API Keys Setup
+
+Create a `.env` file in the root directory with your API keys:
+
+```bash
+OPENAI_API_KEY=your_openai_api_key
+ANTHROPIC_API_KEY=your_anthropic_api_key
+GEMINI_API_KEY=your_gemini_api_key
+FIREWORKS_API_KEY=your_fireworks_api_key
+```
+
+#### Supported Language Models
+
+The framework supports a wide range of language models through unified interfaces for both multi-turn inference and function calling:
+
+##### API-based Models
+
+- **OpenAI Models**
+  - GPT-4o Series: `gpt-4o`, `gpt-4o-mini`, `gpt-4.1`
+  - "o" Series: `o1`, `o3`, `o3-mini`, `o4-mini`
+- **Anthropic Models**
+  - Claude 3.5: `claude-3-5-sonnet-20241022`, `claude-3-5-haiku-20241022`
+  - Claude 3.7: `claude-3-7-sonnet-20250219`, `claude-3-7-sonnet-20250219-thinking`
+- **Google Gemini Models**
+  - Gemini 1.5: `gemini-1.5-flash`, `gemini-1.5-pro`
+  - Gemini 2.0: `gemini-2.0-flash-001`, `gemini-2.0-flash`, `gemini-2.0-flash-thinking-exp`
+  - Gemini 2.5: `gemini-2.5-pro-preview-03-25`, `gemini-2.5-flash-preview-04-17`
+- **Fireworks Models**
+  - Various models hosted on the Fireworks AI platform
+
+##### Local Inference
+- **OSS Models via vLLM**: Run open-source models locally with vLLM for efficient inference
+
+All models use a unified format for multi-turn inference and function calling, with backend-specific implementations that convert responses to a standardized format compatible with OpenAI's API.
+
+##### Adding Custom Models
+
+You can add or customize supported models by modifying the model lists in `swarm/constants.py`.
+
+## Usage
+
+#### Key Parameters
+
+The following command line arguments control the simulation and evaluation:
+
+| Parameter | Description | Options |
+|-----------|-------------|---------|
+| `--domain` | Test domain | bank, online_market, dmv, healthcare, library, hotel, university |
+| `--user_model` | Model for user agent | Any supported model name, "human" for interactive mode, or None (default) |
+| `--assistant_model` | Model for assistant agent | Any supported model name |
+| `--env_mode` | Environment mode | "prompt" (without code constraint checking), "program" (with code constraint checking) |
+| `--tool_list` | Available tools | "full" (all tools), "oracle" (only the oracle-used tools for each case) |
+| `--tool_call_mode` | Tool call mode | "fc" (function calling), "react", "act-only" |
+
+#### Data Preparation
+
+The framework comes with pre-generated task data in the `data` folder. Alternatively, you can download the complete dataset from [Huggingface](https://huggingface.co/datasets/Zekunli/SOPBench).
+
+To generate new data (note that generating each task using GPT-4o costs approximately $0.015 USD):
+
+```bash
+python run_datagen.py
+```
+
+The code will run data generation and verification (format verification and constraint verification). If failed, it will start re-generation. The whole process is fully automated.
+
+#### Running Simulations
+
+```bash
+python run_simulation.py \
+  --domain [domain] \
+  --user_model [user_model] \
+  --assistant_model [assistant_model] \
+  --env_mode [env_mode] \
+  --tool_list [tool_list] \
+  --tool_call_mode [tool_call_mode]
+```
+
+#### Running Evaluations
+
+```bash
+python run_evaluation.py \
+  --domain [domain] \
+  --user_model [user_model] \
+  --assistant_model [assistant_model] \
+  --tool_list [tool_list] \
+  --tool_call_mode [tool_call_mode]
+```
+
+#### Reviewing Agent Trajectories
+
+To view agent trajectories and evaluation results:
+
+```bash
+python run_checking.py \
+  --output_dir [output_dir] \
+  --domain [domain] \
+  --assistant_model [assistant_model] \
+  --tool_call_mode [tool_call_mode] \
+  --default_constraint_option [default_constraint_option] \
+  --constraint_descr_format [constraint_descr_format] \
+  --tool_list [tool_list]
+```
+
+Over 24,000 agent trajectories are provided in the `output/` directory for reference.
 
 ## Project Structure
 
