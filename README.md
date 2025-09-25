@@ -9,31 +9,31 @@ This repository contains the data and code for the paper: "SOPBench: Evaluating 
 
 ## Results
 
-The following table shows model pass rates (%) across seven domains. The overall score is averaged on cases from all domains.
+The following table shows model pass rates (%) across seven domains.
 
-| **Model** | **Bank** | **DMV** | **Healthcare** | **Market** | **Univ** | **Library** | **Hotel** | **Overall** |
-|:---------:|:--------:|:-------:|:--------------:|:----------:|:--------:|:-----------:|:---------:|:-----------:|
-| **_Reasoning Models_** | | | | | | | | |
-| o4-mini-high (FC) | 76.47 | 81.74 | 93.08 | 90.37 | 95.45 | 43.59 | 56.12 | 76.08 |
-| Gemini-2.0-Flash-Thinking (ReAct) | 77.12 | 73.91 | 83.08 | 53.48 | 93.18 | 55.13 | 62.24 | 67.66 |
-| Deepseek-R1 (ReAct) | 55.56 | 79.13 | 55.38 | 71.66 | 77.27 | 57.69 | 51.02 | 62.13 |
-| Claude-3.7-Sonnet-Thinking (FC) | 71.90 | 72.17 | 73.85 | 50.80 | 70.45 | 34.62 | 23.47 | 53.27 |
-| **_Proprietary Non-reasoning Models_** | | | | | | | | |
-| GPT-4.1 (FC) | 71.89 | 78.26 | 80.00 | 81.82 | 52.27 | 61.54 | 42.86 | 67.22 |
-| GPT-4o (FC) | 64.71 | 80.87 | 73.85 | 63.64 | 68.18 | 65.38 | 39.80 | 62.13 |
-| Claude-3-7-Sonnet (FC) | 69.28 | 70.43 | 72.31 | 58.29 | 68.18 | 37.18 | 23.98 | 54.26 |
-| GPT-4.1-mini (FC) | 62.75 | 73.91 | 67.69 | 58.82 | 38.64 | 25.64 | 7.65 | 47.07 |
-| Claude-3-5-Sonnet (FC) | 71.90 | 50.43 | 39.23 | 43.32 | 52.27 | 33.33 | 15.82 | 41.42 |
-| GPT-4o-mini (FC) | 34.64 | 70.43 | 26.15 | 45.99 | 40.91 | 46.15 | 41.33 | 42.64 |
-| Gemini-2.0-Flash (FC) | 56.86 | 54.78 | 23.08 | 40.11 | 34.09 | 26.92 | 7.65 | 33.33 |
-| Gemini-1.5-Pro (FC) | 54.25 | 60.00 | 18.46 | 34.22 | 63.64 | 26.92 | 12.37 | 34.18 |
-| **_Open-source Models_** | | | | | | | | |
-| Llama3.1-70B-Instruct (ReAct) | 43.79 | 66.96 | 56.15 | 40.44 | 45.45 | 42.86 | 14.29 | 41.20 |
-| Qwen2.5-72B-Instruct (ReAct) | 32.68 | 61.74 | 28.46 | 41.71 | 38.64 | 38.46 | 14.29 | 34.44 |
-| Qwen2.5-32B-Instruct (ReAct) | 41.83 | 53.04 | 42.31 | 46.52 | 56.82 | 37.18 | 18.88 | 39.65 |
-| Qwen2.5-14B-Instruct (ReAct) | 32.03 | 53.91 | 29.23 | 39.04 | 27.27 | 30.77 | 15.31 | 31.89 |
-| Llama3.1-8B-Instruct (ReAct) | 13.73 | 20.00 | 20.00 | 19.25 | 25.00 | 32.05 | 0.51 | 15.84 |
-| Qwen2.5-7B-Instruct (ReAct) | 5.88 | 21.74 | 17.69 | 13.37 | 2.27 | 21.79 | 1.02 | 11.30 |
+| **Model** | **Bank** | **DMV** | **Healthcare** | **Market** | **University** | **Library** | **Hotel** |
+|:---------:|:--------:|:-------:|:--------------:|:----------:|:--------------:|:-----------:|:---------:|
+| **_Proprietary Reasoning Models_** | | | | | | | |
+| GPT-5 (FC) | 71.64 | 84.54 | 76.61 | 69.77 | 88.10 | 66.67 | 67.18 |
+| o4-mini-high (FC) | 76.87 | 83.51 | 92.74 | 89.53 | 95.24 | 34.85 | 55.90 |
+| GPT-5-mini (FC) | 58.96 | 82.47 | 92.74 | 75.58 | 95.24 | 34.85 | 69.74 |
+| Gemini-2.5-Flash (FC) | 67.91 | 81.44 | 87.90 | 77.91 | 83.33 | 51.52 | 42.56 |
+| Deepseek-R1 (ReAct) | 54.48 | 81.44 | 54.03 | 70.41 | 76.19 | 54.55 | 50.77 |
+| **_Proprietary Non-reasoning Models_** | | | | | | | |
+| GPT-4.1 (FC) | 69.40 | 79.38 | 79.03 | 80.81 | 50.00 | 57.58 | 42.56 |
+| GPT-4o (FC) | 58.96 | 80.41 | 73.39 | 61.63 | 66.67 | 60.61 | 39.49 |
+| Claude-3-7-Sonnet (FC) | 65.67 | 70.10 | 70.97 | 56.98 | 66.67 | 27.27 | 23.59 |
+| GPT-4.1-mini (FC) | 57.46 | 76.29 | 66.13 | 56.40 | 35.71 | 18.18 | 7.18 |
+| GPT-4o-mini (FC) | 33.58 | 73.20 | 25.00 | 43.60 | 38.10 | 42.42 | 41.03 |
+| Claude-3-5-Sonnet (FC) | 71.90 | 50.43 | 39.23 | 43.32 | 52.27 | 33.33 | 15.82 |
+| Gemini-2.0-Flash (FC) | 52.99 | 51.55 | 21.77 | 38.37 | 30.95 | 19.70 | 7.18 |
+| **_Open-source Models_** | | | | | | | |
+| Llama3.1-70B-Instruct (ReAct) | 42.54 | 65.98 | 54.84 | 37.21 | 42.86 | 34.85 | 13.85 |
+| Qwen2.5-72B-Instruct (ReAct) | 35.07 | 68.04 | 27.42 | 40.12 | 35.71 | 34.85 | 13.85 |
+| Qwen2.5-32B-Instruct (ReAct) | 40.30 | 52.58 | 41.13 | 44.19 | 54.76 | 27.27 | 18.46 |
+| Qwen2.5-14B-Instruct (ReAct) | 35.07 | 57.73 | 29.03 | 35.47 | 23.81 | 25.76 | 14.87 |
+| Llama3.1-8B-Instruct (ReAct) | 14.93 | 18.56 | 20.16 | 16.28 | 23.81 | 30.30 | 0.00 |
+| Qwen2.5-7B-Instruct (ReAct) | 5.22 | 20.62 | 16.94 | 9.30 | 0.00 | 15.15 | 0.51 |
 
 ## Getting Started
 
@@ -69,6 +69,7 @@ The framework supports a wide range of language models through unified interface
 ##### API-based Models
 
 - **OpenAI Models**
+  - GPT-5 Series: `gpt-5`, `gpt-5-mini`
   - GPT-4o Series: `gpt-4o`, `gpt-4o-mini`, `gpt-4.1`
   - "o" Series: `o1`, `o3`, `o3-mini`, `o4-mini`
 - **Anthropic Models**
