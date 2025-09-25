@@ -156,12 +156,7 @@ def claude_chat_completion_openai_format(
     logprobs=False,
 ):
     assert n == 1
-    # client = Anthropic(api_key=api_key)
-    client = AnthropicBedrock(
-        aws_access_key=os.getenv('AWS_ACCESS_KEY'),
-        aws_secret_key=os.getenv('AWS_SECRET_KEY'),
-        aws_region=os.getenv('AWS_REGION'),
-    )
+    client = Anthropic(api_key=api_key)
 
     if "-thinking" in model:
         thinking_mode = True
@@ -259,15 +254,15 @@ def claude_chat_completion_openai_format(
     formatted_tools = format_tool_input(tools) if tools else []
     
     # Change the model name to the Bedrock model name
-    bedrock_model_names = {
-        "claude-3-5-haiku-20241022": "us.anthropic.claude-3-5-haiku-20241022-v1:0",
-        "claude-3-5-sonnet-20240229": "us.anthropic.claude-3-5-sonnet-20240229-v1:0",
-        "claude-3-5-sonnet-20241022": "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
-        "claude-3-7-sonnet-20250219": "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
-    }
+    # bedrock_model_names = {
+    #     "claude-3-5-haiku-20241022": "us.anthropic.claude-3-5-haiku-20241022-v1:0",
+    #     "claude-3-5-sonnet-20240229": "us.anthropic.claude-3-5-sonnet-20240229-v1:0",
+    #     "claude-3-5-sonnet-20241022": "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
+    #     "claude-3-7-sonnet-20250219": "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+    # }
     
     create_params = {
-        "model": bedrock_model_names[model],
+        "model": model,
         "max_tokens": max_tokens,
         "system": system_message,
         "messages": message_list,

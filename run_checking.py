@@ -197,7 +197,7 @@ def main():
     parser.add_argument("--assistant_model", type=str, required=True,
                        help="Model to use for the assistant agent")
     parser.add_argument("--tool_call_mode", type=str, default="fc",
-                       choices=["fc", "react", "act-only"],
+                       choices=["fc", "react", "act-only", "react-v"],
                        help="Tool call mode for the assistant model")
     parser.add_argument("--default_constraint_option", type=str, default="full",
                        choices=["full", "required"], 

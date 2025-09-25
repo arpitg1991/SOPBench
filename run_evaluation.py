@@ -111,7 +111,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--user_model", type=str, default=None, help="Model to use for the user agent")
     parser.add_argument("--assistant_model", type=str, default="gpt-4o-mini", help="Model to use for the assistant agent")
     # Evaluation settings
-    parser.add_argument("--tool_call_mode", type=str, default="fc", choices=["fc", "act-only", "react"], help="Tool call mode for the assistant model")
+    parser.add_argument("--tool_call_mode", type=str, default="fc", choices=["fc", "act-only", "react", "react-v"], help="Tool call mode for the assistant model")
     parser.add_argument("--tool_list", type=str, default="oracle", choices=["full", "oracle"], help="Tool list to use for the simulation, only use the tools that have been evaluated or full tool list")
     parser.add_argument("--shuffle_func", action="store_true", help="Whether to shuffle assistant functions")
     parser.add_argument("--default_constraint_option", type=str, default="full", choices=["full", "required"], help="Default dependency to use for the other unevaluated actions")
@@ -119,7 +119,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--num_run_per_interaction", type=int, default=1, help="Number of interactions per task")
     parser.add_argument("--verbose", action="store_true", help="Whether to print verbose output")
     # Data settings
-    parser.add_argument("--output_dir", type=str, default="./output", help="Output directory")
+    parser.add_argument("--output_dir", type=str, default="./output_v2", help="Output directory")
     parser.add_argument("--domain", type=str, default="bank", choices=["bank", "online_market", "dmv", "healthcare", "library", "hotel", "university", "all"], help="Domain name")
     parser.add_argument("--indent_amount", type=int, default=2, help="controls the indent amount when writing to a file")
     args = parser.parse_args()

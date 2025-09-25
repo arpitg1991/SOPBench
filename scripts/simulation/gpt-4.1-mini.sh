@@ -14,7 +14,7 @@ for domain in "${domains[@]}"; do
                 --env_mode prompt \
                 --tool_list $tool_list \
                 --tool_call_mode $method \
-                --num_run_per_interaction 3
+                --num_run_per_interaction 1
     done
 done
 

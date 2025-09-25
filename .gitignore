@@ -16,8 +16,9 @@ sync.sh
 # keys
 swarm/.env
 
-# ignore small model files
-*3b*.json
+# ignore output files
+output/
+# *3b*.json
 # *7b*.json
 # *8b*.json
 # *14b*.json
@@ -26,3 +27,11 @@ swarm/.env
 # backup files
 data_backup/
 output_backup/
+analysis/
+
+# verl
+verl/
+
+data_v2/
+output_v2/
+filter_data.py

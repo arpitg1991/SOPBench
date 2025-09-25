@@ -334,7 +334,7 @@ class OpenAIHandler:
 
         return message
     
-    def response_completion(self, test_entry: dict, include_debugging_log: bool, tool_call_mode: Literal["fc", "prompt", "react", "act-only"] = "fc"):
+    def response_completion(self, test_entry: dict, include_debugging_log: bool, tool_call_mode: Literal["fc", "prompt", "react", "act-only", "react-v"] = "fc"):
         """
         Response completion API from OpenAI o-series models
         Reference: https://platform.openai.com/docs/guides/reasoning
@@ -489,7 +489,7 @@ class OpenAIHandler:
         )
         return {"idx": test_entry.get("idx", 0), "completion": completion}
     
-    def chat_completion(self, test_entry: dict, include_debugging_log: bool, tool_call_mode: Literal["fc", "prompt", "react", "act-only"] = "fc"):
+    def chat_completion(self, test_entry: dict, include_debugging_log: bool, tool_call_mode: Literal["fc", "prompt", "react", "act-only", "react-v"] = "fc"):
         """
         OSS models have a different inference method.
         They need to spin up a server first and then send requests to it.
@@ -538,6 +538,13 @@ class OpenAIHandler:
             if self.backend in ["openai", "vllm"]:
                 if not any(_ in self.model_name_huggingface for _ in ["o1", "o3", "o4"]):
                     chat_completion_params["parallel_tool_calls"] = test_entry.get("parallel_tool_calls", False)
+                if self.model_name_huggingface in ["gpt-5", "gpt-5-mini", "gpt-5-nano"]:
+                    # Replace max_tokens with max_completion_tokens
+                    max_completion_tokens = chat_completion_params.get("max_tokens", 1024)
+                    del chat_completion_params["max_tokens"]
+                    del chat_completion_params["temperature"]
+                    del chat_completion_params["top_p"]
+                    chat_completion_params["max_completion_tokens"] = max_completion_tokens
                 completion = self.client.chat.completions.create(**chat_completion_params)
             elif self.backend in ["fireworks"]:
                 # Does not support "strict" field in tool description
@@ -556,7 +563,7 @@ class OpenAIHandler:
         
         # Prompt-based tool calling (react or act-only), 
         # Need input formatter and output parser, and change into FC format    
-        elif tool_call_mode in ["react", "act-only"]:            
+        elif tool_call_mode in ["react", "act-only", "react-v"]:            
             if self.backend in ["openai", "vllm", "fireworks"]:
                 chat_completion_func = self.client.chat.completions.create
             elif self.backend in ["gemini", "claude"]:
@@ -571,7 +578,8 @@ class OpenAIHandler:
                 chat_completion_params=chat_completion_params,
                 messages=norm_messages,
                 tools=tools,
-                reasoning=(tool_call_mode != "act-only")
+                reasoning=(tool_call_mode != "act-only"),
+                verification=(tool_call_mode == "react-v")
             )
             return {"idx": test_entry.get("idx", 0), "completion": completion}
         

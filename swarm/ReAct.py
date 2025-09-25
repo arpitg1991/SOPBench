@@ -31,6 +31,32 @@ Action Input: [Arguments in JSON format]
 - If you decide not to take any action, use Action: N/A and Action Input: N/A.
 """
 
+ReAct_Verify_FORMAT_INSTRUCTIONS_SYSTEM_FUNCTION = """
+Always attempt to solve tasks by leveraging the available tools. You have access to the following tools:
+
+{func_str}
+
+## RESPONSE ACTION FORMAT
+For every response, please adhere strictly to the following format:
+Thought: Describe your reasoning before taking any action.
+Eligibility: Check if it is eligible to take the planned action under the current context.
+Action: Specify the action to execute. This must be one of {func_list} (include only the function name).
+Action Input: Provide the input arguments for the action in JSON format. For example: {{"arg1": "value1", "arg2": "value2"}}
+<End Action>
+
+**Example Response Format:**
+Thought: [Your reasoning here]  
+Eligibility: [Yes/No]  
+Action: [one of {func_list}]  
+Action Input: [Arguments in JSON format]  
+<End Action>
+
+## Important: 
+- Your response must be in the format of Thought, Eligibility, Action, Action Input, <End Action> without any other information.
+- You can use at most ONE function per response.
+- If the planned action is not eligible, or you decide not to take any action, use Eligibility: No and Action: N/A and Action Input: N/A.
+"""
+
 ReAct_wo_REASON_FORMAT_INSTRUCTIONS_SYSTEM_FUNCTION = """
 Always attempt to solve tasks by leveraging the available tools. You have access to the following tools:
 
@@ -53,9 +79,22 @@ Action Input: [Arguments in JSON format]
 - If you determine no action is needed, respond with Action: None and Action Input: None.
 """
 
-TOOL_CALL_TEMPLATE = """
+ReAct_TOOL_CALL_TEMPLATE = """
 Thought: {content}
 Action: {function_name}
+Action Input: {function_args}
+<End Action>
+"""
+
+ReAct_Verify_TOOL_CALL_TEMPLATE = """
+Thought: {content}
+Action: {function_name}
+Action Input: {function_args}
+<End Action>
+"""
+
+Act_ONLY_TOOL_CALL_TEMPLATE = """
+{content}Action: {function_name}
 Action Input: {function_args}
 <End Action>
 """
@@ -65,7 +104,7 @@ Observation ({function_call}):
 {content}
 """
 
-def convert_assistant_message(message, called_tools):
+def convert_assistant_message(message, called_tools, response_template):
     """
     Input OpenAI assistant message:
         {
@@ -95,10 +134,10 @@ def convert_assistant_message(message, called_tools):
         function_args = message["tool_calls"][0]["function"]["arguments"]
         # record the tool call
         called_tools[tool_call_id] = {"function_name": function_name, "function_args": function_args}
-        text = TOOL_CALL_TEMPLATE.format(content=content, function_name=function_name, function_args=function_args)
+        text = response_template.format(content=content, function_name=function_name, function_args=function_args)
     else:
         # use N/A if no tool call
-        text = TOOL_CALL_TEMPLATE.format(content=content, function_name="N/A", function_args="N/A")
+        text = response_template.format(content=content, function_name="N/A", function_args="N/A")
     return {"role": "assistant", "content": text}, called_tools
 
 def convert_tool_message(message, called_tools):
@@ -215,7 +254,8 @@ def ReAct_tool_calling(chat_completion_func,
                        chat_completion_params, 
                        messages, 
                        tools, 
-                       reasoning=True):
+                       reasoning=True,
+                       verification=False):
     """
     Receive the messages in the openai function calling format, and convert it into the format of chat completion messages.
     Return the converted messages.
@@ -225,9 +265,14 @@ def ReAct_tool_calling(chat_completion_func,
     """
     called_tools = {}
     if not reasoning:
-        template = ReAct_wo_REASON_FORMAT_INSTRUCTIONS_SYSTEM_FUNCTION
+        input_template = ReAct_wo_REASON_FORMAT_INSTRUCTIONS_SYSTEM_FUNCTION
+        response_template = ReAct_wo_REASON_TOOL_CALL_TEMPLATE
+    elif verification:
+        input_template = ReAct_Verify_FORMAT_INSTRUCTIONS_SYSTEM_FUNCTION
+        response_template = ReAct_Verify_TOOL_CALL_TEMPLATE
     else:
-        template = ReAct_FORMAT_INSTRUCTIONS_SYSTEM_FUNCTION
+        input_template = ReAct_FORMAT_INSTRUCTIONS_SYSTEM_FUNCTION
+        response_template = ReAct_TOOL_CALL_TEMPLATE
     
     tool_list = [tool["function"]["name"] for tool in tools]
     tool_str = json.dumps(tools, indent=4)
@@ -235,10 +280,10 @@ def ReAct_tool_calling(chat_completion_func,
     for message in messages:
         if message["role"] == "system":
             system_message = message["content"]
-            system_message_w_func_doc = system_message + "\n\n" + template.format(func_str=tool_str, func_list=tool_list)
+            system_message_w_func_doc = system_message + "\n\n" + input_template.format(func_str=tool_str, func_list=tool_list)
             new_messages.append({"role": "system", "content": system_message_w_func_doc})
         elif message["role"] == "assistant":
-            converted_message, called_tools = convert_assistant_message(message, called_tools)
+            converted_message, called_tools = convert_assistant_message(message, called_tools, response_template)
             new_messages.append(converted_message)
         elif message["role"] == "tool":
             # change the tool message into user message

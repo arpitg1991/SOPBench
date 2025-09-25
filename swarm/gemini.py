@@ -296,13 +296,13 @@ def gemini_chat_completion_openai_format(
                 return completion
             except requests.exceptions.RequestException as e:
                 print(f"Request failed (attempt {retry + 1}/{max_retries}): {str(e)}")
-                time.sleep(1.5 * min((1.1**retry), 5))
+                time.sleep(2 * min((1.25**retry), 5))
                 retry += 1
             except Exception as e:
                 # print full traceback
                 traceback.print_exc()
                 print(f"Error: {str(e)}")
-                time.sleep(1.2 * min((1.2**retry), 5))
+                time.sleep(2 * min((1.5**retry), 5))
                 retry += 1
         return None
     

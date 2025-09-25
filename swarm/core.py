@@ -47,6 +47,7 @@ class Swarm:
             return construct_chatcompletion(role=agent.name, 
                                             content=agent.default_response)
         elif agent.default_response and not agent.response_repeat:
+            # Use this default response only once at the begining of the history
             # Check if the default response is already in the history, if so, do not repeat it
             default_response_found = False
             for message in history:
@@ -190,7 +191,7 @@ class Swarm:
         
         agent_history = []
         # switch the history roles, always identify myself as assistant
-        if active_agent_idx == 0: # user agent
+        if active_agent_idx == 0: # user agent, reverse the message roles
             for message in history:
                 new_message = copy.deepcopy(message)
                 if message["role"] == "tool":
@@ -248,9 +249,12 @@ class Swarm:
         agents = [user_agent, assistant_agent]
         
         # starts the conversation
-        active_agent_idx = 0 if start_agent == "user" else 1
+        active_agent_idx = 0 if start_agent == "user" else 1 # user: 0, assistant: 1
         active_agent = agents[active_agent_idx]
         active_agent_history = copy.deepcopy(history)
+        
+        # update the active agent's history
+        active_agent, active_agent_history = self.update_active_agent(history, agents, active_agent_idx)
         
         # run the conversation until max_turns or until the active agent is None
         while len(history) < max_turns and len(actions) < max_actions and active_agent:

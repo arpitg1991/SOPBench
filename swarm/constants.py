@@ -1,5 +1,10 @@
 # OpenAI model names
 OPENAI_MODELS = [
+    # GPT-5 variants
+    "gpt-5",
+    "gpt-5-mini",
+    "gpt-5-nano",
+    
     # GPT-4 variants
     "gpt-4o", # -> gpt-4o-2024-08-06
     "gpt-4o-2024-11-20",
@@ -34,9 +39,8 @@ GEMINI_MODELS = [
     "gemini-2.0-flash-001",
     "gemini-2.0-flash",
     "gemini-2.0-flash-thinking-exp",
-    # gemini 2.5
-    "gemini-2.5-pro-preview-03-25",
-    "gemini-2.5-flash-preview-04-17",
+    "gemini-2.5-flash",
+    "gemini-2.5-pro"
 ]
 
 # Claude models
@@ -45,6 +49,7 @@ CLAUDE_MODELS = [
     "claude-3-5-haiku-20241022",
     "claude-3-7-sonnet-20250219", 
     "claude-3-7-sonnet-20250219-thinking",
+    "claude-sonnet-4-20250514",
 ]
 
 # Fireworks models
@@ -77,9 +82,6 @@ AVAILABLE_MODELS = {
         "qwen2.5-32b-instruct",
         "llama3.1-8b-instruct",
         "llama3.2-3b-instruct",
-        # "toolace-8b",
-        # "qwen2.5-coder-7b-instruct",
-        # "qwen2.5-coder-32b-instruct",
     ],
     "fireworks": [
         "llama3.1-405b-instruct",
@@ -101,6 +103,8 @@ AVAILABLE_MODELS = {
     "claude": [
         "claude-3-5-sonnet-20241022",
         "claude-3-5-haiku-20241022",
+        "claude-3-7-sonnet-20250219", 
+        "claude-3-7-sonnet-20250219-thinking",
     ],
     "openai": [
         "gpt-4o",
@@ -127,6 +131,8 @@ FUNCTION_CALLING_MODELS = {
         "gemini-2.0-flash-001",
         "gemini-2.0-flash",
         "gemini-2.0-flash-thinking-exp",
+        "gemini-2.5-flash",
+        "gemini-2.5-pro",
         "gemini-2.5-pro-preview-03-25",
         "gemini-2.5-flash-preview-04-17",
     ],
@@ -135,8 +141,14 @@ FUNCTION_CALLING_MODELS = {
         "claude-3-5-haiku-20241022",
         "claude-3-7-sonnet-20250219", 
         "claude-3-7-sonnet-20250219-thinking",
+        "claude-opus-4-20250514",
+        "claude-sonnet-4-20250514",
+        "claude-opus-4-20250514",
     ],
     "openai": [
+        "gpt-5",
+        "gpt-5-mini",
+        "gpt-5-nano",
         "gpt-4o",
         "gpt-4o-2024-11-20",
         "gpt-4o-mini",

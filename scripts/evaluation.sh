@@ -1,38 +1,43 @@
 cd ..
 
 models=(
-        "gpt-4o" 
-        "gpt-4o-mini" 
-        "claude-3-5-sonnet-20241022" 
-        "gemini-2.0-flash-001" 
-        "gemini-1.5-pro"
-        "gemini-2.0-flash-thinking-exp" 
-        "o1"
-        "deepseek-r1"
-        "llama3.1-70b-instruct" 
-        "qwen2.5-72b-instruct" 
-        "llama3.1-8b-instruct"
-        "llama3.2-3b-instruct"
-        "qwen2.5-32b-instruct"
-        "qwen2.5-14b-instruct"
-        "qwen2.5-7b-instruct"
-        "qwen2.5-3b-instruct"
+        # "gpt-5"
+        # "gpt-5-mini"
+        # "gpt-4.1" 
+        # "gpt-4o"
+        # "gpt-4o-mini" 
+        # "claude-3-7-sonnet-20250219" 
+        # "claude-3-5-sonnet-20241022" 
+        # "gemini-2.0-flash-001" 
+        # "gemini-2.5-flash"
+        # "gemini-2.0-flash-thinking-exp" 
+        "o4-mini-high"
+        # "deepseek-r1"
+        # "llama3.1-70b-instruct" 
+        # "qwen2.5-72b-instruct" 
+        # "llama3.1-8b-instruct"
+        # "qwen2.5-32b-instruct"
+        # "qwen2.5-14b-instruct"
+        # "qwen2.5-7b-instruct"
         )
 domains=(
-    "healthcare" 
-    "dmv" 
-    "library" 
-    "online_market" 
-    "bank"
+    # "healthcare" 
+    # "dmv" 
+    # "library"
+    # "online_market" 
+    # "bank"
+    # "hotel"
+    # "university"
+    "all"
     )
 tool_lists=(
     "full" 
-    "oracle"
+    # "oracle"
     )
 tool_call_modes=(
     "fc" 
-    "react" 
-    "act-only"
+    # "react" 
+    # "act-only"
     )
 
 # Default settings

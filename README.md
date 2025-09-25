@@ -1,11 +1,5 @@
 # SOPBench: Evaluating Language Agents at Following Standard Operating Procedures and Constraints
 
-<p align="center">
-  <a href="https://arxiv.org/abs/2503.08669"><img src="https://img.shields.io/badge/arXiv-Paper-red?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv Paper"></a>
-  &nbsp;
-  <a href="https://github.com/Leezekun/SOPBench"><img src="https://img.shields.io/badge/GitHub-Project-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Project"></a>
-</p>
-
 
 ## Overview
 
@@ -47,9 +41,6 @@ The following table shows model pass rates (%) across seven domains. The overall
 
 ```bash
 # Clone the repository
-git clone https://github.com/Leezekun/SOPBench.git
-cd SOPBench
-
 # Create and activate conda environment
 conda create -n agent python=3.10
 conda activate agent
@@ -116,7 +107,7 @@ The following command line arguments control the simulation and evaluation:
 
 #### Data Preparation
 
-The framework comes with pre-generated task data in the `data` folder. Alternatively, you can download the complete dataset from [Huggingface](https://huggingface.co/datasets/Zekunli/SOPBench).
+The framework comes with pre-generated task data in the `data` folder.
 
 To generate new data (note that generating each task using GPT-4o costs approximately $0.015 USD):
 

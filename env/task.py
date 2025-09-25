@@ -175,6 +175,7 @@ def task_initializer(domain_str:str, task:dict, dep_innate_full:dict, default_de
     # compiling the user instructions
     user_instructions = f"You should roleplay as a user has requests within the {domain_str} domain. Your goal is: " + task["user_instruction"] if task else "None"
     user_known = task["user_known"] if task else {}
+    user_instructions += f" You have the following information: " if user_known else ""
     for parameter in user_known: user_instructions += f" \"{parameter}\" is \"{user_known[parameter]}\"."
     user_info = {"instructions":user_instructions, "known":user_known}
     # compiling the assistant dependency instructions

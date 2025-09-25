@@ -20,7 +20,7 @@ class Agent(BaseModel):
     system: Optional[BaseModel] = None
     functions: List[Union[Callable, dict]] = []
     parallel_tool_calls: bool = False
-    tool_call_mode: Literal["fc", "react", "act-only"] = "fc"
+    tool_call_mode: Literal["fc", "react", "act-only", "react-v"] = "fc"
     temperature: float = 1.0
     top_p: float = 1.0
     max_tokens: int = 512
