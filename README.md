@@ -158,6 +158,29 @@ python run_checking.py \
 
 Over 24,000 agent trajectories are provided in the `output/` directory for reference.
 
+#### Simplified SOP Agent Loop
+
+For lightweight experimentation or integration into reinforcement learning pipelines, use the simplified agent loop located at `scripts/simple_agent_loop.py`. It exposes a gym-like API and can execute SOPBench tasks with either deterministic or LLM-driven planners.
+
+Run a deterministic episode (no model calls required):
+
+```bash
+python scripts/simple_agent_loop.py --domain bank --task-index 0
+```
+
+To delegate planning to an LLM, provide the desired model and call configuration. For example, to use OpenAI's function-calling interface:
+
+```bash
+python scripts/simple_agent_loop.py \
+  --domain bank \
+  --task-index 0 \
+  --planner llm \
+  --assistant-model gpt-4o \
+  --tool-call-mode fc
+```
+
+Both commands print a JSON summary indicating SOP compliance, execution success, and the number of steps performed.
+
 ## Project Structure
 
 ```
